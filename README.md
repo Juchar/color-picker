@@ -21,7 +21,7 @@
 <color-picker></color-picker>
 ```
 
-[<img src="https://raw.githubusercontent.com/juchar/color-picker/master/screenshot.png" width="200" alt="Screenshot of color-picker">](https://github.com/juchar/color-picker)
+[<img src="https://raw.githubusercontent.com/juchar/color-picker/master/screenshot.png" width="400" alt="Screenshot of color-picker">](https://github.com/juchar/color-picker)
 
 
 ## Installation
