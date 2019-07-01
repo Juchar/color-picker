@@ -1,0 +1,188 @@
+<link href="../../../polymer/polymer-element.html" rel="import">
+<link href="../../../vaadin-themable-mixin/vaadin-themable-mixin.html" rel="import">
+<link href="../../../vaadin-element-mixin/vaadin-element-mixin.html" rel="import">
+<link href="color-picker-sl-slider.html" rel="import">
+<link href="color-picker-hue-slider.html" rel="import">
+<link href="color-picker-alpha-slider.html" rel="import">
+<link href="color-picker-selected-color.html" rel="import">
+<link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
+<link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
+<link href="../libraries/chroma-js-import.html" rel="import"/>
+
+<dom-module id="color-picker-slider">
+  <template>
+    <style include="color-picker-shared-styles">
+      :host {
+        display: flex;
+      }
+
+      :host > *, sl-slider {
+        flex-grow: 1;
+      }
+
+      selected-color {
+        flex-grow: 0 !important;
+      }
+    </style>
+
+    <div class="vertical-spacing">
+      <sl-slider disabled$="[[disabled]]"
+                 hue="{{_hue}}"
+                 theme$="[[theme]]"
+                 value-x="{{_saturation}}"
+                 value-y="{{_value}}"></sl-slider>
+      <div class="horizontal-spacing" style="align-self: stretch;align-items: center;">
+        <selected-color disabled$="[[disabled]]"
+                        previous-value="{{previousValue}}"
+                        value="{{value}}"></selected-color>
+        <div class="vertical-spacing">
+          <hue-slider disabled$="[[disabled]]"
+                      id="hueSlider"
+                      theme$="[[theme]]"
+                      value-x="{{_hue}}"></hue-slider>
+          <alpha-slider disabled$="[[disabled]]"
+                        hidden$="[[disableAlpha]]"
+                        hue="{{_hue}}"
+                        id="alphaSlider"
+                        theme$="[[theme]]"
+                        value="{{_value}}"
+                        value-x="{{_alpha}}"></alpha-slider>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script>
+    (function() {
+
+      /**
+       * `<color-picker-slider>` allows to select a color from sliders.
+       *
+       * @memberof Vaadin.ColorPicker
+       * @mixes Vaadin.ElementMixin
+       * @mixes Vaadin.ThemableMixin
+       * @mixes Vaadin.DisabledPropertyMixin
+       * @mixes Vaadin.ColorPicker.HasColorValueMixin
+       */
+      class ColorPickerSliderElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
+        Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(Polymer.Element)))) {
+
+        static get is() {
+          return 'color-picker-slider';
+        }
+
+        static get version() {
+          return '0.1.0';
+        }
+
+        static get properties() {
+          return {
+            /**
+             * The previous value.
+             */
+            previousValue: {
+              type: Object,
+              notify: true
+            },
+            /**
+             * Disable the input of **alpha** values.
+             */
+            disableAlpha: {
+              type: Boolean,
+              value: false,
+              notify: true
+            },
+            /**
+             * The current hue in the range `[0 - 360]`.
+             */
+            _hue: {
+              type: Number,
+              value: 0,
+              notify: true,
+              observer: '_sliderColorChanged'
+            },
+            /**
+             * The current saturation in the range `[0 - 1]`.
+             */
+            _saturation: {
+              type: Number,
+              value: 1,
+              notify: true,
+              observer: '_sliderColorChanged'
+            },
+            /**
+             * The current value in the range `[0 - 1]`.
+             */
+            _value: {
+              type: Number,
+              value: 1,
+              notify: true,
+              observer: '_sliderColorChanged'
+            },
+            /**
+             * The current alpha in the range `[0 - 1]`.
+             */
+            _alpha: {
+              type: Number,
+              value: 0,
+              notify: true,
+              observer: '_sliderColorChanged'
+            }
+          };
+        }
+
+        /**
+         * @protected
+         */
+        ready() {
+          super.ready();
+          this._createPropertyObserver('value', '_valueChanged', true);
+        }
+
+        /**
+         * Update the color value if the slider values changed.
+         * @private
+         */
+        _sliderColorChanged() {
+          this._colorChanged(() => {
+            this.value = chroma.hsv(this._hue, this._saturation, this._value).alpha(this._alpha);
+          });
+        }
+
+        /**
+         * Update the slider values if the color value changed.
+         * @private
+         */
+        _valueChanged() {
+          this._colorChanged(() => {
+            this._hue = this.value.get('hsv.h');
+            this._saturation = this.value.get('hsv.s');
+            this._value = this.value.get('hsv.v');
+            this._alpha = this.value.alpha();
+          });
+        }
+
+        /**
+         * Prevent endless recursion.
+         * @param updateAction
+         * @private
+         */
+        _colorChanged(updateAction) {
+          if (!this._updatingColor) {
+            this._updatingColor = true;
+            updateAction();
+            this._updatingColor = false;
+          }
+        }
+      }
+
+      customElements.define(ColorPickerSliderElement.is, ColorPickerSliderElement);
+
+      /**
+       * @namespace Vaadin.ColorPicker
+       */
+      window.Vaadin = window.Vaadin || {};
+      window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
+      window.Vaadin.ColorPicker.ColorPickerSliderElement = ColorPickerSliderElement;
+    })();
+  </script>
+</dom-module>

@@ -1,0 +1,21 @@
+<script>
+  window.Vaadin = window.Vaadin || {};
+  window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
+  Vaadin.ColorPicker.HasColorValueMixin =
+    superClass => class HasColorValueMixin extends superClass {
+
+      static get properties() {
+        return {
+          /**
+           * The selected color in the form of a
+           * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma object.
+           */
+          value: {
+            type: Object,
+            value: chroma.hsl(0, 1, 0.5),
+            notify: true
+          }
+        };
+      }
+    };
+</script>

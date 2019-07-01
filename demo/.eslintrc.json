@@ -1,0 +1,8 @@
+{
+  "rules": {
+  },
+  "globals": {
+    "ColorPickerDemo": false,
+    "DemoReadyEventEmitter": false
+  }
+}

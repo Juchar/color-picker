@@ -1,0 +1,26 @@
+<link href="../../../../vaadin-icons/vaadin-icons.html" rel="import">
+<link href="../../../../vaadin-button/theme/material/vaadin-button.html" rel="import">
+
+<dom-module id="material-color-picker-element-carousel" theme-for="element-carousel">
+  <template>
+    <style>
+      [part="switch-button"] {
+        min-width: 0px;
+        height: 32px;
+        width: 32px;
+        margin: 8px 0;
+      }
+    </style>
+  </template>
+</dom-module>
+
+<dom-module id="material-color-picker-element-carousel-switch-button" theme-for="vaadin-button">
+  <template>
+    <style>
+      :host([part="switch-button"]) [part="prefix"] ::slotted(iron-icon) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    </style>
+  </template>
+</dom-module>

@@ -1,0 +1,131 @@
+<link href="../../../polymer/polymer-element.html" rel="import">
+<link href="../../../vaadin-themable-mixin/vaadin-themable-mixin.html" rel="import">
+<link href="../../../vaadin-element-mixin/vaadin-element-mixin.html" rel="import">
+<link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
+<link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
+<link href="../libraries/chroma-js-import.html" rel="import"/>
+
+<dom-module id="selected-color">
+  <template>
+    <style include="color-picker-shared-styles">
+      :host {
+        display: flex;
+        overflow: hidden;
+        position: relative;
+      }
+
+      [part="previous-color-canvas"],
+      [part="selected-color-canvas"] {
+        flex-grow: 1;
+      }
+    </style>
+
+    <responsive-canvas disabled$="[[disabled]]"
+                       hidden$="[[!_hasPreviousColor(value,previousValue)]]"
+                       part="previous-color-canvas"
+                       render-callback="[[_renderPreviousColor(previousValue)]]"></responsive-canvas>
+    <responsive-canvas disabled$="[[disabled]]"
+                       part="selected-color-canvas"
+                       render-callback="[[_renderSelectedColor(value)]]"></responsive-canvas>
+  </template>
+  <script>
+    (function() {
+
+      /**
+       * `<selected-color>` shows a selected color. If a previous color is specified, this one will
+       * be also visible.
+       *
+       * @memberof Vaadin.ColorPicker
+       * @mixes Vaadin.ElementMixin
+       * @mixes Vaadin.ThemableMixin
+       * @mixes Vaadin.DisabledPropertyMixin
+       * @mixes Vaadin.ColorPicker.HasColorValueMixin
+       */
+      class SelectedColorElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
+        Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(Polymer.Element)))) {
+
+        static get is() {
+          return 'selected-color';
+        }
+
+        static get version() {
+          return '0.1.0';
+        }
+
+        static get properties() {
+          return {
+            /**
+             * The previous value.
+             */
+            previousValue: {
+              type: Object,
+              notify: true
+            }
+          };
+        }
+
+        /**
+         * Check if a value is set for the previous value.
+         * @returns {boolean}
+         * @private
+         */
+        _hasPreviousColor() {
+          return this.previousValue;
+        }
+
+        /**
+         * Callback to render the selected color.
+         * @returns {Function}
+         * @private
+         */
+        _renderSelectedColor() {
+          return (canvas) => {
+            SelectedColorElement._renderColor(canvas, this.value);
+          };
+        }
+
+        /**
+         * Callback to render the previous color.
+         * @returns {Function}
+         * @private
+         */
+        _renderPreviousColor() {
+          return (canvas) => {
+            SelectedColorElement._renderColor(canvas, this.previousValue);
+          };
+        }
+
+        /**
+         * Render a color to a canvas.
+         * @param canvas The canvas to show the color in.
+         * @param color The color to show in the format of a valid
+         * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma object
+         * @private
+         */
+        static _renderColor(canvas, color) {
+          const ctx = canvas.getContext('2d');
+          const width = canvas.scrollWidth;
+          const height = canvas.scrollHeight;
+
+          ctx.clearRect(0, 0, width, height);
+
+          if (color) {
+            const hsl = chroma(color).hsl();
+            ctx.fillStyle =
+              `hsla(${hsl[0] || 0}, ${hsl[1] * 100}%, ${hsl[2] * 100}%, ${color.alpha()})`;
+            ctx.fillRect(0, 0, width, height);
+          }
+        }
+      }
+
+      customElements.define(SelectedColorElement.is, SelectedColorElement);
+
+      /**
+       * @namespace Vaadin.ColorPicker
+       */
+      window.Vaadin = window.Vaadin || {};
+      window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
+      window.Vaadin.ColorPicker.SelectedColorElement = SelectedColorElement;
+    })();
+  </script>
+</dom-module>

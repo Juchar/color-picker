@@ -1,0 +1,117 @@
+<link href="../../../polymer/polymer-element.html" rel="import">
+<link href="../../../vaadin-themable-mixin/vaadin-themable-mixin.html" rel="import">
+<link href="../../../vaadin-element-mixin/vaadin-element-mixin.html" rel="import">
+<link href="../components/color-picker-element-carousel.html" rel="import">
+<link href="color-picker-hex-input.html" rel="import">
+<link href="color-picker-rgba-input.html" rel="import">
+<link href="color-picker-hsla-input.html" rel="import">
+<link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
+<link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
+<link href="../libraries/chroma-js-import.html" rel="import"/>
+
+<dom-module id="color-picker-input">
+  <template>
+    <element-carousel disabled$="[[disabled]]"
+                      pinned="{{pinned}}"
+                      theme$="[[theme]]">
+      <hex-input color-input="hex" disable-alpha="{{disableAlpha}}"
+                 disable-for-switch$="{{disableHex}}"
+                 disabled$="[[disabled]]"
+                 theme$="[[theme]]" value="{{value}}"></hex-input>
+      <rgba-input color-input="rgb"
+                  disable-alpha="{{disableAlpha}}"
+                  disable-for-switch$="{{disableRgb}}"
+                  disabled$="[[disabled]]"
+                  theme$="[[theme]]"
+                  value="{{value}}"></rgba-input>
+      <hsla-input color-input="hsl"
+                  disable-alpha="{{disableAlpha}}"
+                  disable-for-switch$="{{disableHsl}}"
+                  disabled$="[[disabled]]"
+                  theme$="[[theme]]"
+                  value="{{value}}"></hsla-input>
+    </element-carousel>
+  </template>
+  <script>
+    (function() {
+
+      /**
+       * `<color-picker-input>` allows to select a color from different inputs:
+       * * HEX
+       * * RGBA
+       * * HSLA
+       *
+       * @memberof Vaadin.ColorPicker
+       * @mixes Vaadin.ElementMixin
+       * @mixes Vaadin.ThemableMixin
+       * @mixes Vaadin.DisabledPropertyMixin
+       * @mixes Vaadin.ColorPicker.HasColorValueMixin
+       */
+      class ColorPickerInputElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
+        Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(Polymer.Element)))) {
+
+        static get is() {
+          return 'color-picker-input';
+        }
+
+        static get version() {
+          return '0.1.0';
+        }
+
+        static get properties() {
+          return {
+            /**
+             * Pin all inputs visible or show them in a carousel.
+             */
+            pinned: {
+              type: Boolean,
+              value: false,
+              notify: true
+            },
+            /**
+             * Disable the input of color in the **hex** format.
+             */
+            disableHex: {
+              type: Boolean,
+              value: true,
+              notify: true
+            },
+            /**
+             * Disable the input of color in the **rgb(a)** format.
+             */
+            disableRgb: {
+              type: Boolean,
+              value: true,
+              notify: true
+            },
+            /**
+             * Disable the input of color in the **hsl(a)** format.
+             */
+            disableHsl: {
+              type: Boolean,
+              value: true,
+              notify: true
+            },
+            /**
+             * Disable the input of **alpha** values.
+             */
+            disableAlpha: {
+              type: Boolean,
+              value: true,
+              notify: true
+            }
+          };
+        }
+      }
+
+      customElements.define(ColorPickerInputElement.is, ColorPickerInputElement);
+
+      /**
+       * @namespace Vaadin.ColorPicker
+       */
+      window.Vaadin = window.Vaadin || {};
+      window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
+      window.Vaadin.ColorPicker.ColorPickerInputElement = ColorPickerInputElement;
+    })();
+  </script>
+</dom-module>

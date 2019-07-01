@@ -1,0 +1,41 @@
+<!doctype html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>color-picker tests</title>
+  <script src="../../web-component-tester/browser.js"></script>
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../test-fixture/test-fixture.html">
+  <link rel="import" href="../color-picker.html">
+</head>
+
+<body>
+  <test-fixture id="default">
+    <template>
+      <color-picker></color-picker>
+    </template>
+  </test-fixture>
+
+  <script>
+    describe('sample test', function() {
+      var element;
+
+      beforeEach(function() {
+        element = fixture('default');
+      });
+
+      it('should pass', function() {
+        expect(element.localName).to.be.equal('color-picker');
+      });
+
+      it('should not expose class name globally', function() {
+        expect(window.ColorPicker).not.to.be.ok;
+      });
+
+      it('should have a valid version number', function() {
+        expect(element.constructor.version).to.match(/^(\d+\.)?(\d+\.)?(\d+)(-(alpha|beta)\d+)?$/);
+      });
+
+    });
+  </script>
+</body>

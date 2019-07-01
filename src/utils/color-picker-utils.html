@@ -1,0 +1,24 @@
+<dom-module id="color-picker-utils">
+  <script>
+    class ColorPickerUtils {
+
+      static roundToNearest(value, nearest) {
+        nearest = 1 / (nearest);
+        return Math.round(value * nearest) / nearest;
+      }
+
+      static limit(value, min, max) {
+        value = +value;
+        return isNaN(value) ? min : (value < min ? min : (value > max ? max : value));
+      }
+
+      static conditionallySetAttribute(element, condition, attr) {
+        if (condition) {
+          element.setAttribute(attr, '');
+        } else {
+          element.removeAttribute(attr);
+        }
+      }
+    }
+  </script>
+</dom-module>

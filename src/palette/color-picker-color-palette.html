@@ -1,0 +1,106 @@
+<link href="../../../polymer/polymer-element.html" rel="import">
+<link href="../../../vaadin-themable-mixin/vaadin-themable-mixin.html" rel="import">
+<link href="../../../vaadin-element-mixin/vaadin-element-mixin.html" rel="import">
+<link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
+<link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
+<link href="color-picker-color-checkbox.html" rel="import"/>
+<link href="../libraries/chroma-js-import.html" rel="import"/>
+
+<dom-module id="color-palette">
+  <template>
+    <style include="color-picker-shared-styles">
+      :host {
+        width: 100%;
+      }
+
+      [part="container"] {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+
+      [part="container"] > * {
+        flex-grow: 0 !important;
+      }
+    </style>
+
+    <div class="horizontal-spacing" part="container">
+      <dom-repeat as="color" items="{{palette}}">
+        <template>
+          <color-checkbox checked="[[_isSelected(color,value)]]"
+                          color="[[color]]"
+                          disabled$="[[disabled]]"
+                          on-change="_setColorFromPalette"
+                          theme$="[[theme]]"
+                          value$="[[index]]"></color-checkbox>
+        </template>
+      </dom-repeat>
+    </div>
+
+  </template>
+  <script>
+    (function() {
+
+      /**
+       * `<color-palette>` shows a set of colors that can be selected.
+       *
+       * @memberof Vaadin.ColorPicker
+       * @mixes Vaadin.ElementMixin
+       * @mixes Vaadin.ThemableMixin
+       * @mixes Vaadin.DisabledPropertyMixin
+       * @mixes Vaadin.ColorPicker.HasColorValueMixin
+       */
+      class ColorPaletteElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
+        Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(Polymer.Element)))) {
+
+        static get is() {
+          return 'color-palette';
+        }
+
+        static get version() {
+          return '0.1.0';
+        }
+
+        static get properties() {
+          return {
+            /**
+             * The palette of colors to show. Each color in the array should be a
+             * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma object.
+             */
+            palette: {
+              type: Array,
+              notify: true
+            }
+          };
+        }
+
+        /**
+         * Set the current value.
+         * @param e the click event
+         * @private
+         */
+        _setColorFromPalette(e) {
+          this.value = e.model.color;
+        }
+
+        /**
+         * Check if a the provided color is the current value.
+         * @param color
+         * @returns {boolean}
+         * @private
+         */
+        _isSelected(color) {
+          return color && this.value && chroma(color).css() === chroma(this.value).css();
+        }
+      }
+
+      customElements.define(ColorPaletteElement.is, ColorPaletteElement);
+
+      /**
+       * @namespace Vaadin.ColorPicker
+       */
+      window.Vaadin = window.Vaadin || {};
+      window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
+      window.Vaadin.ColorPicker.ColorPaletteElement = ColorPaletteElement;
+    })();
+  </script>
+</dom-module>
