@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "color-picker",
   "main": "color-picker.html",
-  "repository": "vaadin/color-picker",
+  "repository": "juchar/color-picker",
   "keywords": [
     "Vaadin",
     "color-picker",
