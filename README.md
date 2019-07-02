@@ -53,17 +53,7 @@ Once installed, import it in your application:
 
 ### npm (ES Modules compatible version)
 
-Install `color-picker`:
-
-```sh
-npm i @juchar/color-picker --save
-```
-
-Once installed, import it in your application:
-
-```js
-import '@juchar/color-picker/color-picker.js';
-```
+Not available yet.
 
 ## Getting started
 
