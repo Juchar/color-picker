@@ -1,0 +1,21 @@
+node_modules
+package-lock.json
+yarn.lock
+coverage
+.idea
+*.iml
+
+# Not needed for hosting the pages
+test
+.editorconfig
+.eslintrc.json
+.gemini.yml
+.npmrc
+.stylelintrc
+.travis.yml
+bower.json
+package.json
+README.md
+screenshot.png
+vaadin-directory-description.md
+wct.conf.js
