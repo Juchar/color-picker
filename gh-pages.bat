@@ -1,6 +1,6 @@
 @echo off
 
-SET ghPagesBranch=gh-pages-new
+SET ghPagesBranch=gh-pages
 echo Using branch %ghPagesBranch%
 
 git branch -D %ghPagesBranch%
