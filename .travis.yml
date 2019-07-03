@@ -2,15 +2,15 @@ sudo: false
 dist: trusty
 language: node_js
 node_js: 8.11
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 script: 'true'
-
 deploy:
   provider: script
   script: bash gh-pages.sh
   on:
     branch: master
+env:
+  global:
+    secure: EFfRTNRRW2+wnVYXoMREM943+Cu6OVoUVK6p+lq8sMJRJq3HCjz8/h73/OUj+ulExV222wB0tY/qXAXILN+UNHC9sqN+iajTS2Q7pIOiAqyurpAthi8VZvby6iG//0EIVTudII+5hv8SngCmlAfEiP3uyytqotv3j/JqbxiXoNqUJFSz9BKncAvgJBTARR78OT47UIYEqNQA/pAAp0g5QwliluLRafy0kOVTXIHvWc5cmCRagm8N17wyvUqCDJqZk0uATKPvIMhulfT031f7V43v+EqkmnyIleVqwj+G+tG6Nc2z6+gZ6JkOGR9dsRkt7w5YUT/1nJuH2vP+0UhTudHjKmiLEWvAlivyxBMcHAs0Oh1aAHkXQdUPd7JvuK3eVlJkFKnIfvMJEK/gXMte5Hjo4u/A2KKujt3voXrphmBfBvJxASeu1LdtSZz3lMSBJT9gmVX9yOgqI+ErQxn8pUCcrci9HleWnHBCHfSIzmR1TWKZXsqsyfJnWXO0iD5QmflIu3/2zsYNn3KAUjTjTHyI9ParkGWhHivO0tHYt/i34Wd7oemv0newRq7WnTXvgGJqUZprUpEQvIXl9YHNWEy08UB+e97Eg+myNoR0H+vqFVfguScFyhJZxfEkHsYznWr/4DC4MUbvqoZrCeveXKb2U+cafOFBhL1YnDLfLO0=
