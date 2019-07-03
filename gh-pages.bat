@@ -5,7 +5,7 @@ echo Using branch %ghPagesBranch%
 
 git branch -D %ghPagesBranch%
 git push origin --delete %ghPagesBranch%
-git checkout -b %ghPagesBranch% master
+git checkout --theirs -b %ghPagesBranch% master
 
 git rm -r --cached .
 
