@@ -5,7 +5,7 @@ echo Using branch %ghPagesBranch%
 
 git branch -D %ghPagesBranch%
 git push origin --delete %ghPagesBranch%
-git checkout --theirs -b %ghPagesBranch% master
+git checkout -b %ghPagesBranch% master
 
 git rm -r --cached .
 
@@ -17,4 +17,4 @@ call bower install
 git add .
 
 git commit -m "Create GitHub Pages" --no-verify
-git push origin %ghPagesBranch%
+git push origin %ghPagesBranch% --force
