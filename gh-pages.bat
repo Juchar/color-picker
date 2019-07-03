@@ -7,11 +7,13 @@ git branch -D %ghPagesBranch%
 git push origin --delete %ghPagesBranch%
 git checkout -b %ghPagesBranch% master
 
-call bower install
-
 git rm -r --cached .
+
 DEL .gitignore
 REN .gitignore-gh-pages .gitignore
+
+call bower install
+
 git add .
 
 git commit -m "Create GitHub Pages" --no-verify
