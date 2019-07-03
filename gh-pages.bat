@@ -9,12 +9,12 @@ git checkout -b %ghPagesBranch% master
 
 git rm -r --cached .
 
-DEL .gitignore
-REN .gitignore-gh-pages .gitignore
-
 call bower cache clean
 call bower install --force
 call bower prune
+
+DEL .gitignore
+REN .gitignore-gh-pages .gitignore
 
 git add .
 
