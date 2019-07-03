@@ -7,7 +7,7 @@ git branch -D %ghPagesBranch%
 git push origin --delete %ghPagesBranch%
 git checkout -b %ghPagesBranch% master
 
-bower install
+call bower install
 
 git rm -r --cached .
 DEL .gitignore
