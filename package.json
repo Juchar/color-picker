@@ -44,8 +44,7 @@
     "gh-pages-sh": "polymer analyze > analysis.json && gh-pages.sh"
   },
   "devDependencies": {
-    "@vaadin/vaadin-component-dev-dependencies": "^3.0.0",
-    "simple-git": "^1.118.0"
+    "@vaadin/vaadin-component-dev-dependencies": "^3.0.0"
   },
   "dependencies": {
     "@polymer/iron-resizable-behavior": "^3.0.1",
