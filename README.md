@@ -8,7 +8,6 @@
 
 [![Bower version](https://badgen.net/github/release/juchar/color-picker)](https://github.com/juchar/color-picker/releases)
 [![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/jucharcolor-picker)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/juchar/color-picker)
 
 <!--
 ```
