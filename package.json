@@ -40,10 +40,12 @@
     "prestart": "polymer analyze > analysis.json",
     "start": "polymer serve --port 3000 --open",
     "preversion": "magi update-version",
-    "gh-pages": "polymer analyze > analysis.json && gh-pages.bat"
+    "gh-pages-bat": "polymer analyze > analysis.json && gh-pages.bat",
+    "gh-pages-sh": "gh-pages.sh"
   },
   "devDependencies": {
-    "@vaadin/vaadin-component-dev-dependencies": "^3.0.0"
+    "@vaadin/vaadin-component-dev-dependencies": "^3.0.0",
+    "simple-git": "^1.118.0"
   },
   "dependencies": {
     "@polymer/iron-resizable-behavior": "^3.0.1",
