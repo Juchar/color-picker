@@ -40,7 +40,7 @@
     "prestart": "polymer analyze > analysis.json",
     "start": "polymer serve --port 3000 --open",
     "preversion": "magi update-version",
-    "gh-pages": "gh-pages.bat"
+    "gh-pages": "polymer analyze > analysis.json gh-pages.bat"
   },
   "devDependencies": {
     "@vaadin/vaadin-component-dev-dependencies": "^3.0.0"
