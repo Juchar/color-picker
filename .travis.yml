@@ -11,6 +11,6 @@ script: 'true'
 
 deploy:
   provider: script
-  script: npm install && npm run gh-pages.sh
+  script: bash gh-pages.sh
   on:
     branch: master

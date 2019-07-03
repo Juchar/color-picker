@@ -13,6 +13,8 @@ bower cache clean
 bower install --force
 bower prune
 
+polymer analyze > analysis.json
+
 rm .gitignore
 mv .gitignore-gh-pages .gitignore
 

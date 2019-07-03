@@ -39,9 +39,7 @@
     "lint:polymer": "polymer lint --rules polymer-2 --input ./src/*.html ./theme/**/*.html",
     "prestart": "polymer analyze > analysis.json",
     "start": "polymer serve --port 3000 --open",
-    "preversion": "magi update-version",
-    "gh-pages-bat": "polymer analyze > analysis.json && gh-pages.bat",
-    "gh-pages-sh": "polymer analyze > analysis.json && gh-pages.sh"
+    "preversion": "magi update-version"
   },
   "devDependencies": {
     "@vaadin/vaadin-component-dev-dependencies": "^3.0.0"
