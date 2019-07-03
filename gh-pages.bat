@@ -12,7 +12,9 @@ git rm -r --cached .
 DEL .gitignore
 REN .gitignore-gh-pages .gitignore
 
-call bower install
+call bower cache clean
+call bower install --force
+call bower prune
 
 git add .
 
