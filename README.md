@@ -2,9 +2,9 @@
 
 [&lt;color-picker&gt;](https://github.com/juchar/color-picker) is a themable Web Component providing the possibility to select a color using sliders, inputs or palettes.
 
-[Live Demo ↗](https://www.webcomponents.org/element/juchar/color-picker)
+[Live Demo ↗](https://juchar.github.io/color-picker/demo/#color-picker-basic-demos)
 |
-[API documentation ↗](https://vaadin.com/components/color-picker/html-api)
+[API documentation ↗](https://juchar.github.io/color-picker/)
 
 [![Bower version](https://badgen.net/github/release/juchar/color-picker)](https://github.com/juchar/color-picker/releases)
 [![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/jucharcolor-picker)
