@@ -83,8 +83,8 @@
             element.classList.add(this.color.luminance() > 0.5 ? 'light-color' : 'dark-color');
             element.style.color =
               this.color.luminance() > 0.5
-              ? this.color.alpha(1).set('hsl.s', 1).set('hsl.l', .5).darken(2.5).css()
-              : this.color.alpha(1).set('hsl.s', 1).set('hsl.l', .5).brighten(2.5).css();
+                ? this.color.alpha(1).set('hsl.s', 1).set('hsl.l', .5).darken(2.5).css()
+                : this.color.alpha(1).set('hsl.s', 1).set('hsl.l', .5).brighten(2.5).css();
 
             if (this.color.luminance() > 0.96) {
               element.classList.add('show-border');

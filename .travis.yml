@@ -11,6 +11,7 @@ cache:
 script: 'true'
 
 install:
+  - export PATH=$PATH:`/home/travis/.nvm/versions/node/v12.6.0/bin/bower`
   - npm install -g bower polymer-cli
   - npm install
   - bower install
