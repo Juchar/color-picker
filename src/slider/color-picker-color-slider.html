@@ -255,10 +255,29 @@
             }
           };
 
+          const onTouchMove = (e) => {
+            e.stopPropagation();
+
+            // Translate to mouse event
+            var mouseEvent = document.createEvent('MouseEvent');
+            mouseEvent.initMouseEvent('mousemove', true, true, window, e.detail,
+              e.touches[0].screenX, e.touches[0].screenY,
+              e.touches[0].clientX, e.touches[0].clientY,
+              false, false, false, false, 0, null);
+
+            onMouseMove(mouseEvent);
+          };
+
           const onMouseUp = () => {
             this._handle.removeAttribute('active');
             document.removeEventListener('mousemove', onMouseMove);
             document.removeEventListener('mouseup', onMouseUp);
+          };
+
+          const onTouchEnd = () => {
+            this._handle.removeAttribute('active');
+            document.removeEventListener('touchmove', onTouchMove);
+            document.removeEventListener('touchend', onTouchEnd);
           };
 
           const onMouseDown = (e) => {
@@ -270,38 +289,52 @@
             document.addEventListener('mouseup', onMouseUp);
           };
 
+          const onTouchStart = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            onTouchMove(e);
+
+            this._handle.setAttribute('active', '');
+            document.addEventListener('touchmove', onTouchMove);
+            document.addEventListener('touchend', onTouchEnd);
+          };
+
           const onKeyDown = (e) => {
-            if (e.keyCode === 37 || e.keyCode === 38 || e.keyCode === 39 || e.keyCode === 40) {
+            const key = e.key || e.keyCode;
+
+            if (key === 37 || key === 38 || key === 39 || key === 40) {
               e.preventDefault();
             }
 
             if (this.enableX && this.enableY) {
-              if (e.keyCode === 37) {
+              if (key === 37) {
                 this._decreaseX();
-              } else if (e.keyCode === 38) {
+              } else if (key === 38) {
                 this._increaseY();
-              } else if (e.keyCode === 39) {
+              } else if (key === 39) {
                 this._increaseX();
-              } else if (e.keyCode === 40) {
+              } else if (key === 40) {
                 this._decreaseY();
               }
             } else if (this.enableX) {
-              if (e.keyCode === 37 || e.keyCode === 40) {
+              if (key === 37 || key === 40) {
                 this._decreaseX();
-              } else if (e.keyCode === 39 || e.keyCode === 38) {
+              } else if (key === 39 || key === 38) {
                 this._increaseX();
               }
             } else if (this.enableY) {
-              if (e.keyCode === 37 || e.keyCode === 40) {
+              if (key === 37 || key === 40) {
                 this._decreaseY();
-              } else if (e.keyCode === 39 || e.keyCode === 38) {
+              } else if (key === 39 || key === 38) {
                 this._increaseY();
               }
             }
           };
 
+          this._handle.addEventListener('touchstart', onTouchStart);
           this._handle.addEventListener('mousedown', onMouseDown);
           this._handle.addEventListener('keydown', onKeyDown);
+          this._canvas.addEventListener('touchstart', onTouchStart);
           this._canvas.addEventListener('mousedown', onMouseDown);
         }
 
