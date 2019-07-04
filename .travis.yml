@@ -11,14 +11,13 @@ cache:
 script: 'true'
 
 install:
-  - export PATH=$PATH:`/home/travis/.nvm/versions/node/v12.6.0/bin/bower`
   - npm install -g bower polymer-cli
   - npm install
   - bower install
 
 after_success:
   - if [ ${TRAVIS_PULL_REQUEST} = "false" ] && [ "$TRAVIS_BRANCH" = "master" ]; then
-      ./gh-pages.sh;
+      gh-pages.sh;
     fi
 env:
   global:
