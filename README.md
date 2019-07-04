@@ -2,9 +2,9 @@
 
 [&lt;color-picker&gt;](https://github.com/juchar/color-picker) is a themable Web Component providing the possibility to select a color using sliders, inputs or palettes.
 
-[Live Demo ↗](https://juchar.github.io/color-picker/demo/#color-picker-basic-demos)
+[Live Demo ↗](https://juchar.github.io/color-picker/components/color-picker/demo)
 |
-[API documentation ↗](https://juchar.github.io/color-picker/)
+[API documentation ↗](https://juchar.github.io/color-picker/components/color-picker)
 
 [![Build Status](https://travis-ci.org/Juchar/color-picker.svg?branch=master)](https://travis-ci.org/Juchar/color-picker)
 [![Bower version](https://badgen.net/github/release/juchar/color-picker)](https://github.com/juchar/color-picker/releases)
