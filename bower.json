@@ -22,7 +22,8 @@
     "node_modules",
     "bower_components",
     "package-lock.json",
-    "wct.conf.js"
+    "wct.conf.js",
+    "gh-pages.sh"
   ],
   "dependencies": {
     "polymer": "^2.0.0",
