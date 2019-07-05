@@ -29,6 +29,8 @@
       <color-picker-slider disable-alpha="{{disableAlpha}}"
                            disabled$="[[disabled]]"
                            previous-value="{{_previousValueInternal}}"
+                           step-alpha="{{stepAlpha}}"
+                           step-hsl="{{stepHsl}}"
                            theme$="[[theme]]"
                            value="{{_valueInternal}}"></color-picker-slider>
       <color-picker-input disable-alpha="{{disableAlpha}}"
@@ -38,6 +40,8 @@
                           disabled$="[[disabled]]"
                           hidden$="[[!_showInputs(disableHex,disableRgb,disableHsl)]]"
                           pinned="{{pinnedInputs}}"
+                          step-alpha="{{stepAlpha}}"
+                          step-hsl="{{stepHsl}}"
                           theme$="[[theme]]"
                           value="{{_valueInternal}}"></color-picker-input>
       <color-picker-palette disabled$="[[disabled]]"
@@ -122,6 +126,16 @@
               type: Array,
               notify: true,
               observer: '_onPalettesChanged'
+            },
+            stepAlpha: {
+              type: Number,
+              value: 0.01,
+              notify: true
+            },
+            stepHsl: {
+              type: Number,
+              value: 1,
+              notify: true
             },
             _valueInternal: {
               type: Object,

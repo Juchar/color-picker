@@ -22,12 +22,15 @@
                   disable-alpha="{{disableAlpha}}"
                   disable-for-switch$="{{disableRgb}}"
                   disabled$="[[disabled]]"
+                  step-alpha="{{stepAlpha}}"
                   theme$="[[theme]]"
                   value="{{value}}"></rgba-input>
       <hsla-input color-input="hsl"
                   disable-alpha="{{disableAlpha}}"
                   disable-for-switch$="{{disableHsl}}"
                   disabled$="[[disabled]]"
+                  step="{{stepHsl}}"
+                  step-alpha="{{stepAlpha}}"
                   theme$="[[theme]]"
                   value="{{value}}"></hsla-input>
     </element-carousel>
@@ -98,6 +101,22 @@
             disableAlpha: {
               type: Boolean,
               value: true,
+              notify: true
+            },
+            /**
+             * Allowed number o intervals on the **alpha** value
+             */
+            stepAlpha: {
+              type: Number,
+              value: 0.01,
+              notify: true
+            },
+            /**
+             * Allowed number o intervals on the **hsl** value
+             */
+            stepHsl: {
+              type: Number,
+              value: 1,
               notify: true
             }
           };

@@ -1,6 +1,7 @@
 <link href="../../../vaadin-text-field/src/vaadin-number-field.html" rel="import">
 <link href="color-picker-color-input.html" rel="import">
 <link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../utils/color-picker-utils.html" rel="import"/>
 
 <dom-module id="hsla-input">
   <template>
@@ -10,11 +11,13 @@
     <div class="horizontal-spacing">
       <vaadin-number-field disabled$="[[disabled]]" label="H" max="360" min="0" minlength="1"
                            prevent-invalid-input
+                           step="{{step}}"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{hue}}"></vaadin-number-field>
       <vaadin-number-field disabled$="[[disabled]]" label="S" max="100" min="0"
                            minlength="1"
                            prevent-invalid-input
+                           step="{{step}}"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{saturation}}">
         <div slot="suffix">%</div>
@@ -22,6 +25,7 @@
       <vaadin-number-field disabled$="[[disabled]]" label="L" max="100" min="0"
                            minlength="1"
                            prevent-invalid-input
+                           step="{{step}}"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{lightness}}">
         <div slot="suffix">%</div>
@@ -33,7 +37,7 @@
                            min="0"
                            minlength="1"
                            prevent-invalid-input
-                           step="0.01"
+                           step="{{stepAlpha}}"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{alpha}}"></vaadin-number-field>
     </div>
@@ -90,6 +94,22 @@
               type: Number,
               value: 1,
               notify: true
+            },
+            /**
+             * Allowed number o intervals on the **alpha** value
+             */
+            stepAlpha: {
+              type: Number,
+              value: 0.01,
+              notify: true
+            },
+            /**
+             * Allowed number o intervals on the **hsl** value
+             */
+            step: {
+              type: Number,
+              value: 1,
+              notify: true
             }
           };
         }
@@ -111,10 +131,10 @@
           this._toInputConverter = color => {
             if (color) {
               const hsl = color.hsl();
-              this.hue = ColorPickerUtils.roundToNearest(hsl[0] || 0, 1);
-              this.saturation = ColorPickerUtils.roundToNearest(hsl[1] * 100, 1);
-              this.lightness = ColorPickerUtils.roundToNearest(hsl[2] * 100, 1);
-              this.alpha = color.alpha();
+              this.hue = ColorPickerUtils.roundToNearest(hsl[0] || 0, this.step);
+              this.saturation = ColorPickerUtils.roundToNearest(hsl[1] * 100, this.step);
+              this.lightness = ColorPickerUtils.roundToNearest(hsl[2] * 100, this.step);
+              this.alpha = ColorPickerUtils.roundToNearest(color.alpha(), this.stepAlpha);
             } else {
               this.hue = '';
               this.saturation = '';

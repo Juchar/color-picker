@@ -1918,11 +1918,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 81,
+                  "line": 85,
                   "column": 12
                 },
                 "end": {
-                  "line": 84,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -1940,11 +1940,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 88,
+                  "line": 92,
                   "column": 12
                 },
                 "end": {
-                  "line": 92,
+                  "line": 96,
                   "column": 13
                 }
               },
@@ -1963,11 +1963,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 96,
+                  "line": 100,
                   "column": 12
                 },
                 "end": {
-                  "line": 101,
+                  "line": 105,
                   "column": 13
                 }
               },
@@ -1987,11 +1987,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 105,
+                  "line": 109,
                   "column": 12
                 },
                 "end": {
-                  "line": 110,
+                  "line": 114,
                   "column": 13
                 }
               },
@@ -2011,11 +2011,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 114,
+                  "line": 118,
                   "column": 12
                 },
                 "end": {
-                  "line": 119,
+                  "line": 123,
                   "column": 13
                 }
               },
@@ -2035,11 +2035,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 123,
+                  "line": 127,
                   "column": 12
                 },
                 "end": {
-                  "line": 128,
+                  "line": 132,
                   "column": 13
                 }
               },
@@ -2047,6 +2047,52 @@
                 "polymer": {
                   "notify": true,
                   "observer": "\"_sliderColorChanged\"",
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "1"
+            },
+            {
+              "name": "stepAlpha",
+              "type": "number | null | undefined",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 136,
+                  "column": 12
+                },
+                "end": {
+                  "line": 140,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "0.01"
+            },
+            {
+              "name": "stepHsl",
+              "type": "number | null | undefined",
+              "description": "Allowed number o intervals on the **hsl** value",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 144,
+                  "column": 12
+                },
+                "end": {
+                  "line": 148,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
                   "attributeType": "Number"
                 }
               },
@@ -2060,11 +2106,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 135,
+                  "line": 155,
                   "column": 8
                 },
                 "end": {
-                  "line": 138,
+                  "line": 158,
                   "column": 9
                 }
               },
@@ -2080,11 +2126,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 144,
+                  "line": 164,
                   "column": 8
                 },
                 "end": {
-                  "line": 148,
+                  "line": 168,
                   "column": 9
                 }
               },
@@ -2100,11 +2146,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 154,
+                  "line": 174,
                   "column": 8
                 },
                 "end": {
-                  "line": 168,
+                  "line": 188,
                   "column": 9
                 }
               },
@@ -2120,11 +2166,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 175,
+                  "line": 195,
                   "column": 8
                 },
                 "end": {
-                  "line": 181,
+                  "line": 201,
                   "column": 9
                 }
               },
@@ -2137,6 +2183,23 @@
               "return": {
                 "type": "void"
               }
+            },
+            {
+              "name": "_stepSl",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 203,
+                  "column": 8
+                },
+                "end": {
+                  "line": 205,
+                  "column": 9
+                }
+              },
+              "metadata": {},
+              "params": []
             }
           ],
           "staticMethods": [
@@ -2244,11 +2307,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 65,
+              "line": 69,
               "column": 6
             },
             "end": {
-              "line": 182,
+              "line": 206,
               "column": 7
             }
           },
@@ -2261,11 +2324,11 @@
               "description": "The previous value.",
               "sourceRange": {
                 "start": {
-                  "line": 81,
+                  "line": 85,
                   "column": 12
                 },
                 "end": {
-                  "line": 84,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -2277,16 +2340,48 @@
               "description": "Disable the input of **alpha** values.",
               "sourceRange": {
                 "start": {
-                  "line": 88,
+                  "line": 92,
                   "column": 12
                 },
                 "end": {
-                  "line": 92,
+                  "line": 96,
                   "column": 13
                 }
               },
               "metadata": {},
               "type": "boolean | null | undefined"
+            },
+            {
+              "name": "step-alpha",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "sourceRange": {
+                "start": {
+                  "line": 136,
+                  "column": 12
+                },
+                "end": {
+                  "line": 140,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            },
+            {
+              "name": "step-hsl",
+              "description": "Allowed number o intervals on the **hsl** value",
+              "sourceRange": {
+                "start": {
+                  "line": 144,
+                  "column": 12
+                },
+                "end": {
+                  "line": 148,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
             }
           ],
           "events": [
@@ -2300,6 +2395,18 @@
               "type": "CustomEvent",
               "name": "disable-alpha-changed",
               "description": "Fired when the `disableAlpha` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-alpha-changed",
+              "description": "Fired when the `stepAlpha` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-hsl-changed",
+              "description": "Fired when the `stepHsl` property changes.",
               "metadata": {}
             }
           ],
@@ -3452,11 +3559,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 58,
+                  "line": 62,
                   "column": 12
                 },
                 "end": {
-                  "line": 62,
+                  "line": 66,
                   "column": 13
                 }
               },
@@ -3475,11 +3582,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 66,
+                  "line": 70,
                   "column": 12
                 },
                 "end": {
-                  "line": 70,
+                  "line": 74,
                   "column": 13
                 }
               },
@@ -3498,11 +3605,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 74,
+                  "line": 78,
                   "column": 12
                 },
                 "end": {
-                  "line": 78,
+                  "line": 82,
                   "column": 13
                 }
               },
@@ -3521,11 +3628,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 82,
+                  "line": 86,
                   "column": 12
                 },
                 "end": {
-                  "line": 86,
+                  "line": 90,
                   "column": 13
                 }
               },
@@ -3536,6 +3643,29 @@
                 }
               },
               "defaultValue": "1"
+            },
+            {
+              "name": "stepAlpha",
+              "type": "number | null | undefined",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 94,
+                  "column": 12
+                },
+                "end": {
+                  "line": 98,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "0.01"
             }
           ],
           "methods": [],
@@ -3544,11 +3674,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 42,
+              "line": 46,
               "column": 6
             },
             "end": {
-              "line": 119,
+              "line": 131,
               "column": 7
             }
           },
@@ -3561,11 +3691,11 @@
               "description": "The current red value in the range `[0 - 255]`.",
               "sourceRange": {
                 "start": {
-                  "line": 58,
+                  "line": 62,
                   "column": 12
                 },
                 "end": {
-                  "line": 62,
+                  "line": 66,
                   "column": 13
                 }
               },
@@ -3577,11 +3707,11 @@
               "description": "The current green value in the range `[0 - 255]`.",
               "sourceRange": {
                 "start": {
-                  "line": 66,
+                  "line": 70,
                   "column": 12
                 },
                 "end": {
-                  "line": 70,
+                  "line": 74,
                   "column": 13
                 }
               },
@@ -3593,11 +3723,11 @@
               "description": "The current blue value in the range `[0 - 255]`.",
               "sourceRange": {
                 "start": {
-                  "line": 74,
+                  "line": 78,
                   "column": 12
                 },
                 "end": {
-                  "line": 78,
+                  "line": 82,
                   "column": 13
                 }
               },
@@ -3609,11 +3739,27 @@
               "description": "The current alpha in the range `[0 - 1]`.",
               "sourceRange": {
                 "start": {
-                  "line": 82,
+                  "line": 86,
                   "column": 12
                 },
                 "end": {
-                  "line": 86,
+                  "line": 90,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            },
+            {
+              "name": "step-alpha",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "sourceRange": {
+                "start": {
+                  "line": 94,
+                  "column": 12
+                },
+                "end": {
+                  "line": 98,
                   "column": 13
                 }
               },
@@ -3645,6 +3791,12 @@
               "name": "alpha-changed",
               "description": "Fired when the `alpha` property changes.",
               "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-alpha-changed",
+              "description": "Fired when the `stepAlpha` property changes.",
+              "metadata": {}
             }
           ],
           "styling": {
@@ -3666,11 +3818,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 64,
+                  "line": 68,
                   "column": 12
                 },
                 "end": {
-                  "line": 68,
+                  "line": 72,
                   "column": 13
                 }
               },
@@ -3689,11 +3841,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 72,
+                  "line": 76,
                   "column": 12
                 },
                 "end": {
-                  "line": 76,
+                  "line": 80,
                   "column": 13
                 }
               },
@@ -3712,11 +3864,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 80,
+                  "line": 84,
                   "column": 12
                 },
                 "end": {
-                  "line": 84,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -3735,11 +3887,57 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 88,
+                  "line": 92,
                   "column": 12
                 },
                 "end": {
-                  "line": 92,
+                  "line": 96,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "1"
+            },
+            {
+              "name": "stepAlpha",
+              "type": "number | null | undefined",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 100,
+                  "column": 12
+                },
+                "end": {
+                  "line": 104,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "0.01"
+            },
+            {
+              "name": "step",
+              "type": "number | null | undefined",
+              "description": "Allowed number o intervals on the **hsl** value",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 108,
+                  "column": 12
+                },
+                "end": {
+                  "line": 112,
                   "column": 13
                 }
               },
@@ -3758,11 +3956,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 48,
+              "line": 52,
               "column": 6
             },
             "end": {
-              "line": 125,
+              "line": 145,
               "column": 7
             }
           },
@@ -3775,11 +3973,11 @@
               "description": "The current hue in the range `[0 - 360]`.",
               "sourceRange": {
                 "start": {
-                  "line": 64,
+                  "line": 68,
                   "column": 12
                 },
                 "end": {
-                  "line": 68,
+                  "line": 72,
                   "column": 13
                 }
               },
@@ -3791,11 +3989,11 @@
               "description": "The current saturation in the range `[0 - 100]`.",
               "sourceRange": {
                 "start": {
-                  "line": 72,
+                  "line": 76,
                   "column": 12
                 },
                 "end": {
-                  "line": 76,
+                  "line": 80,
                   "column": 13
                 }
               },
@@ -3807,11 +4005,11 @@
               "description": "The current saturation in the range `[0 - 100]`.",
               "sourceRange": {
                 "start": {
-                  "line": 80,
+                  "line": 84,
                   "column": 12
                 },
                 "end": {
-                  "line": 84,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -3823,11 +4021,43 @@
               "description": "The current alpha in the range `[0 - 1]`.",
               "sourceRange": {
                 "start": {
-                  "line": 88,
+                  "line": 92,
                   "column": 12
                 },
                 "end": {
-                  "line": 92,
+                  "line": 96,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            },
+            {
+              "name": "step-alpha",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "sourceRange": {
+                "start": {
+                  "line": 100,
+                  "column": 12
+                },
+                "end": {
+                  "line": 104,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            },
+            {
+              "name": "step",
+              "description": "Allowed number o intervals on the **hsl** value",
+              "sourceRange": {
+                "start": {
+                  "line": 108,
+                  "column": 12
+                },
+                "end": {
+                  "line": 112,
                   "column": 13
                 }
               },
@@ -3859,6 +4089,18 @@
               "name": "alpha-changed",
               "description": "Fired when the `alpha` property changes.",
               "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-alpha-changed",
+              "description": "Fired when the `stepAlpha` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-changed",
+              "description": "Fired when the `step` property changes.",
+              "metadata": {}
             }
           ],
           "styling": {
@@ -3880,11 +4122,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 65,
+                  "line": 68,
                   "column": 12
                 },
                 "end": {
-                  "line": 69,
+                  "line": 72,
                   "column": 13
                 }
               },
@@ -3903,11 +4145,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 73,
+                  "line": 76,
                   "column": 12
                 },
                 "end": {
-                  "line": 77,
+                  "line": 80,
                   "column": 13
                 }
               },
@@ -3926,11 +4168,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 81,
+                  "line": 84,
                   "column": 12
                 },
                 "end": {
-                  "line": 85,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -3949,11 +4191,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 89,
+                  "line": 92,
                   "column": 12
                 },
                 "end": {
-                  "line": 93,
+                  "line": 96,
                   "column": 13
                 }
               },
@@ -3972,11 +4214,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 97,
+                  "line": 100,
                   "column": 12
                 },
                 "end": {
-                  "line": 101,
+                  "line": 104,
                   "column": 13
                 }
               },
@@ -3987,6 +4229,52 @@
                 }
               },
               "defaultValue": "true"
+            },
+            {
+              "name": "stepAlpha",
+              "type": "number | null | undefined",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 108,
+                  "column": 12
+                },
+                "end": {
+                  "line": 112,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "0.01"
+            },
+            {
+              "name": "stepHsl",
+              "type": "number | null | undefined",
+              "description": "Allowed number o intervals on the **hsl** value",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 116,
+                  "column": 12
+                },
+                "end": {
+                  "line": 120,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "1"
             }
           ],
           "methods": [
@@ -4118,11 +4406,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 49,
+              "line": 52,
               "column": 6
             },
             "end": {
-              "line": 104,
+              "line": 123,
               "column": 7
             }
           },
@@ -4135,11 +4423,11 @@
               "description": "Pin all inputs visible or show them in a carousel.",
               "sourceRange": {
                 "start": {
-                  "line": 65,
+                  "line": 68,
                   "column": 12
                 },
                 "end": {
-                  "line": 69,
+                  "line": 72,
                   "column": 13
                 }
               },
@@ -4151,11 +4439,11 @@
               "description": "Disable the input of color in the **hex** format.",
               "sourceRange": {
                 "start": {
-                  "line": 73,
+                  "line": 76,
                   "column": 12
                 },
                 "end": {
-                  "line": 77,
+                  "line": 80,
                   "column": 13
                 }
               },
@@ -4167,11 +4455,11 @@
               "description": "Disable the input of color in the **rgb(a)** format.",
               "sourceRange": {
                 "start": {
-                  "line": 81,
+                  "line": 84,
                   "column": 12
                 },
                 "end": {
-                  "line": 85,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -4183,11 +4471,11 @@
               "description": "Disable the input of color in the **hsl(a)** format.",
               "sourceRange": {
                 "start": {
-                  "line": 89,
+                  "line": 92,
                   "column": 12
                 },
                 "end": {
-                  "line": 93,
+                  "line": 96,
                   "column": 13
                 }
               },
@@ -4199,16 +4487,48 @@
               "description": "Disable the input of **alpha** values.",
               "sourceRange": {
                 "start": {
-                  "line": 97,
+                  "line": 100,
                   "column": 12
                 },
                 "end": {
-                  "line": 101,
+                  "line": 104,
                   "column": 13
                 }
               },
               "metadata": {},
               "type": "boolean | null | undefined"
+            },
+            {
+              "name": "step-alpha",
+              "description": "Allowed number o intervals on the **alpha** value",
+              "sourceRange": {
+                "start": {
+                  "line": 108,
+                  "column": 12
+                },
+                "end": {
+                  "line": 112,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            },
+            {
+              "name": "step-hsl",
+              "description": "Allowed number o intervals on the **hsl** value",
+              "sourceRange": {
+                "start": {
+                  "line": 116,
+                  "column": 12
+                },
+                "end": {
+                  "line": 120,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
             }
           ],
           "events": [
@@ -4240,6 +4560,18 @@
               "type": "CustomEvent",
               "name": "disable-alpha-changed",
               "description": "Fired when the `disableAlpha` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-alpha-changed",
+              "description": "Fired when the `stepAlpha` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-hsl-changed",
+              "description": "Fired when the `stepHsl` property changes.",
               "metadata": {}
             }
           ],
@@ -5875,11 +6207,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 80,
+                  "line": 84,
                   "column": 12
                 },
                 "end": {
-                  "line": 84,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -5898,11 +6230,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 85,
+                  "line": 89,
                   "column": 12
                 },
                 "end": {
-                  "line": 89,
+                  "line": 93,
                   "column": 13
                 }
               },
@@ -5921,11 +6253,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 90,
+                  "line": 94,
                   "column": 12
                 },
                 "end": {
-                  "line": 94,
+                  "line": 98,
                   "column": 13
                 }
               },
@@ -5944,11 +6276,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 95,
+                  "line": 99,
                   "column": 12
                 },
                 "end": {
-                  "line": 99,
+                  "line": 103,
                   "column": 13
                 }
               },
@@ -5967,11 +6299,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 100,
+                  "line": 104,
                   "column": 12
                 },
                 "end": {
-                  "line": 104,
+                  "line": 108,
                   "column": 13
                 }
               },
@@ -5990,11 +6322,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 105,
+                  "line": 109,
                   "column": 12
                 },
                 "end": {
-                  "line": 109,
+                  "line": 113,
                   "column": 13
                 }
               },
@@ -6013,11 +6345,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 110,
+                  "line": 114,
                   "column": 12
                 },
                 "end": {
-                  "line": 114,
+                  "line": 118,
                   "column": 13
                 }
               },
@@ -6036,11 +6368,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 115,
+                  "line": 119,
                   "column": 12
                 },
                 "end": {
-                  "line": 119,
+                  "line": 123,
                   "column": 13
                 }
               },
@@ -6059,11 +6391,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 120,
+                  "line": 124,
                   "column": 12
                 },
                 "end": {
-                  "line": 124,
+                  "line": 128,
                   "column": 13
                 }
               },
@@ -6076,17 +6408,63 @@
               }
             },
             {
+              "name": "stepAlpha",
+              "type": "number | null | undefined",
+              "description": "",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 129,
+                  "column": 12
+                },
+                "end": {
+                  "line": 133,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "0.01"
+            },
+            {
+              "name": "stepHsl",
+              "type": "number | null | undefined",
+              "description": "",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 134,
+                  "column": 12
+                },
+                "end": {
+                  "line": 138,
+                  "column": 13
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "1"
+            },
+            {
               "name": "_valueInternal",
               "type": "Object | null | undefined",
               "description": "",
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 125,
+                  "line": 139,
                   "column": 12
                 },
                 "end": {
-                  "line": 129,
+                  "line": 143,
                   "column": 13
                 }
               },
@@ -6105,11 +6483,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 130,
+                  "line": 144,
                   "column": 12
                 },
                 "end": {
-                  "line": 133,
+                  "line": 147,
                   "column": 13
                 }
               },
@@ -6127,11 +6505,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 134,
+                  "line": 148,
                   "column": 12
                 },
                 "end": {
-                  "line": 138,
+                  "line": 152,
                   "column": 13
                 }
               },
@@ -6151,11 +6529,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 142,
+                  "line": 156,
                   "column": 8
                 },
                 "end": {
-                  "line": 149,
+                  "line": 163,
                   "column": 9
                 }
               },
@@ -6171,11 +6549,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 151,
+                  "line": 165,
                   "column": 8
                 },
                 "end": {
-                  "line": 153,
+                  "line": 167,
                   "column": 9
                 }
               },
@@ -6188,11 +6566,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 155,
+                  "line": 169,
                   "column": 8
                 },
                 "end": {
-                  "line": 157,
+                  "line": 171,
                   "column": 9
                 }
               },
@@ -6205,11 +6583,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 159,
+                  "line": 173,
                   "column": 8
                 },
                 "end": {
-                  "line": 165,
+                  "line": 179,
                   "column": 9
                 }
               },
@@ -6225,11 +6603,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 167,
+                  "line": 181,
                   "column": 8
                 },
                 "end": {
-                  "line": 173,
+                  "line": 187,
                   "column": 9
                 }
               },
@@ -6245,11 +6623,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 175,
+                  "line": 189,
                   "column": 8
                 },
                 "end": {
-                  "line": 177,
+                  "line": 191,
                   "column": 9
                 }
               },
@@ -6265,11 +6643,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 179,
+                  "line": 193,
                   "column": 8
                 },
                 "end": {
-                  "line": 183,
+                  "line": 197,
                   "column": 9
                 }
               },
@@ -6390,11 +6768,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 67,
+              "line": 71,
               "column": 6
             },
             "end": {
-              "line": 184,
+              "line": 198,
               "column": 7
             }
           },
@@ -6407,11 +6785,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 80,
+                  "line": 84,
                   "column": 12
                 },
                 "end": {
-                  "line": 84,
+                  "line": 88,
                   "column": 13
                 }
               },
@@ -6423,11 +6801,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 85,
+                  "line": 89,
                   "column": 12
                 },
                 "end": {
-                  "line": 89,
+                  "line": 93,
                   "column": 13
                 }
               },
@@ -6439,11 +6817,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 90,
+                  "line": 94,
                   "column": 12
                 },
                 "end": {
-                  "line": 94,
+                  "line": 98,
                   "column": 13
                 }
               },
@@ -6455,11 +6833,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 95,
+                  "line": 99,
                   "column": 12
                 },
                 "end": {
-                  "line": 99,
+                  "line": 103,
                   "column": 13
                 }
               },
@@ -6471,11 +6849,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 100,
+                  "line": 104,
                   "column": 12
                 },
                 "end": {
-                  "line": 104,
+                  "line": 108,
                   "column": 13
                 }
               },
@@ -6487,11 +6865,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 105,
+                  "line": 109,
                   "column": 12
                 },
                 "end": {
-                  "line": 109,
+                  "line": 113,
                   "column": 13
                 }
               },
@@ -6503,11 +6881,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 110,
+                  "line": 114,
                   "column": 12
                 },
                 "end": {
-                  "line": 114,
+                  "line": 118,
                   "column": 13
                 }
               },
@@ -6519,11 +6897,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 115,
+                  "line": 119,
                   "column": 12
                 },
                 "end": {
-                  "line": 119,
+                  "line": 123,
                   "column": 13
                 }
               },
@@ -6535,16 +6913,48 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 120,
+                  "line": 124,
                   "column": 12
                 },
                 "end": {
-                  "line": 124,
+                  "line": 128,
                   "column": 13
                 }
               },
               "metadata": {},
               "type": "Array | null | undefined"
+            },
+            {
+              "name": "step-alpha",
+              "description": "",
+              "sourceRange": {
+                "start": {
+                  "line": 129,
+                  "column": 12
+                },
+                "end": {
+                  "line": 133,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            },
+            {
+              "name": "step-hsl",
+              "description": "",
+              "sourceRange": {
+                "start": {
+                  "line": 134,
+                  "column": 12
+                },
+                "end": {
+                  "line": 138,
+                  "column": 13
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
             }
           ],
           "events": [
@@ -6600,6 +7010,18 @@
               "type": "CustomEvent",
               "name": "palettes-changed",
               "description": "Fired when the `palettes` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-alpha-changed",
+              "description": "Fired when the `stepAlpha` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "step-hsl-changed",
+              "description": "Fired when the `stepHsl` property changes.",
               "metadata": {}
             }
           ],
