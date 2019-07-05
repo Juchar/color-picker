@@ -15,7 +15,7 @@
         display: none !important;
       }
 
-      [part="canvas"] {
+      [part="canvas"], ::slotted(*) {
         position: absolute;
         left: 0;
         top: 0;
@@ -25,6 +25,7 @@
     </style>
 
     <canvas height="[[_height]]" part="canvas" width="[[_width]]"></canvas>
+    <slot></slot>
   </template>
 
   <script>

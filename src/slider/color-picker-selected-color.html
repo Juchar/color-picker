@@ -3,30 +3,71 @@
 <link href="../../../vaadin-element-mixin/vaadin-element-mixin.html" rel="import">
 <link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
 <link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
+<link href="../utils/color-picker-utils.html" rel="import"/>
 <link href="../libraries/chroma-js-import.html" rel="import"/>
 
 <dom-module id="selected-color">
   <template>
     <style include="color-picker-shared-styles">
       :host {
-        display: flex;
-        overflow: hidden;
         position: relative;
       }
 
       [part="previous-color-canvas"],
       [part="selected-color-canvas"] {
-        flex-grow: 1;
+        position: absolute;
+        height: 100%;
+      }
+
+      [part="selected-color-canvas"] {
+        width: 100%;
+      }
+
+      [part="previous-color-canvas"] {
+        width: 50%;
+      }
+
+      [part="selected-color-canvas"] {
+        left: 0;
+      }
+
+      [part="previous-color-canvas"] {
+        right: 0;
+      }
+
+      [part="previous-icon"] {
+        opacity: 0;
+      }
+
+      [part="halo"] {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "\2003";
+        color: transparent;
+        opacity: 0;
+      }
+
+      :host([has-previous-value]:hover) [part="previous-color-canvas"] {
+        width: 100%;
+      }
+
+      :host([has-previous-value]:hover) [part="previous-icon"] {
+        opacity: 1;
       }
     </style>
 
-    <responsive-canvas disabled$="[[disabled]]"
-                       hidden$="[[!_hasPreviousColor(value,previousValue)]]"
-                       part="previous-color-canvas"
-                       render-callback="[[_renderPreviousColor(previousValue)]]"></responsive-canvas>
+    <span part="halo"></span>
     <responsive-canvas disabled$="[[disabled]]"
                        part="selected-color-canvas"
                        render-callback="[[_renderSelectedColor(value)]]"></responsive-canvas>
+    <responsive-canvas disabled$="[[disabled]]"
+                       hidden$="[[!_hasPreviousValue(value,previousValue)]]"
+                       part="previous-color-canvas"
+                       render-callback="[[_renderPreviousColor(previousValue)]]"
+                       on-click="_resetToPreviousValue">
+      <iron-icon icon="vaadin:check" part="previous-icon"></iron-icon>
+    </responsive-canvas>
   </template>
   <script>
     (function() {
@@ -59,9 +100,37 @@
              */
             previousValue: {
               type: Object,
-              notify: true
+              notify: true,
+              observer: '_previousValueChanged'
+            },
+            hasPreviousValue: {
+              type: Boolean,
+              reflectToAttribute: true,
+              computed: '_hasPreviousValue(previousValue)'
+            },
+            _previousIcon: {
+              type: Object
+            },
+            _halo: {
+              type: Object
             }
           };
+        }
+
+        ready() {
+          super.ready();
+          this._previousIcon = this.shadowRoot.querySelector('[part="previous-icon"]');
+          this._halo = this.shadowRoot.querySelector('[part="halo"]');
+        }
+
+        /**
+         * @private
+         **/
+        _previousValueChanged() {
+          this._previousIcon.style.color = this.previousValue
+            ? ColorPickerUtils.getContrastColor(this.previousValue)
+            : 'transparent';
+          this._halo.style.backgroundColor = this.previousValue ? this.previousValue.css() : 'transparent';
         }
 
         /**
@@ -69,8 +138,8 @@
          * @returns {boolean}
          * @private
          */
-        _hasPreviousColor() {
-          return this.previousValue;
+        _hasPreviousValue() {
+          return this.previousValue !== undefined && this.previousValue !== null;
         }
 
         /**
@@ -93,6 +162,14 @@
           return (canvas) => {
             SelectedColorElement._renderColor(canvas, this.previousValue);
           };
+        }
+
+        /**
+         * Reset the value to the previous value.
+         * @private
+         **/
+        _resetToPreviousValue() {
+          this.value = this.previousValue;
         }
 
         /**
