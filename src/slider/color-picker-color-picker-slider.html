@@ -123,7 +123,7 @@
              */
             _alpha: {
               type: Number,
-              value: 0,
+              value: 1,
               notify: true,
               observer: '_sliderColorChanged'
             }
@@ -154,10 +154,17 @@
          */
         _valueChanged() {
           this._colorChanged(() => {
-            this._hue = this.value.get('hsv.h');
-            this._saturation = this.value.get('hsv.s');
-            this._value = this.value.get('hsv.v');
-            this._alpha = this.value.alpha();
+            if (this.value) {
+              this._hue = this.value.get('hsv.h');
+              this._saturation = this.value.get('hsv.s');
+              this._value = this.value.get('hsv.v');
+              this._alpha = this.value.alpha();
+            } else {
+              this._hue = 0;
+              this._saturation = 1;
+              this._value = 1;
+              this._alpha = 0;
+            }
           });
         }
 

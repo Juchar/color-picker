@@ -109,11 +109,18 @@
             .alpha(parseFloat(this.alpha));
 
           this._toInputConverter = color => {
-            const hsl = color.hsl();
-            this.hue = ColorPickerUtils.roundToNearest(hsl[0] || 0, 1);
-            this.saturation = ColorPickerUtils.roundToNearest(hsl[1] * 100, 1);
-            this.lightness = ColorPickerUtils.roundToNearest(hsl[2] * 100, 1);
-            this.alpha = color.alpha();
+            if (color) {
+              const hsl = color.hsl();
+              this.hue = ColorPickerUtils.roundToNearest(hsl[0] || 0, 1);
+              this.saturation = ColorPickerUtils.roundToNearest(hsl[1] * 100, 1);
+              this.lightness = ColorPickerUtils.roundToNearest(hsl[2] * 100, 1);
+              this.alpha = color.alpha();
+            } else {
+              this.hue = '';
+              this.saturation = '';
+              this.lightness = '';
+              this.alpha = '';
+            }
           };
         }
       }

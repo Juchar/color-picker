@@ -54,7 +54,7 @@
 
           this._observedInputProperties = ['hex'];
           this._colorSupplier = () => chroma.hex('#' + this.hex);
-          this._toInputConverter = color => this.hex = color.hex().replace('#', '');
+          this._toInputConverter = color => this.hex = color ? color.hex().replace('#', '') : '';
         }
 
         /**
