@@ -134,6 +134,7 @@
             },
             _palettesInternal: {
               type: Array,
+              value: [],
               notify: true
             },
           };
@@ -149,7 +150,7 @@
         }
 
         _showPalettes() {
-          return this.palettes && this.palettes.length > 0;
+          return this._palettesInternal ? this._palettesInternal.length > 0 : false;
         }
 
         _showInputs() {
