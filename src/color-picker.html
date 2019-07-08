@@ -43,7 +43,8 @@
                           step-alpha="{{stepAlpha}}"
                           step-hsl="{{stepHsl}}"
                           theme$="[[theme]]"
-                          value="{{_valueInternal}}"></color-picker-input>
+                          value="{{_valueInternal}}"
+                          last-used-format="{{lastUsedFormat}}"></color-picker-input>
       <color-picker-palette disabled$="[[disabled]]"
                             hidden$="[[!_showPalettes(_palettesInternal)]]"
                             palettes="{{_palettesInternal}}"
@@ -122,6 +123,11 @@
               notify: true,
               observer: '_onPreviousValueChanged'
             },
+            lastUsedFormat: {
+              type: String,
+              notify: true,
+              observer: '_onValueInternalChanged'
+            },
             palettes: {
               type: Array,
               notify: true,
@@ -182,7 +188,9 @@
         _onValueInternalChanged() {
           if (!this.valueChanged) {
             this.valueInternalChanged = true;
-            this.value = this._valueInternal ? this._valueInternal.css() : undefined;
+            this.value = this._valueInternal
+              ? ('hex' === this.lastUsedFormat ? this._valueInternal.hex() : this._valueInternal.css(this.lastUsedFormat))
+              : undefined;
             this.valueInternalChanged = false;
           }
         }

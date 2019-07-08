@@ -13,7 +13,8 @@
   <template>
     <element-carousel disabled$="[[disabled]]"
                       pinned="{{pinned}}"
-                      theme$="[[theme]]">
+                      theme$="[[theme]]"
+                      displayed-element-index="{{_visibleInputIndex}}">
       <hex-input color-input="hex" disable-alpha="{{disableAlpha}}"
                  disable-for-switch$="{{disableHex}}"
                  disabled$="[[disabled]]"
@@ -118,8 +119,44 @@
               type: Number,
               value: 1,
               notify: true
+            },
+            /**
+             * The format that was last modified.
+             */
+            lastUsedFormat: {
+              type: String,
+              notify: true,
+              readOnly: true
+            },
+            _visibleInputIndex: {
+              type: Number,
+              notify: true,
+              observer: '_onVisibleInputChanged'
             }
           };
+        }
+
+        ready() {
+          super.ready();
+
+          this.shadowRoot.querySelector('hex-input')._createPropertyObserver('value',
+            (value) => this._updateLastUsedFormat(value, 'hex'), false);
+
+          this.shadowRoot.querySelector('rgba-input')._createPropertyObserver('value',
+            (value) => this._updateLastUsedFormat(value, 'rgb'), false);
+
+          this.shadowRoot.querySelector('hsla-input')._createPropertyObserver('value',
+            (value) => this._updateLastUsedFormat(value, 'hsl'), false);
+        }
+
+        _updateLastUsedFormat(value, format) {
+          if (value !== this.value) {
+            this._setLastUsedFormat(format);
+          }
+        }
+
+        _onVisibleInputChanged() {
+          this._setLastUsedFormat(['hex', 'rgb', 'hsl'][this._visibleInputIndex]);
         }
       }
 

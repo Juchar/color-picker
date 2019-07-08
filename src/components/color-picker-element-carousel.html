@@ -88,20 +88,21 @@
               observer: '_refreshElementVisibility'
             },
             /**
+             * The index of the currently displayed element.
+             */
+            displayedElementIndex: {
+              type: Number,
+              value: 0,
+              notify: true,
+              readOnly: true
+            },
+            /**
              * @private
              */
             _slotElements: {
               type: Array,
               notify: true,
               observer: '_refreshElementVisibility'
-            },
-            /**
-             * @private
-             */
-            _displayedElement: {
-              type: Number,
-              value: 0,
-              notify: true
             },
             /**
              * @private
@@ -157,7 +158,7 @@
          * @private
          */
         _refreshElementVisibility() {
-          this._displayIndex(this._displayedElement);
+          this._displayIndex(this.displayedElementIndex);
         }
 
         /**
@@ -190,7 +191,7 @@
           }
 
           this._slotElements[elementIndex].removeAttribute('hidden');
-          this._displayedElement = elementIndex;
+          this._setDisplayedElementIndex(elementIndex);
           this._showSwitchButton = !this.pinned && enabledElementsCount > 1;
         }
 
@@ -210,7 +211,7 @@
          * @private
          */
         _displayNextElement() {
-          this._displayIndex(this._displayedElement + 1);
+          this._displayIndex(this.displayedElementIndex + 1);
         }
       }
 
