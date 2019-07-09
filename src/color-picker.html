@@ -79,7 +79,7 @@
         }
 
         static get version() {
-          return '0.7.5';
+          return '0.7.6';
         }
 
         static get properties() {
@@ -117,7 +117,6 @@
             value: {
               type: String,
               notify: true,
-              reflectToAttribute: true,
               observer: '_onValueChanged'
             },
             previousValue: {
@@ -209,7 +208,7 @@
         }
 
         _getResolvedValue(value) {
-          return /--[a-zA-Z1-9]+[a-zA-Z1-9-]*/gm.test(value)
+          return /--[a-zA-Z0-9]+[a-zA-Z0-9-]*/gm.test(value)
             ? window.getComputedStyle(this).getPropertyValue(value).trim()
             : value;
         }
