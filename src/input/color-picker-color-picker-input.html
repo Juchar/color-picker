@@ -12,26 +12,26 @@
 <dom-module id="color-picker-input">
   <template>
     <element-carousel disabled$="[[disabled]]"
-                      pinned="{{pinned}}"
+                      pinned="[[pinned]]"
                       theme$="[[theme]]"
                       displayed-element-index="{{_visibleInputIndex}}">
-      <hex-input color-input="hex" disable-alpha="{{disableAlpha}}"
-                 disable-for-switch$="{{disableHex}}"
+      <hex-input color-input="hex" disable-alpha="[[disableAlpha]]"
+                 disable-for-switch$="[[disableHex]]"
                  disabled$="[[disabled]]"
                  theme$="[[theme]]" value="{{value}}"></hex-input>
       <rgba-input color-input="rgb"
-                  disable-alpha="{{disableAlpha}}"
-                  disable-for-switch$="{{disableRgb}}"
+                  disable-alpha="[[disableAlpha]]"
+                  disable-for-switch$="[[disableRgb]]"
                   disabled$="[[disabled]]"
-                  step-alpha="{{stepAlpha}}"
+                  step-alpha="[[stepAlpha]]"
                   theme$="[[theme]]"
                   value="{{value}}"></rgba-input>
       <hsla-input color-input="hsl"
-                  disable-alpha="{{disableAlpha}}"
-                  disable-for-switch$="{{disableHsl}}"
+                  disable-alpha="[[disableAlpha]]"
+                  disable-for-switch$="[[disableHsl]]"
                   disabled$="[[disabled]]"
-                  step="{{stepHsl}}"
-                  step-alpha="{{stepAlpha}}"
+                  step="[[stepHsl]]"
+                  step-alpha="[[stepAlpha]]"
                   theme$="[[theme]]"
                   value="{{value}}"></hsla-input>
     </element-carousel>
@@ -59,7 +59,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -69,56 +69,49 @@
              */
             pinned: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             },
             /**
              * Disable the input of color in the **hex** format.
              */
             disableHex: {
               type: Boolean,
-              value: true,
-              notify: true
+              value: false
             },
             /**
              * Disable the input of color in the **rgb(a)** format.
              */
             disableRgb: {
               type: Boolean,
-              value: true,
-              notify: true
+              value: false
             },
             /**
              * Disable the input of color in the **hsl(a)** format.
              */
             disableHsl: {
               type: Boolean,
-              value: true,
-              notify: true
+              value: false
             },
             /**
              * Disable the input of **alpha** values.
              */
             disableAlpha: {
               type: Boolean,
-              value: true,
-              notify: true
+              value: false
             },
             /**
              * Allowed number o intervals on the **alpha** value
              */
             stepAlpha: {
               type: Number,
-              value: 0.01,
-              notify: true
+              value: 0.01
             },
             /**
              * Allowed number o intervals on the **hsl** value
              */
             stepHsl: {
               type: Number,
-              value: 1,
-              notify: true
+              value: 1
             },
             /**
              * The format that was last modified.
@@ -130,7 +123,6 @@
             },
             _visibleInputIndex: {
               type: Number,
-              notify: true,
               observer: '_onVisibleInputChanged'
             }
           };

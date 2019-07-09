@@ -30,7 +30,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -46,10 +46,7 @@
              *
              * @abstract
              */
-            _colorSupplier: {
-              type: Function,
-              notify: true
-            },
+            _colorSupplier: Function,
             /**
              * The converter function that is called if the `value` property changed and the inputs
              * should be updated.
@@ -61,10 +58,7 @@
              *
              * @abstract
              */
-            _toInputConverter: {
-              type: Function,
-              notify: true
-            },
+            _toInputConverter: Function,
             /**
              * The properties that should trigger a call to `_colorSupplier` as the color has
              * changed from the input side.
@@ -80,8 +74,7 @@
              */
             disableAlpha: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             }
           };
         }

@@ -24,7 +24,7 @@
     </style>
 
     <div class="horizontal-spacing" part="container">
-      <dom-repeat as="color" items="{{palette}}">
+      <dom-repeat as="color" items="[[palette]]">
         <template>
           <color-checkbox checked="[[_isSelected(color,value)]]"
                           color="[[color]]"
@@ -57,7 +57,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -66,10 +66,7 @@
              * The palette of colors to show. Each color in the array should be a
              * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma object.
              */
-            palette: {
-              type: Array,
-              notify: true
-            }
+            palette: Array
           };
         }
 

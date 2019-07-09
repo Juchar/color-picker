@@ -25,13 +25,13 @@
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{blue}}"></vaadin-number-field>
       <vaadin-number-field disabled$="[[disabled]]"
-                           hidden$="{{disableAlpha}}"
+                           hidden$="[[disableAlpha]]"
                            label="A"
                            max="1"
                            min="0"
                            minlength="1"
                            prevent-invalid-input
-                           step="{{stepAlpha}}"
+                           step="[[stepAlpha]]"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{alpha}}"></vaadin-number-field>
     </div>
@@ -52,7 +52,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -94,8 +94,7 @@
              */
             stepAlpha: {
               type: Number,
-              value: 0.01,
-              notify: true
+              value: 0.01
             }
           };
         }

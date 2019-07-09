@@ -16,12 +16,12 @@
     </style>
 
     <element-carousel disabled$="[[disabled]]"
-                      pinned="{{pinned}}"
+                      pinned="[[pinned]]"
                       theme$="[[theme]]">
-      <dom-repeat as="palette" disable-for-switch items="{{palettes}}">
+      <dom-repeat as="palette" disable-for-switch items="[[palettes]]">
         <template>
           <color-palette disabled$="[[disabled]]"
-                         palette="{{palette}}"
+                         palette="[[palette]]"
                          theme$="[[theme]]"
                          value="{{value}}"></color-palette>
         </template>
@@ -48,7 +48,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -57,17 +57,13 @@
              * The palettes to show whereas each palette should be an array of
              * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma objects.
              */
-            palettes: {
-              type: Array,
-              notify: true
-            },
+            palettes: Array,
             /**
              * Pin all palettes visible or show them in a carousel.
              */
             pinned: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             }
           };
         }

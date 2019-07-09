@@ -90,7 +90,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -100,7 +100,6 @@
              */
             previousValue: {
               type: Object,
-              notify: true,
               observer: '_previousValueChanged'
             },
             hasPreviousValue: {
@@ -108,12 +107,8 @@
               reflectToAttribute: true,
               computed: '_hasPreviousValue(previousValue)'
             },
-            _previousIcon: {
-              type: Object
-            },
-            _halo: {
-              type: Object
-            }
+            _previousIcon: Object,
+            _halo: Object
           };
         }
 

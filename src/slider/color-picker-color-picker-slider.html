@@ -27,7 +27,7 @@
 
     <div class="vertical-spacing">
       <sl-slider disabled$="[[disabled]]"
-                 hue="{{_hue}}"
+                 hue="[[_hue]]"
                  step-x="[[_stepSl(stepHsl)]]"
                  step-y="[[_stepSl(stepHsl)]]"
                  theme$="[[theme]]"
@@ -35,21 +35,21 @@
                  value-y="{{_value}}"></sl-slider>
       <div class="horizontal-spacing" style="align-self: stretch;align-items: center;">
         <selected-color disabled$="[[disabled]]"
-                        previous-value="{{previousValue}}"
+                        previous-value="[[previousValue]]"
                         value="{{value}}"></selected-color>
         <div class="vertical-spacing">
           <hue-slider disabled$="[[disabled]]"
                       id="hueSlider"
-                      step-x="{{stepHsl}}"
+                      step-x="[[stepHsl]]"
                       theme$="[[theme]]"
                       value-x="{{_hue}}"></hue-slider>
           <alpha-slider disabled$="[[disabled]]"
                         hidden$="[[disableAlpha]]"
-                        hue="{{_hue}}"
+                        hue="[[_hue]]"
                         id="alphaSlider"
-                        step-x="{{stepAlpha}}"
+                        step-x="[[stepAlpha]]"
                         theme$="[[theme]]"
-                        value="{{_value}}"
+                        value="[[_value]]"
                         value-x="{{_alpha}}"></alpha-slider>
         </div>
       </div>
@@ -75,7 +75,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -83,17 +83,27 @@
             /**
              * The previous value.
              */
-            previousValue: {
-              type: Object,
-              notify: true
-            },
+            previousValue: Object,
             /**
              * Disable the input of **alpha** values.
              */
             disableAlpha: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
+            },
+            /**
+             * Allowed number o intervals on the **alpha** value
+             */
+            stepAlpha: {
+              type: Number,
+              value: 0.01
+            },
+            /**
+             * Allowed number o intervals on the **hsl** value
+             */
+            stepHsl: {
+              type: Number,
+              value: 1
             },
             /**
              * The current hue in the range `[0 - 360]`.
@@ -101,7 +111,6 @@
             _hue: {
               type: Number,
               value: 0,
-              notify: true,
               observer: '_sliderColorChanged'
             },
             /**
@@ -110,7 +119,6 @@
             _saturation: {
               type: Number,
               value: 1,
-              notify: true,
               observer: '_sliderColorChanged'
             },
             /**
@@ -119,7 +127,6 @@
             _value: {
               type: Number,
               value: 1,
-              notify: true,
               observer: '_sliderColorChanged'
             },
             /**
@@ -128,24 +135,7 @@
             _alpha: {
               type: Number,
               value: 1,
-              notify: true,
               observer: '_sliderColorChanged'
-            },
-            /**
-             * Allowed number o intervals on the **alpha** value
-             */
-            stepAlpha: {
-              type: Number,
-              value: 0.01,
-              notify: true
-            },
-            /**
-             * Allowed number o intervals on the **hsl** value
-             */
-            stepHsl: {
-              type: Number,
-              value: 1,
-              notify: true
             }
           };
         }

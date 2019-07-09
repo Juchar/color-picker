@@ -50,7 +50,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -62,9 +62,7 @@
              *
              * @property {Function} renderCallback
              */
-            renderCallback: {
-              type: Function
-            },
+            renderCallback: Function,
             /**
              * @private
              */
@@ -75,17 +73,11 @@
             /**
              * @private
              */
-            _width: {
-              type: Number,
-              notify: true
-            },
+            _width: Number,
             /**
              * @private
              */
-            _height: {
-              type: Number,
-              notify: true
-            }
+            _height: Number
           };
         }
 

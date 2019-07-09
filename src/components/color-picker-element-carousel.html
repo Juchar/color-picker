@@ -73,7 +73,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -84,7 +84,6 @@
             pinned: {
               type: Boolean,
               value: false,
-              notify: true,
               observer: '_refreshElementVisibility'
             },
             /**
@@ -101,7 +100,6 @@
              */
             _slotElements: {
               type: Array,
-              notify: true,
               observer: '_refreshElementVisibility'
             },
             /**
@@ -109,8 +107,7 @@
              */
             _showSwitchButton: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             }
           };
         }

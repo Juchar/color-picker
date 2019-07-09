@@ -11,7 +11,7 @@
     <div class="horizontal-spacing">
       <vaadin-number-field disabled$="[[disabled]]" label="H" max="360" min="0" minlength="1"
                            prevent-invalid-input
-                           step="{{step}}"
+                           step="[[step]]"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{hue}}">
         <div slot="suffix">°</div>
@@ -19,7 +19,7 @@
       <vaadin-number-field disabled$="[[disabled]]" label="S" max="100" min="0"
                            minlength="1"
                            prevent-invalid-input
-                           step="{{step}}"
+                           step="[[step]]"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{saturation}}">
         <div slot="suffix">%</div>
@@ -27,19 +27,19 @@
       <vaadin-number-field disabled$="[[disabled]]" label="L" max="100" min="0"
                            minlength="1"
                            prevent-invalid-input
-                           step="{{step}}"
+                           step="[[step]]"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{lightness}}">
         <div slot="suffix">%</div>
       </vaadin-number-field>
       <vaadin-number-field disabled$="[[disabled]]"
-                           hidden$="{{disableAlpha}}"
+                           hidden$="[[disableAlpha]]"
                            label="A"
                            max="1"
                            min="0"
                            minlength="1"
                            prevent-invalid-input
-                           step="{{stepAlpha}}"
+                           step="[[stepAlpha]]"
                            theme$="color-value-text-field align-center [[theme]]"
                            value="{{alpha}}"></vaadin-number-field>
     </div>
@@ -60,7 +60,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -102,16 +102,14 @@
              */
             stepAlpha: {
               type: Number,
-              value: 0.01,
-              notify: true
+              value: 0.01
             },
             /**
              * Allowed number o intervals on the **hsl** value
              */
             step: {
               type: Number,
-              value: 1,
-              notify: true
+              value: 1
             }
           };
         }

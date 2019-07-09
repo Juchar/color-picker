@@ -27,29 +27,29 @@
     </style>
 
     <div class="vertical-spacing" style="align-items: stretch; min-height: 100%;">
-      <color-picker-slider disable-alpha="{{disableAlpha}}"
+      <color-picker-slider disable-alpha="[[disableAlpha]]"
                            disabled$="[[disabled]]"
-                           previous-value="{{_previousValueInternal}}"
-                           step-alpha="{{stepAlpha}}"
-                           step-hsl="{{stepHsl}}"
+                           previous-value="[[_previousValueInternal]]"
+                           step-alpha="[[stepAlpha]]"
+                           step-hsl="[[stepHsl]]"
                            theme$="[[theme]]"
                            value="{{_valueInternal}}"></color-picker-slider>
-      <color-picker-input disable-alpha="{{disableAlpha}}"
-                          disable-hex="{{disableHex}}"
-                          disable-hsl="{{disableHsl}}"
-                          disable-rgb="{{disableRgb}}"
+      <color-picker-input disable-alpha="[[disableAlpha]]"
+                          disable-hex="[[disableHex]]"
+                          disable-hsl="[[disableHsl]]"
+                          disable-rgb="[[disableRgb]]"
                           disabled$="[[disabled]]"
                           hidden$="[[!_showInputs(disableHex,disableRgb,disableHsl)]]"
                           last-used-format="{{lastUsedFormat}}"
-                          pinned="{{pinnedInputs}}"
-                          step-alpha="{{stepAlpha}}"
-                          step-hsl="{{stepHsl}}"
+                          pinned="[[pinnedInputs]]"
+                          step-alpha="[[stepAlpha]]"
+                          step-hsl="[[stepHsl]]"
                           theme$="[[theme]]"
                           value="{{_valueInternal}}"></color-picker-input>
       <color-picker-palette disabled$="[[disabled]]"
                             hidden$="[[!_showPalettes(_palettesInternal)]]"
-                            palettes="{{_palettesInternal}}"
-                            pinned="{{pinnedPalettes}}"
+                            palettes="[[_palettesInternal]]"
+                            pinned="[[pinnedPalettes]]"
                             theme$="[[theme]]"
                             value="{{_valueInternal}}"></color-picker-palette>
     </div>
@@ -79,40 +79,34 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
           return {
             disableHex: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             },
             disableRgb: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             },
             disableHsl: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             },
             disableAlpha: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             },
             pinnedInputs: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             },
             pinnedPalettes: {
               type: Boolean,
-              value: false,
-              notify: true
+              value: false
             },
             value: {
               type: String,
@@ -121,7 +115,6 @@
             },
             previousValue: {
               type: String,
-              notify: true,
               observer: '_onPreviousValueChanged'
             },
             lastUsedFormat: {
@@ -131,32 +124,24 @@
             },
             palettes: {
               type: Array,
-              notify: true,
               observer: '_onPalettesChanged'
             },
             stepAlpha: {
               type: Number,
-              value: 0.01,
-              notify: true
+              value: 0.01
             },
             stepHsl: {
               type: Number,
-              value: 1,
-              notify: true
+              value: 1
             },
             _valueInternal: {
               type: Object,
-              notify: true,
               observer: '_onValueInternalChanged'
             },
-            _previousValueInternal: {
-              type: Object,
-              notify: true
-            },
+            _previousValueInternal: Object,
             _palettesInternal: {
               type: Array,
-              value: [],
-              notify: true
+              value: []
             },
           };
         }

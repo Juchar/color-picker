@@ -86,7 +86,7 @@
         }
 
         static get version() {
-          return '0.7.6';
+          return '0.7.7';
         }
 
         static get properties() {
@@ -96,16 +96,14 @@
              */
             enableX: {
               type: Boolean,
-              value: true,
-              reflectToAttribute: true
+              value: true
             },
             /**
              * Enable the possibility to move the handle in the Y-direction.
              */
             enableY: {
               type: Boolean,
-              value: false,
-              reflectToAttribute: true
+              value: false
             },
             /**
              * The current X-value.
@@ -113,7 +111,6 @@
             valueX: {
               type: Number,
               value: 0,
-              reflectToAttribute: true,
               notify: true
             },
             /**
@@ -122,7 +119,6 @@
             valueY: {
               type: Number,
               value: 0,
-              reflectToAttribute: true,
               notify: true
             },
             /**
@@ -130,32 +126,28 @@
              */
             minX: {
               type: Number,
-              value: 0,
-              reflectToAttribute: true
+              value: 0
             },
             /**
              * The lower bound of the Y-value.
              */
             minY: {
               type: Number,
-              value: 0,
-              reflectToAttribute: true
+              value: 0
             },
             /**
              * The upper bound of the X-value.
              */
             maxX: {
               type: Number,
-              value: 100,
-              reflectToAttribute: true
+              value: 100
             },
             /**
              * The upper bound of the Y-value.
              */
             maxY: {
               type: Number,
-              value: 100,
-              reflectToAttribute: true
+              value: 100
             },
             /**
              * The steps that are added and removed to the current X-value if the slider handle is
@@ -163,8 +155,7 @@
              */
             stepX: {
               type: Number,
-              value: 1,
-              reflectToAttribute: true
+              value: 1
             },
             /**
              * The steps that are added and removed to the current Y-value if the slider handle is
@@ -172,16 +163,12 @@
              */
             stepY: {
               type: Number,
-              value: 1,
-              reflectToAttribute: true
+              value: 1
             },
             /**
              * The callback that is used to render the sliders background.
              */
-            renderCallback: {
-              type: Function,
-              notify: true
-            },
+            renderCallback: Function,
             _canvas: {
               type: Object,
               readOnly: true
