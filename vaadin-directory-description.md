@@ -9,3 +9,9 @@ Color picker is a themable Web Component providing the possibility to select a c
 ```html
 <color-picker></color-picker>
 ```
+
+## Credits
+Huge thanks also goes to the developers of [Choma.js](https://github.com/gka/chroma.js) that is used for the internal color handling, released under the [BSD license](http://opensource.org/licenses/BSD-3-Clause).
+
+## License
+Apache License 2.0
