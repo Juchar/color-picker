@@ -35,8 +35,11 @@
         if ('hex' === format) {
           return colorInternal.hex();
         } else {
-          const regex = colorInternal.alpha() === 1 ? /(\d+\.\d+)/gm : /(\d+\.\d+,)/gm;
-          return colorInternal.css(format).replace(regex, match => ColorPickerUtils.roundToNearest(match, step));
+          const regex = colorInternal.alpha() === 1 ? /(\d+\.\d+)/gm : /(\d+\.\d+(?=,))/gm;
+          return colorInternal.css(format).replace(regex, match => {
+            console.info(match);
+            return ColorPickerUtils.roundToNearest(match, step);
+          });
         }
       }
     }
