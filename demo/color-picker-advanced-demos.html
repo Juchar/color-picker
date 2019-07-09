@@ -6,6 +6,21 @@
       }
     </style>
 
+    <h3>CSS Custom Properties</h3>
+    <p>It is possible to use <b>CSS Custom Properties</b> to <b>initialize</b>:
+    <ul>
+      <li><code>value</code></li>
+      <li><code>previous-value</code></li>
+      <li><code>palettes</code></li>
+    </ul>
+    </p>
+    <vaadin-demo-snippet id="color-picker-css-custom-property" when-defined="color-picker">
+      <template preserve-content>
+        <color-picker value="--lumo-primary-color" previous-value="--lumo-success-color"
+                      palettes='[["--lumo-primary-color", "--lumo-success-color", "--lumo-error-color"]]'></color-picker>
+      </template>
+    </vaadin-demo-snippet>
+
     <h3>Resolution</h3>
     <p>It is possible to change the resolution of the alpha and hsl values using the
       <code>step-alpha</code> and <code>step-hsl</code> property.</p>
