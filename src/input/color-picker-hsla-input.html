@@ -13,7 +13,9 @@
                            prevent-invalid-input
                            step="{{step}}"
                            theme$="color-value-text-field align-center [[theme]]"
-                           value="{{hue}}"></vaadin-number-field>
+                           value="{{hue}}">
+        <div slot="suffix">°</div>
+      </vaadin-number-field>
       <vaadin-number-field disabled$="[[disabled]]" label="S" max="100" min="0"
                            minlength="1"
                            prevent-invalid-input
