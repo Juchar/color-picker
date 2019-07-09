@@ -84,52 +84,90 @@
 
         static get properties() {
           return {
+            /**
+             * Set to true to disable **hex** input.
+             */
             disableHex: {
               type: Boolean,
               value: false
             },
+            /**
+             * Set to true to disable **rgb** input.
+             */
             disableRgb: {
               type: Boolean,
               value: false
             },
+            /**
+             * Set to true to disable **hsl** input.
+             */
             disableHsl: {
               type: Boolean,
               value: false
             },
+            /**
+             * Set to true to disable **alpha** input and **alpha** slider.
+             */
             disableAlpha: {
               type: Boolean,
               value: false
             },
+            /**
+             * Set to true to have all inputs visible all the time instead of having a switch button.
+             */
             pinnedInputs: {
               type: Boolean,
               value: false
             },
+            /**
+             * Set to true to have all palettes visible all the time instead of having a switch button.
+             */
             pinnedPalettes: {
               type: Boolean,
               value: false
             },
+            /**
+             * The color value as string. If the user switches the input or changes an input, the value will be
+             * formatted related to the input. Should be a valid CSS color code or CSS Custom Property.
+             */
             value: {
               type: String,
               notify: true,
               observer: '_onValueChanged'
             },
+            /**
+             * The value that should be used as previous value. Should be a valid CSS color code or CSS Custom Property.
+             */
             previousValue: {
               type: String,
               observer: '_onPreviousValueChanged'
             },
+            /**
+             * The format that the user used last as input or by switching inputs. One of `hex`,`rgb`,`hsl`.
+             */
             lastUsedFormat: {
               type: String,
               notify: true,
               observer: '_onValueInternalChanged'
             },
+            /**
+             * The palettes to be shown. Should be an Array of Arrays, whereas the inner Arrays should contain valid
+             * CSS color codes or CSS Custom Properties.
+             */
             palettes: {
               type: Array,
               observer: '_onPalettesChanged'
             },
+            /**
+             * The precision step to use for alpha values.
+             */
             stepAlpha: {
               type: Number,
               value: 0.01
             },
+            /**
+             * The precision step to use for hsl values.
+             */
             stepHsl: {
               type: Number,
               value: 1
