@@ -5,6 +5,7 @@
 <link href="input/color-picker-color-picker-input.html" rel="import">
 <link href="palette/color-picker-color-picker-palette.html" rel="import">
 <link href="utils/vaadin-disabled-property-mixin.html" rel="import">
+<link href="utils/color-picker-utils.html" rel="import">
 <link href="libraries/chroma-js-import.html" rel="import"/>
 
 <dom-module id="color-picker">
@@ -116,6 +117,7 @@
             value: {
               type: String,
               notify: true,
+              reflectToAttribute: true,
               observer: '_onValueChanged'
             },
             previousValue: {
@@ -140,7 +142,7 @@
             },
             stepHsl: {
               type: Number,
-              value: 1,
+              value: 0.1,
               notify: true
             },
             _valueInternal: {
@@ -189,7 +191,8 @@
           if (!this.valueChanged) {
             this.valueInternalChanged = true;
             this.value = this._valueInternal
-              ? ('hex' === this.lastUsedFormat ? this._valueInternal.hex() : this._valueInternal.css(this.lastUsedFormat))
+              ? ColorPickerUtils.getFormattedColor(this._valueInternal, this.lastUsedFormat, this.stepAlpha,
+                this['step' + this.lastUsedFormat.charAt(0).toUpperCase() + this.lastUsedFormat.slice(1)] || 1)
               : undefined;
             this.valueInternalChanged = false;
           }

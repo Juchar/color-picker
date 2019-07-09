@@ -28,6 +28,17 @@
           : color.alpha(1).set('hsl.s', 1).set('hsl.l', .5)
             .brighten(2.5).css();
       }
+
+      static getFormattedColor(color, format, stepAlpha, step) {
+        const colorInternal = color.alpha(ColorPickerUtils.roundToNearest(color.alpha(), stepAlpha));
+
+        if ('hex' === format) {
+          return colorInternal.hex();
+        } else {
+          const regex = colorInternal.alpha() === 1 ? /(\d+\.\d+)/gm : /(\d+\.\d+(?!\)))/gm;
+          return colorInternal.css(format).replace(regex, match => ColorPickerUtils.roundToNearest(match, step));
+        }
+      }
     }
   </script>
 </dom-module>
