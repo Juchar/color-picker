@@ -79,7 +79,7 @@
         }
 
         static get version() {
-          return '0.7.8';
+          return '0.7.9';
         }
 
         static get properties() {
@@ -189,7 +189,7 @@
           super.ready();
 
           if (initialColor) {
-            this._valueInternal = chroma(this._getResolvedValue(initialColor));
+            this._valueInternal = this._getResolvedValue(initialColor);
           }
         }
 
@@ -204,7 +204,7 @@
         _onValueChanged() {
           if (!this.valueInternalChanged) {
             this.valueChanged = true;
-            this._valueInternal = this.value ? chroma(this._getResolvedValue(this.value)) : undefined;
+            this._valueInternal = this.value ? this._getResolvedValue(this.value) : undefined;
             this.valueChanged = false;
           }
         }
@@ -221,19 +221,22 @@
         }
 
         _onPreviousValueChanged() {
-          this._previousValueInternal = this.previousValue ? chroma(this._getResolvedValue(this.previousValue)) : undefined;
+          this._previousValueInternal = this.previousValue ? this._getResolvedValue(this.previousValue) : undefined;
         }
 
         _onPalettesChanged() {
           this._palettesInternal =
-            this.palettes ? this.palettes.map(palette => palette.map(color => chroma(this._getResolvedValue(color))))
+            this.palettes ? this.palettes.map(palette => palette.map(color => this._getResolvedValue(color)))
               : undefined;
         }
 
         _getResolvedValue(value) {
-          return /--[a-zA-Z0-9]+[a-zA-Z0-9-]*/gm.test(value)
-            ? window.getComputedStyle(this).getPropertyValue(value).trim()
-            : value;
+          if (/--[a-zA-Z0-9]+[a-zA-Z0-9-]*/gm.test(value)) {
+            const propertyValue = window.getComputedStyle(this).getPropertyValue(value).trim();
+            return propertyValue !== '' ? chroma(propertyValue) : undefined;
+          } else {
+            return chroma(value);
+          }
         }
       }
 
