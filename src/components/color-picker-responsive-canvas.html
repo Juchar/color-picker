@@ -97,6 +97,23 @@
         connectedCallback() {
           super.connectedCallback();
           this.addEventListener('iron-resize', this._refreshCanvas.bind(this));
+
+          this._hiddenMutationObserver = new MutationObserver(mutations => {
+            if (mutations.filter(mutation => mutation.type === 'attributes').length > 0
+              && !this.hasAttribute('hidden')) {
+              this._refreshCanvas();
+            }
+          });
+
+          this._hiddenMutationObserver.observe(this, {attributes: true, attributeFilter: ['hidden']});
+        }
+
+        /**
+         * @protected
+         */
+        disconnectedCallback() {
+          super.disconnectedCallback();
+          this._hiddenMutationObserver.disconnect();
         }
 
         /**
