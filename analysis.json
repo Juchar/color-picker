@@ -1727,7 +1727,7 @@
               }
             },
             {
-              "name": "_hasPreviousValue",
+              "name": "_showSelectPreviousValue",
               "description": "Check if a value is set for the previous value.",
               "privacy": "private",
               "sourceRange": {
@@ -1736,7 +1736,7 @@
                   "column": 8
                 },
                 "end": {
-                  "line": 137,
+                  "line": 138,
                   "column": 9
                 }
               },
@@ -1752,11 +1752,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 144,
+                  "line": 145,
                   "column": 8
                 },
                 "end": {
-                  "line": 148,
+                  "line": 149,
                   "column": 9
                 }
               },
@@ -1772,11 +1772,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 155,
+                  "line": 156,
                   "column": 8
                 },
                 "end": {
-                  "line": 159,
+                  "line": 160,
                   "column": 9
                 }
               },
@@ -1792,11 +1792,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 165,
+                  "line": 166,
                   "column": 8
                 },
                 "end": {
-                  "line": 167,
+                  "line": 168,
                   "column": 9
                 }
               },
@@ -1913,11 +1913,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 176,
+                  "line": 177,
                   "column": 8
                 },
                 "end": {
-                  "line": 189,
+                  "line": 190,
                   "column": 9
                 }
               },
@@ -1945,7 +1945,7 @@
               "column": 6
             },
             "end": {
-              "line": 190,
+              "line": 191,
               "column": 7
             }
           },

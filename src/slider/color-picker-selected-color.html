@@ -62,7 +62,7 @@
                        part="selected-color-canvas"
                        render-callback="[[_renderSelectedColor(value)]]"></responsive-canvas>
     <responsive-canvas disabled$="[[disabled]]"
-                       hidden$="[[!_hasPreviousValue(value,previousValue)]]"
+                       hidden$="[[!_showSelectPreviousValue(value,previousValue)]]"
                        part="previous-color-canvas"
                        render-callback="[[_renderPreviousColor(previousValue)]]"
                        on-click="_resetToPreviousValue">
@@ -90,7 +90,7 @@
         }
 
         static get version() {
-          return '0.7.9';
+          return '0.7.8';
         }
 
         static get properties() {
@@ -105,7 +105,7 @@
             hasPreviousValue: {
               type: Boolean,
               reflectToAttribute: true,
-              computed: '_hasPreviousValue(previousValue)'
+              computed: '_showSelectPreviousValue(value,previousValue)'
             },
             _previousIcon: Object,
             _halo: Object
@@ -133,8 +133,9 @@
          * @returns {boolean}
          * @private
          */
-        _hasPreviousValue() {
-          return this.previousValue !== undefined && this.previousValue !== null;
+        _showSelectPreviousValue() {
+          return this.previousValue !== undefined && this.previousValue !== null
+            && this.previousValue.css() !== (this.value !== undefined && this.value !== null ? this.value.css() : undefined);
         }
 
         /**
