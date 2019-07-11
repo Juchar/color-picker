@@ -1,5 +1,5 @@
 <link href="color-picker-color-slider.html" rel="import">
-<link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../libraries/tinycolor-import.html" rel="import"/>
 
 <dom-module id="alpha-slider">
   <script>
@@ -18,7 +18,7 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {
@@ -73,11 +73,11 @@
             const ctx = canvas.getContext('2d');
             const width = canvas.scrollWidth;
             const height = canvas.scrollHeight;
-            const hsv = chroma.hsv(this.hue || 0, 1, this.value);
+            const hsv = tinycolor({h: this.hue || 0, s: 1, v: this.value});
 
             const gradient = ctx.createLinearGradient(0, 0, width, 0);
-            gradient.addColorStop(0, hsv.alpha(0).css());
-            gradient.addColorStop(1, hsv.alpha(1).css());
+            gradient.addColorStop(0, hsv.setAlpha(0).toHslString());
+            gradient.addColorStop(1, hsv.setAlpha(1).toHslString());
 
             ctx.clearRect(0, 0, width, height);
             ctx.fillStyle = gradient;

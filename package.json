@@ -1,6 +1,6 @@
 {
   "name": "@juchar/color-picker",
-  "version": "0.6.0",
+  "version": "0.9.0",
   "description": "color-picker",
   "main": "color-picker.html",
   "repository": "juchar/color-picker",
@@ -48,6 +48,6 @@
     "@vaadin/vaadin-icons": "^4.3.1",
     "@vaadin/vaadin-tabs": "^3.0.0",
     "@vaadin/vaadin-text-field": "^2.4.4",
-    "chroma-js": "^2.0.3"
+    "tinycolor2": "^1.4.1"
   }
 }

@@ -4,7 +4,7 @@
 <link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
 <link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
 <link href="color-picker-color-checkbox.html" rel="import"/>
-<link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../libraries/tinycolor-import.html" rel="import"/>
 
 <dom-module id="color-palette">
   <template>
@@ -57,14 +57,14 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {
           return {
             /**
              * The palette of colors to show. Each color in the array should be a
-             * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma object.
+             * [TinyColor](https://github.com/bgrins/TinyColor|TinyColor) color.
              */
             palette: Array
           };
@@ -86,7 +86,7 @@
          * @private
          */
         _isSelected(color) {
-          return color && this.value && chroma(color).css() === chroma(this.value).css();
+          return color && this.value && tinycolor(color).toHslString() === tinycolor(this.value).toHslString();
         }
       }
 

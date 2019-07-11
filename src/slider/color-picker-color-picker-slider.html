@@ -7,7 +7,7 @@
 <link href="color-picker-selected-color.html" rel="import">
 <link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
 <link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
-<link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../libraries/tinycolor-import.html" rel="import"/>
 
 <dom-module id="color-picker-slider">
   <template>
@@ -75,7 +75,7 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {
@@ -154,7 +154,7 @@
          */
         _sliderColorChanged() {
           this._colorChanged(() => {
-            this.value = chroma.hsv(this._hue, this._saturation, this._value).alpha(this._alpha);
+            this.value = tinycolor({h: this._hue, s: this._saturation, v: this._value}).setAlpha(this._alpha);
           });
         }
 
@@ -165,10 +165,11 @@
         _valueChanged() {
           this._colorChanged(() => {
             if (this.value) {
-              this._hue = this.value.get('hsv.h');
-              this._saturation = this.value.get('hsv.s');
-              this._value = this.value.get('hsv.v');
-              this._alpha = this.value.alpha();
+              const hsv = this.value.toHsv();
+              this._hue = hsv.h;
+              this._saturation = hsv.s;
+              this._value = hsv.v;
+              this._alpha = hsv.a;
             } else {
               this._hue = 0;
               this._saturation = 1;

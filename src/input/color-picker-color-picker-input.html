@@ -7,14 +7,14 @@
 <link href="color-picker-hsla-input.html" rel="import">
 <link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
 <link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
-<link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../libraries/tinycolor-import.html" rel="import"/>
 
 <dom-module id="color-picker-input">
   <template>
     <element-carousel disabled$="[[disabled]]"
+                      displayed-element-index="{{_visibleInputIndex}}"
                       pinned="[[pinned]]"
-                      theme$="[[theme]]"
-                      displayed-element-index="{{_visibleInputIndex}}">
+                      theme$="[[theme]]">
       <hex-input color-input="hex" disable-alpha="[[disableAlpha]]"
                  disable-for-switch$="[[disableHex]]"
                  disabled$="[[disabled]]"
@@ -59,7 +59,7 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {

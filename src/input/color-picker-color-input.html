@@ -3,7 +3,7 @@
 <link href="../../../vaadin-element-mixin/vaadin-element-mixin.html" rel="import">
 <link href="../utils/vaadin-disabled-property-mixin.html" rel="import"/>
 <link href="../utils/color-picker-has-color-value-mixin.html" rel="import"/>
-<link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../libraries/tinycolor-import.html" rel="import"/>
 
 <dom-module id="color-input">
   <script>
@@ -30,7 +30,7 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {
@@ -39,10 +39,10 @@
              * The supplier function that is called if one of the `_observedInputProperties` is
              * changed and the `value` property should be updated.
              *
-             * Should return a valid [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma
-             * object, e.g.:
+             * Should return a valid [TinyColor](https://github.com/bgrins/TinyColor|TinyColor)
+             * color, e.g.:
              *
-             * ```() => chroma.rgb(255, 255, 255)```
+             * ```() => tinycolor('rgb(255, 255, 255)')```
              *
              * @abstract
              */
@@ -51,7 +51,7 @@
              * The converter function that is called if the `value` property changed and the inputs
              * should be updated.
              *
-             * Should consume the [chroma.js](https://github.com/gka/chroma.js/|chroma.js) `value`
+             * Should consume the [tinycolor](https://github.com/bgrins/TinyColor|TinyColor) `value`
              * as an argument, e.g.:
              *
              * ```value => console.info(value)```
@@ -117,7 +117,7 @@
               // Nothing to do here, invalid value
             }
 
-            if (!color.css().includes('NaN')) {
+            if (color.isValid()) {
               this.value = color;
             }
 

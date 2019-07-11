@@ -12,11 +12,11 @@
         return {
           /**
            * The selected color in the form of a
-           * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma object.
+           * [TinyColor](https://github.com/bgrins/TinyColor|TinyColor) color.
            */
           value: {
             type: Object,
-            value: chroma.hsl(0, 1, 0.5),
+            value: tinycolor({h: 0, s: 1, l: 0.5}),
             notify: true
           }
         };

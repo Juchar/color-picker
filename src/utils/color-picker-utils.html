@@ -22,21 +22,24 @@
       }
 
       static getContrastColor(color) {
-        return color.luminance() >= 0.5 || color.alpha() <= 0.5
-          ? color.alpha(1).set('hsl.s', 1).set('hsl.l', .5)
-            .darken(color.alpha() <= 0.5 && color.luminance() <= 0.5 ? 1.5 : 2.5).css()
-          : color.alpha(1).set('hsl.s', 1).set('hsl.l', .5)
-            .brighten(2.5).css();
+        const hsl = color.toHsl();
+        const contrastColor = tinycolor({h: hsl.h, s: 1, l: .5});
+
+        if (color.getLuminance() >= 0.5 || color.getAlpha() <= 0.5) {
+          return contrastColor.darken(color.getAlpha() <= 0.5 && color.getLuminance() <= 0.5 ? 10 : 20).toHslString();
+        } else {
+          return contrastColor.brighten(70).toHslString();
+        }
       }
 
       static getFormattedColor(color, format, stepAlpha, step) {
-        const colorInternal = color.alpha(ColorPickerUtils.roundToNearest(color.alpha(), stepAlpha));
+        const colorInternal = color.setAlpha(ColorPickerUtils.roundToNearest(color.getAlpha(), stepAlpha));
 
         if ('hex' === format) {
-          return colorInternal.hex();
+          return colorInternal.getAlpha() === 1 ? colorInternal.toHexString() : colorInternal.toHex8String();
         } else {
-          const regex = colorInternal.alpha() === 1 ? /(\d+\.\d+)/gm : /(\d+\.\d+(?=[^\d)]+\d))/gm;
-          return colorInternal.css(format).replace(regex, match => {
+          const regex = colorInternal.getAlpha() === 1 ? /(\d+\.\d+)/gm : /(\d+\.\d+(?=[^\d)]+\d))/gm;
+          return colorInternal.toString(format).replace(regex, match => {
             return ColorPickerUtils.roundToNearest(match, step);
           });
         }

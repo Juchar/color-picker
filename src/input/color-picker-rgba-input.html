@@ -1,6 +1,6 @@
 <link href="../../../vaadin-text-field/src/vaadin-number-field.html" rel="import">
 <link href="color-picker-color-input.html" rel="import">
-<link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../libraries/tinycolor-import.html" rel="import"/>
 <link href="../utils/color-picker-utils.html" rel="import"/>
 
 <dom-module id="rgba-input">
@@ -52,7 +52,7 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {
@@ -107,19 +107,19 @@
 
           this._observedInputProperties = ['red', 'green', 'blue', 'alpha'];
 
-          this._colorSupplier = () => chroma
-            .rgb(parseFloat(this.red),
-              parseFloat(this.green),
-              parseFloat(this.blue))
-            .alpha(parseFloat(this.alpha));
+          this._colorSupplier = () => tinycolor({
+            r: parseFloat(this.red),
+            g: parseFloat(this.green),
+            b: parseFloat(this.blue)
+          }).setAlpha(parseFloat(this.alpha));
 
           this._toInputConverter = color => {
             if (color) {
-              const rgb = color.rgb();
-              this.red = rgb[0];
-              this.green = rgb[1];
-              this.blue = rgb[2];
-              this.alpha = ColorPickerUtils.roundToNearest(color.alpha(), this.stepAlpha);
+              const rgb = color.toRgb();
+              this.red = rgb.r;
+              this.green = rgb.g;
+              this.blue = rgb.b;
+              this.alpha = ColorPickerUtils.roundToNearest(color.getAlpha(), this.stepAlpha);
             } else {
               this.red = '';
               this.green = '';

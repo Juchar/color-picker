@@ -1,6 +1,6 @@
 <link href="../../../vaadin-checkbox/src/vaadin-checkbox.html" rel="import">
 <link href="../utils/color-picker-utils.html" rel="import"/>
-<link href="../libraries/chroma-js-import.html" rel="import"/>
+<link href="../libraries/tinycolor-import.html" rel="import"/>
 
 <dom-module id="color-checkbox">
   <script>
@@ -25,14 +25,14 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {
           return {
             /**
              * The color for the checkbox in the form of a
-             * [chroma.js](https://github.com/gka/chroma.js/|chroma.js) chroma object.
+             * [TinyColor](https://github.com/bgrins/TinyColor|TinyColor) color.
              */
             color: {
               type: Object,
@@ -79,10 +79,10 @@
           const element = this.shadowRoot.querySelector('[part="checkbox"]');
 
           if (this.color) {
-            element.style.background = this.color.css();
+            element.style.background = this.color.toHslString();
             element.style.color = ColorPickerUtils.getContrastColor(this.color);
 
-            if (this.color.luminance() > 0.96) {
+            if (this.color.getLuminance() > 0.96) {
               element.classList.add('show-border');
             }
           } else {

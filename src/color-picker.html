@@ -6,7 +6,7 @@
 <link href="palette/color-picker-color-picker-palette.html" rel="import">
 <link href="utils/vaadin-disabled-property-mixin.html" rel="import">
 <link href="utils/color-picker-utils.html" rel="import">
-<link href="libraries/chroma-js-import.html" rel="import"/>
+<link href="libraries/tinycolor-import.html" rel="import"/>
 
 <dom-module id="color-picker">
   <template>
@@ -79,7 +79,7 @@
         }
 
         static get version() {
-          return '0.8.1';
+          return '0.9.0';
         }
 
         static get properties() {
@@ -233,9 +233,9 @@
         _getResolvedValue(value) {
           if (/--[a-zA-Z0-9]+[a-zA-Z0-9-]*/gm.test(value)) {
             const propertyValue = window.getComputedStyle(this).getPropertyValue(value).trim();
-            return propertyValue !== '' ? chroma(propertyValue) : undefined;
+            return propertyValue !== '' ? tinycolor(propertyValue) : undefined;
           } else {
-            return chroma(value);
+            return tinycolor(value);
           }
         }
       }
