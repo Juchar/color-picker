@@ -44,6 +44,15 @@
           });
         }
       }
+
+      static getResolvedValue(element, value) {
+        if (/--[a-zA-Z0-9]+[a-zA-Z0-9-]*/gm.test(value)) {
+          const propertyValue = window.getComputedStyle(element).getPropertyValue(value).trim();
+          return propertyValue !== '' ? tinycolor(propertyValue) : undefined;
+        } else {
+          return tinycolor(value);
+        }
+      }
     }
   </script>
 </dom-module>
