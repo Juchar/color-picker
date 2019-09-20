@@ -1,4 +1,6 @@
-class ColorPickerAdvancedDemos extends DemoReadyEventEmitter(ColorPickerDemo(Polymer.Element)) {
+import {html, PolymerElement} from "@polymer/polymer";
+
+class ColorPickerAdvancedDemos extends DemoReadyEventEmitter(ColorPickerDemo(PolymerElement)) {
   static get is() {
     return 'color-picker-advanced-demos';
   }

@@ -6,13 +6,13 @@
       "description": "",
       "summary": "",
       "sourceRange": {
-        "file": "src/palette/color-picker-color-palette.js",
+        "file": "src/palette/color-picker-color-picker-palette.js",
         "start": {
-          "line": 94,
+          "line": 73,
           "column": 0
         },
         "end": {
-          "line": 94,
+          "line": 73,
           "column": 36
         }
       },
@@ -29,11 +29,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 58,
+                  "line": 59,
                   "column": 6
                 },
                 "end": {
-                  "line": 58,
+                  "line": 59,
                   "column": 30
                 }
               },
@@ -50,11 +50,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 62,
+                  "line": 63,
                   "column": 6
                 },
                 "end": {
-                  "line": 65,
+                  "line": 66,
                   "column": 7
                 }
               },
@@ -72,11 +72,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 69,
+                  "line": 70,
                   "column": 6
                 },
                 "end": {
-                  "line": 69,
+                  "line": 70,
                   "column": 20
                 }
               },
@@ -93,11 +93,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 73,
+                  "line": 74,
                   "column": 6
                 },
                 "end": {
-                  "line": 73,
+                  "line": 74,
                   "column": 21
                 }
               },
@@ -115,11 +115,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 80,
+                  "line": 81,
                   "column": 2
                 },
                 "end": {
-                  "line": 85,
+                  "line": 86,
                   "column": 3
                 }
               },
@@ -135,11 +135,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 90,
+                  "line": 91,
                   "column": 2
                 },
                 "end": {
-                  "line": 102,
+                  "line": 103,
                   "column": 3
                 }
               },
@@ -155,11 +155,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 107,
+                  "line": 108,
                   "column": 2
                 },
                 "end": {
-                  "line": 110,
+                  "line": 111,
                   "column": 3
                 }
               },
@@ -175,11 +175,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 117,
+                  "line": 118,
                   "column": 2
                 },
                 "end": {
-                  "line": 120,
+                  "line": 121,
                   "column": 3
                 }
               },
@@ -195,11 +195,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 127,
+                  "line": 128,
                   "column": 2
                 },
                 "end": {
-                  "line": 130,
+                  "line": 131,
                   "column": 3
                 }
               },
@@ -215,11 +215,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 135,
+                  "line": 136,
                   "column": 2
                 },
                 "end": {
-                  "line": 139,
+                  "line": 140,
                   "column": 3
                 }
               },
@@ -235,11 +235,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 15,
+              "line": 16,
               "column": 0
             },
             "end": {
-              "line": 140,
+              "line": 141,
               "column": 1
             }
           },
@@ -252,11 +252,11 @@
               "description": "The callback that is used to render the content of the canvas.\nShould be a method handling the `canvas` as an argument: `function render(canvas)`.",
               "sourceRange": {
                 "start": {
-                  "line": 58,
+                  "line": 59,
                   "column": 6
                 },
                 "end": {
-                  "line": 58,
+                  "line": 59,
                   "column": 30
                 }
               },
@@ -289,11 +289,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 418,
+                  "line": 417,
                   "column": 2
                 },
                 "end": {
-                  "line": 420,
+                  "line": 419,
                   "column": 3
                 }
               },
@@ -310,11 +310,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 93,
+                  "line": 92,
                   "column": 6
                 },
                 "end": {
-                  "line": 96,
+                  "line": 95,
                   "column": 7
                 }
               },
@@ -332,11 +332,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 100,
+                  "line": 99,
                   "column": 6
                 },
                 "end": {
-                  "line": 103,
+                  "line": 102,
                   "column": 7
                 }
               },
@@ -354,11 +354,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 107,
+                  "line": 106,
                   "column": 6
                 },
                 "end": {
-                  "line": 111,
+                  "line": 110,
                   "column": 7
                 }
               },
@@ -377,11 +377,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 115,
+                  "line": 114,
                   "column": 6
                 },
                 "end": {
-                  "line": 119,
+                  "line": 118,
                   "column": 7
                 }
               },
@@ -400,11 +400,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 123,
+                  "line": 122,
                   "column": 6
                 },
                 "end": {
-                  "line": 126,
+                  "line": 125,
                   "column": 7
                 }
               },
@@ -422,11 +422,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 130,
+                  "line": 129,
                   "column": 6
                 },
                 "end": {
-                  "line": 133,
+                  "line": 132,
                   "column": 7
                 }
               },
@@ -444,11 +444,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 137,
+                  "line": 136,
                   "column": 6
                 },
                 "end": {
-                  "line": 140,
+                  "line": 139,
                   "column": 7
                 }
               },
@@ -466,11 +466,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 144,
+                  "line": 143,
                   "column": 6
                 },
                 "end": {
-                  "line": 147,
+                  "line": 146,
                   "column": 7
                 }
               },
@@ -488,11 +488,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 152,
+                  "line": 151,
                   "column": 6
                 },
                 "end": {
-                  "line": 155,
+                  "line": 154,
                   "column": 7
                 }
               },
@@ -510,11 +510,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 160,
+                  "line": 159,
                   "column": 6
                 },
                 "end": {
-                  "line": 163,
+                  "line": 162,
                   "column": 7
                 }
               },
@@ -532,11 +532,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 167,
+                  "line": 166,
                   "column": 6
                 },
                 "end": {
-                  "line": 167,
+                  "line": 166,
                   "column": 30
                 }
               },
@@ -553,11 +553,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 168,
+                  "line": 167,
                   "column": 6
                 },
                 "end": {
-                  "line": 171,
+                  "line": 170,
                   "column": 7
                 }
               },
@@ -575,11 +575,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 172,
+                  "line": 171,
                   "column": 6
                 },
                 "end": {
-                  "line": 175,
+                  "line": 174,
                   "column": 7
                 }
               },
@@ -598,11 +598,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 182,
+                  "line": 181,
                   "column": 2
                 },
                 "end": {
-                  "line": 193,
+                  "line": 192,
                   "column": 3
                 }
               },
@@ -618,11 +618,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 198,
+                  "line": 197,
                   "column": 2
                 },
                 "end": {
-                  "line": 201,
+                  "line": 200,
                   "column": 3
                 }
               },
@@ -638,11 +638,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 206,
+                  "line": 205,
                   "column": 2
                 },
                 "end": {
-                  "line": 208,
+                  "line": 207,
                   "column": 3
                 }
               },
@@ -658,11 +658,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 213,
+                  "line": 212,
                   "column": 2
                 },
                 "end": {
-                  "line": 216,
+                  "line": 215,
                   "column": 3
                 }
               },
@@ -678,11 +678,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 222,
+                  "line": 221,
                   "column": 2
                 },
                 "end": {
-                  "line": 322,
+                  "line": 321,
                   "column": 3
                 }
               },
@@ -698,11 +698,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 329,
+                  "line": 328,
                   "column": 2
                 },
                 "end": {
-                  "line": 331,
+                  "line": 330,
                   "column": 3
                 }
               },
@@ -718,11 +718,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 338,
+                  "line": 337,
                   "column": 2
                 },
                 "end": {
-                  "line": 340,
+                  "line": 339,
                   "column": 3
                 }
               },
@@ -738,11 +738,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 346,
+                  "line": 345,
                   "column": 2
                 },
                 "end": {
-                  "line": 352,
+                  "line": 351,
                   "column": 3
                 }
               },
@@ -758,11 +758,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 358,
+                  "line": 357,
                   "column": 2
                 },
                 "end": {
-                  "line": 364,
+                  "line": 363,
                   "column": 3
                 }
               },
@@ -778,11 +778,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 370,
+                  "line": 369,
                   "column": 2
                 },
                 "end": {
-                  "line": 376,
+                  "line": 375,
                   "column": 3
                 }
               },
@@ -798,11 +798,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 382,
+                  "line": 381,
                   "column": 2
                 },
                 "end": {
-                  "line": 388,
+                  "line": 387,
                   "column": 3
                 }
               },
@@ -818,11 +818,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 395,
+                  "line": 394,
                   "column": 2
                 },
                 "end": {
-                  "line": 400,
+                  "line": 399,
                   "column": 3
                 }
               },
@@ -843,11 +843,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 407,
+                  "line": 406,
                   "column": 2
                 },
                 "end": {
-                  "line": 412,
+                  "line": 411,
                   "column": 3
                 }
               },
@@ -868,11 +868,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 21,
+              "line": 22,
               "column": 0
             },
             "end": {
-              "line": 421,
+              "line": 420,
               "column": 1
             }
           },
@@ -885,11 +885,11 @@
               "description": "Enable the possibility to move the handle in the X-direction.",
               "sourceRange": {
                 "start": {
-                  "line": 93,
+                  "line": 92,
                   "column": 6
                 },
                 "end": {
-                  "line": 96,
+                  "line": 95,
                   "column": 7
                 }
               },
@@ -901,11 +901,11 @@
               "description": "Enable the possibility to move the handle in the Y-direction.",
               "sourceRange": {
                 "start": {
-                  "line": 100,
+                  "line": 99,
                   "column": 6
                 },
                 "end": {
-                  "line": 103,
+                  "line": 102,
                   "column": 7
                 }
               },
@@ -917,11 +917,11 @@
               "description": "The current X-value.",
               "sourceRange": {
                 "start": {
-                  "line": 107,
+                  "line": 106,
                   "column": 6
                 },
                 "end": {
-                  "line": 111,
+                  "line": 110,
                   "column": 7
                 }
               },
@@ -933,11 +933,11 @@
               "description": "The current Y-value.",
               "sourceRange": {
                 "start": {
-                  "line": 115,
+                  "line": 114,
                   "column": 6
                 },
                 "end": {
-                  "line": 119,
+                  "line": 118,
                   "column": 7
                 }
               },
@@ -949,11 +949,11 @@
               "description": "The lower bound of the X-value.",
               "sourceRange": {
                 "start": {
-                  "line": 123,
+                  "line": 122,
                   "column": 6
                 },
                 "end": {
-                  "line": 126,
+                  "line": 125,
                   "column": 7
                 }
               },
@@ -965,11 +965,11 @@
               "description": "The lower bound of the Y-value.",
               "sourceRange": {
                 "start": {
-                  "line": 130,
+                  "line": 129,
                   "column": 6
                 },
                 "end": {
-                  "line": 133,
+                  "line": 132,
                   "column": 7
                 }
               },
@@ -981,11 +981,11 @@
               "description": "The upper bound of the X-value.",
               "sourceRange": {
                 "start": {
-                  "line": 137,
+                  "line": 136,
                   "column": 6
                 },
                 "end": {
-                  "line": 140,
+                  "line": 139,
                   "column": 7
                 }
               },
@@ -997,11 +997,11 @@
               "description": "The upper bound of the Y-value.",
               "sourceRange": {
                 "start": {
-                  "line": 144,
+                  "line": 143,
                   "column": 6
                 },
                 "end": {
-                  "line": 147,
+                  "line": 146,
                   "column": 7
                 }
               },
@@ -1013,11 +1013,11 @@
               "description": "The steps that are added and removed to the current X-value if the slider handle is\nmoved.",
               "sourceRange": {
                 "start": {
-                  "line": 152,
+                  "line": 151,
                   "column": 6
                 },
                 "end": {
-                  "line": 155,
+                  "line": 154,
                   "column": 7
                 }
               },
@@ -1029,11 +1029,11 @@
               "description": "The steps that are added and removed to the current Y-value if the slider handle is\nmoved.",
               "sourceRange": {
                 "start": {
-                  "line": 160,
+                  "line": 159,
                   "column": 6
                 },
                 "end": {
-                  "line": 163,
+                  "line": 162,
                   "column": 7
                 }
               },
@@ -1045,11 +1045,11 @@
               "description": "The callback that is used to render the sliders background.",
               "sourceRange": {
                 "start": {
-                  "line": 167,
+                  "line": 166,
                   "column": 6
                 },
                 "end": {
-                  "line": 167,
+                  "line": 166,
                   "column": 30
                 }
               },
@@ -1096,11 +1096,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 25,
+                  "line": 26,
                   "column": 6
                 },
                 "end": {
-                  "line": 28,
+                  "line": 29,
                   "column": 7
                 }
               },
@@ -1119,11 +1119,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 54,
+                  "line": 55,
                   "column": 2
                 },
                 "end": {
-                  "line": 57,
+                  "line": 58,
                   "column": 3
                 }
               },
@@ -1139,11 +1139,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 64,
+                  "line": 65,
                   "column": 2
                 },
                 "end": {
-                  "line": 86,
+                  "line": 87,
                   "column": 3
                 }
               },
@@ -1159,11 +1159,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 8,
+              "line": 9,
               "column": 0
             },
             "end": {
-              "line": 87,
+              "line": 88,
               "column": 1
             }
           },
@@ -1176,11 +1176,11 @@
               "description": "The **h**sv-hue of the color to show as background in the range `[0 - 360]`.",
               "sourceRange": {
                 "start": {
-                  "line": 25,
+                  "line": 26,
                   "column": 6
                 },
                 "end": {
-                  "line": 28,
+                  "line": 29,
                   "column": 7
                 }
               },
@@ -1208,11 +1208,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 38,
+                  "line": 39,
                   "column": 2
                 },
                 "end": {
-                  "line": 53,
+                  "line": 54,
                   "column": 3
                 }
               },
@@ -1228,11 +1228,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 7,
+              "line": 9,
               "column": 0
             },
             "end": {
-              "line": 54,
+              "line": 55,
               "column": 1
             }
           },
@@ -1260,11 +1260,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 24,
+                  "line": 25,
                   "column": 6
                 },
                 "end": {
-                  "line": 27,
+                  "line": 28,
                   "column": 7
                 }
               },
@@ -1282,11 +1282,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 31,
+                  "line": 32,
                   "column": 6
                 },
                 "end": {
-                  "line": 34,
+                  "line": 35,
                   "column": 7
                 }
               },
@@ -1305,11 +1305,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 54,
+                  "line": 55,
                   "column": 2
                 },
                 "end": {
-                  "line": 59,
+                  "line": 60,
                   "column": 3
                 }
               },
@@ -1325,11 +1325,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 66,
+                  "line": 67,
                   "column": 2
                 },
                 "end": {
-                  "line": 81,
+                  "line": 82,
                   "column": 3
                 }
               },
@@ -1345,11 +1345,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 8,
+              "line": 10,
               "column": 0
             },
             "end": {
-              "line": 82,
+              "line": 83,
               "column": 1
             }
           },
@@ -1362,11 +1362,11 @@
               "description": "The **h**sv-hue of the color to show as background in the range `[0 - 360]`.",
               "sourceRange": {
                 "start": {
-                  "line": 24,
+                  "line": 25,
                   "column": 6
                 },
                 "end": {
-                  "line": 27,
+                  "line": 28,
                   "column": 7
                 }
               },
@@ -1378,11 +1378,11 @@
               "description": "The hs**v**-value of the color to show as background in the range `[0 - 1]`.",
               "sourceRange": {
                 "start": {
-                  "line": 31,
+                  "line": 32,
                   "column": 6
                 },
                 "end": {
-                  "line": 34,
+                  "line": 35,
                   "column": 7
                 }
               },
@@ -1410,11 +1410,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 98,
+                  "line": 97,
                   "column": 6
                 },
                 "end": {
-                  "line": 101,
+                  "line": 100,
                   "column": 7
                 }
               },
@@ -1432,11 +1432,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 102,
+                  "line": 101,
                   "column": 6
                 },
                 "end": {
-                  "line": 106,
+                  "line": 105,
                   "column": 7
                 }
               },
@@ -1454,11 +1454,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 107,
+                  "line": 106,
                   "column": 6
                 },
                 "end": {
-                  "line": 107,
+                  "line": 106,
                   "column": 27
                 }
               },
@@ -1475,11 +1475,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 108,
+                  "line": 107,
                   "column": 6
                 },
                 "end": {
-                  "line": 108,
+                  "line": 107,
                   "column": 19
                 }
               },
@@ -1497,11 +1497,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 112,
+                  "line": 111,
                   "column": 2
                 },
                 "end": {
-                  "line": 116,
+                  "line": 115,
                   "column": 3
                 }
               },
@@ -1517,11 +1517,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 121,
+                  "line": 120,
                   "column": 2
                 },
                 "end": {
-                  "line": 126,
+                  "line": 125,
                   "column": 3
                 }
               },
@@ -1537,11 +1537,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 133,
+                  "line": 132,
                   "column": 2
                 },
                 "end": {
-                  "line": 136,
+                  "line": 135,
                   "column": 3
                 }
               },
@@ -1557,11 +1557,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 143,
+                  "line": 142,
                   "column": 2
                 },
                 "end": {
-                  "line": 147,
+                  "line": 146,
                   "column": 3
                 }
               },
@@ -1577,11 +1577,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 154,
+                  "line": 153,
                   "column": 2
                 },
                 "end": {
-                  "line": 158,
+                  "line": 157,
                   "column": 3
                 }
               },
@@ -1597,11 +1597,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 164,
+                  "line": 163,
                   "column": 2
                 },
                 "end": {
-                  "line": 166,
+                  "line": 165,
                   "column": 3
                 }
               },
@@ -1619,11 +1619,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 175,
+                  "line": 174,
                   "column": 2
                 },
                 "end": {
-                  "line": 188,
+                  "line": 187,
                   "column": 3
                 }
               },
@@ -1651,7 +1651,7 @@
               "column": 0
             },
             "end": {
-              "line": 189,
+              "line": 188,
               "column": 1
             }
           },
@@ -1664,11 +1664,11 @@
               "description": "The previous value.",
               "sourceRange": {
                 "start": {
-                  "line": 98,
+                  "line": 97,
                   "column": 6
                 },
                 "end": {
-                  "line": 101,
+                  "line": 100,
                   "column": 7
                 }
               },
@@ -1680,11 +1680,11 @@
               "description": "",
               "sourceRange": {
                 "start": {
-                  "line": 102,
+                  "line": 101,
                   "column": 6
                 },
                 "end": {
-                  "line": 106,
+                  "line": 105,
                   "column": 7
                 }
               },
@@ -1718,11 +1718,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 84,
+                  "line": 83,
                   "column": 6
                 },
                 "end": {
-                  "line": 84,
+                  "line": 83,
                   "column": 27
                 }
               },
@@ -1739,11 +1739,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 88,
+                  "line": 87,
                   "column": 6
                 },
                 "end": {
-                  "line": 91,
+                  "line": 90,
                   "column": 7
                 }
               },
@@ -1761,11 +1761,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 95,
+                  "line": 94,
                   "column": 6
                 },
                 "end": {
-                  "line": 98,
+                  "line": 97,
                   "column": 7
                 }
               },
@@ -1783,11 +1783,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 102,
+                  "line": 101,
                   "column": 6
                 },
                 "end": {
-                  "line": 105,
+                  "line": 104,
                   "column": 7
                 }
               },
@@ -1805,11 +1805,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 109,
+                  "line": 108,
                   "column": 6
                 },
                 "end": {
-                  "line": 113,
+                  "line": 112,
                   "column": 7
                 }
               },
@@ -1828,11 +1828,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 117,
+                  "line": 116,
                   "column": 6
                 },
                 "end": {
-                  "line": 121,
+                  "line": 120,
                   "column": 7
                 }
               },
@@ -1851,11 +1851,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 125,
+                  "line": 124,
                   "column": 6
                 },
                 "end": {
-                  "line": 129,
+                  "line": 128,
                   "column": 7
                 }
               },
@@ -1874,11 +1874,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 133,
+                  "line": 132,
                   "column": 6
                 },
                 "end": {
-                  "line": 137,
+                  "line": 136,
                   "column": 7
                 }
               },
@@ -1898,11 +1898,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 144,
+                  "line": 143,
                   "column": 2
                 },
                 "end": {
-                  "line": 147,
+                  "line": 146,
                   "column": 3
                 }
               },
@@ -1918,11 +1918,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 153,
+                  "line": 152,
                   "column": 2
                 },
                 "end": {
-                  "line": 157,
+                  "line": 156,
                   "column": 3
                 }
               },
@@ -1938,11 +1938,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 163,
+                  "line": 162,
                   "column": 2
                 },
                 "end": {
-                  "line": 178,
+                  "line": 177,
                   "column": 3
                 }
               },
@@ -1958,11 +1958,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 185,
+                  "line": 184,
                   "column": 2
                 },
                 "end": {
-                  "line": 191,
+                  "line": 190,
                   "column": 3
                 }
               },
@@ -1982,11 +1982,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 193,
+                  "line": 192,
                   "column": 2
                 },
                 "end": {
-                  "line": 195,
+                  "line": 194,
                   "column": 3
                 }
               },
@@ -2003,7 +2003,7 @@
               "column": 0
             },
             "end": {
-              "line": 196,
+              "line": 195,
               "column": 1
             }
           },
@@ -2016,11 +2016,11 @@
               "description": "The previous value.",
               "sourceRange": {
                 "start": {
-                  "line": 84,
+                  "line": 83,
                   "column": 6
                 },
                 "end": {
-                  "line": 84,
+                  "line": 83,
                   "column": 27
                 }
               },
@@ -2032,11 +2032,11 @@
               "description": "Disable the input of **alpha** values.",
               "sourceRange": {
                 "start": {
-                  "line": 88,
+                  "line": 87,
                   "column": 6
                 },
                 "end": {
-                  "line": 91,
+                  "line": 90,
                   "column": 7
                 }
               },
@@ -2048,11 +2048,11 @@
               "description": "Allowed number o intervals on the **alpha** value",
               "sourceRange": {
                 "start": {
-                  "line": 95,
+                  "line": 94,
                   "column": 6
                 },
                 "end": {
-                  "line": 98,
+                  "line": 97,
                   "column": 7
                 }
               },
@@ -2064,11 +2064,11 @@
               "description": "Allowed number o intervals on the **hsl** value",
               "sourceRange": {
                 "start": {
-                  "line": 102,
+                  "line": 101,
                   "column": 6
                 },
                 "end": {
-                  "line": 105,
+                  "line": 104,
                   "column": 7
                 }
               },
@@ -2091,10 +2091,306 @@
           ]
         },
         {
+          "description": "`ColorInputElement` is an extendable base class for all inputs regarding color.\n\nIt handles the setting and converting the value from the input and from\noutside without causing stack overflows due to endless recursions.",
+          "summary": "",
+          "path": "src/input/color-picker-color-input.js",
+          "properties": [
+            {
+              "name": "_colorSupplier",
+              "type": "Function | null | undefined",
+              "description": "The supplier function that is called if one of the `_observedInputProperties` is\nchanged and the `value` property should be updated.\n\nShould return a valid [TinyColor](https://github.com/bgrins/TinyColor|TinyColor)\ncolor, e.g.:\n\n```() => tinycolor('rgb(255, 255, 255)')```",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 43,
+                  "column": 6
+                },
+                "end": {
+                  "line": 43,
+                  "column": 30
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Function"
+                }
+              }
+            },
+            {
+              "name": "_toInputConverter",
+              "type": "Function | null | undefined",
+              "description": "The converter function that is called if the `value` property changed and the inputs\nshould be updated.\n\nShould consume the [tinycolor](https://github.com/bgrins/TinyColor|TinyColor) `value`\nas an argument, e.g.:\n\n```value => console.info(value)```",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 55,
+                  "column": 6
+                },
+                "end": {
+                  "line": 55,
+                  "column": 33
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Function"
+                }
+              }
+            },
+            {
+              "name": "_observedInputProperties",
+              "type": "Array | null | undefined",
+              "description": "The properties that should trigger a call to `_colorSupplier` as the color has\nchanged from the input side.",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 62,
+                  "column": 6
+                },
+                "end": {
+                  "line": 65,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Array"
+                }
+              },
+              "defaultValue": "[]"
+            },
+            {
+              "name": "disableAlpha",
+              "type": "boolean | null | undefined",
+              "description": "Show and handle alpha values in the input.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 69,
+                  "column": 6
+                },
+                "end": {
+                  "line": 72,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            }
+          ],
+          "methods": [
+            {
+              "name": "ready",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 79,
+                  "column": 2
+                },
+                "end": {
+                  "line": 85,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            },
+            {
+              "name": "_updateInput",
+              "description": "Update the input with the new `value`.",
+              "privacy": "private",
+              "sourceRange": {
+                "start": {
+                  "line": 91,
+                  "column": 2
+                },
+                "end": {
+                  "line": 97,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            },
+            {
+              "name": "_updateColor",
+              "description": "Update the `value` from the input.",
+              "privacy": "private",
+              "sourceRange": {
+                "start": {
+                  "line": 103,
+                  "column": 2
+                },
+                "end": {
+                  "line": 120,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            }
+          ],
+          "staticMethods": [],
+          "demos": [],
+          "metadata": {},
+          "sourceRange": {
+            "start": {
+              "line": 20,
+              "column": 0
+            },
+            "end": {
+              "line": 121,
+              "column": 1
+            }
+          },
+          "privacy": "public",
+          "superclass": "HTMLElement",
+          "name": "Vaadin.ColorPicker.ColorInputElement",
+          "attributes": [
+            {
+              "name": "disable-alpha",
+              "description": "Show and handle alpha values in the input.",
+              "sourceRange": {
+                "start": {
+                  "line": 69,
+                  "column": 6
+                },
+                "end": {
+                  "line": 72,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            }
+          ],
+          "events": [],
+          "styling": {
+            "cssVariables": [],
+            "selectors": []
+          },
+          "slots": [],
+          "tagname": "color-input",
+          "mixins": [
+            "Vaadin.ElementMixin",
+            "Vaadin.ThemableMixin",
+            "Vaadin.DisabledPropertyMixin",
+            "Vaadin.ColorPicker.HasColorValueMixin"
+          ]
+        },
+        {
           "description": "`<hex-input>` is an element that allows to input **hex** color codes.",
           "summary": "",
           "path": "src/input/color-picker-hex-input.js",
           "properties": [
+            {
+              "name": "_colorSupplier",
+              "type": "Function | null | undefined",
+              "description": "The supplier function that is called if one of the `_observedInputProperties` is\nchanged and the `value` property should be updated.\n\nShould return a valid [TinyColor](https://github.com/bgrins/TinyColor|TinyColor)\ncolor, e.g.:\n\n```() => tinycolor('rgb(255, 255, 255)')```",
+              "privacy": "protected",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 43,
+                  "column": 6
+                },
+                "end": {
+                  "line": 43,
+                  "column": 30
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Function"
+                }
+              },
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
+            {
+              "name": "_toInputConverter",
+              "type": "Function | null | undefined",
+              "description": "The converter function that is called if the `value` property changed and the inputs\nshould be updated.\n\nShould consume the [tinycolor](https://github.com/bgrins/TinyColor|TinyColor) `value`\nas an argument, e.g.:\n\n```value => console.info(value)```",
+              "privacy": "protected",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 55,
+                  "column": 6
+                },
+                "end": {
+                  "line": 55,
+                  "column": 33
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Function"
+                }
+              },
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
+            {
+              "name": "_observedInputProperties",
+              "type": "Array | null | undefined",
+              "description": "The properties that should trigger a call to `_colorSupplier` as the color has\nchanged from the input side.",
+              "privacy": "protected",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 62,
+                  "column": 6
+                },
+                "end": {
+                  "line": 65,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Array"
+                }
+              },
+              "defaultValue": "[]",
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
+            {
+              "name": "disableAlpha",
+              "type": "boolean | null | undefined",
+              "description": "Show and handle alpha values in the input.",
+              "privacy": "public",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 69,
+                  "column": 6
+                },
+                "end": {
+                  "line": 72,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false",
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
             {
               "name": "hex",
               "type": "string | null | undefined",
@@ -2120,6 +2416,72 @@
             }
           ],
           "methods": [
+            {
+              "name": "ready",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 79,
+                  "column": 2
+                },
+                "end": {
+                  "line": 85,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              },
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
+            {
+              "name": "_updateInput",
+              "description": "Update the input with the new `value`.",
+              "privacy": "private",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 91,
+                  "column": 2
+                },
+                "end": {
+                  "line": 97,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              },
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
+            {
+              "name": "_updateColor",
+              "description": "Update the `value` from the input.",
+              "privacy": "private",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 103,
+                  "column": 2
+                },
+                "end": {
+                  "line": 120,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              },
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
             {
               "name": "_getPattern",
               "description": "Returns the input validation pattern.",
@@ -2159,6 +2521,24 @@
           "superclass": "Vaadin.ColorPicker.ColorInputElement",
           "name": "Vaadin.ColorPicker.HexInputElement",
           "attributes": [
+            {
+              "name": "disable-alpha",
+              "description": "Show and handle alpha values in the input.",
+              "sourceRange": {
+                "file": "color-picker-color-input.js",
+                "start": {
+                  "line": 69,
+                  "column": 6
+                },
+                "end": {
+                  "line": 72,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined",
+              "inheritedFrom": "Vaadin.ColorPicker.ColorInputElement"
+            },
             {
               "name": "hex",
               "description": "The color value as hex without the leading `#`.\nIncludes alpha value if enabled (e.g. `#FF00FF00`).",
@@ -2203,11 +2583,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 63,
+                  "line": 64,
                   "column": 12
                 },
                 "end": {
-                  "line": 67,
+                  "line": 68,
                   "column": 13
                 }
               },
@@ -2226,11 +2606,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 71,
+                  "line": 72,
                   "column": 12
                 },
                 "end": {
-                  "line": 75,
+                  "line": 76,
                   "column": 13
                 }
               },
@@ -2249,11 +2629,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 79,
+                  "line": 80,
                   "column": 12
                 },
                 "end": {
-                  "line": 83,
+                  "line": 84,
                   "column": 13
                 }
               },
@@ -2272,11 +2652,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 87,
+                  "line": 88,
                   "column": 12
                 },
                 "end": {
-                  "line": 91,
+                  "line": 92,
                   "column": 13
                 }
               },
@@ -2295,11 +2675,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 95,
+                  "line": 96,
                   "column": 12
                 },
                 "end": {
-                  "line": 98,
+                  "line": 99,
                   "column": 13
                 }
               },
@@ -2317,11 +2697,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 10,
+              "line": 12,
               "column": 0
             },
             "end": {
-              "line": 131,
+              "line": 132,
               "column": 7
             }
           },
@@ -2334,11 +2714,11 @@
               "description": "The current red value in the range `[0 - 255]`.",
               "sourceRange": {
                 "start": {
-                  "line": 63,
+                  "line": 64,
                   "column": 12
                 },
                 "end": {
-                  "line": 67,
+                  "line": 68,
                   "column": 13
                 }
               },
@@ -2350,11 +2730,11 @@
               "description": "The current green value in the range `[0 - 255]`.",
               "sourceRange": {
                 "start": {
-                  "line": 71,
+                  "line": 72,
                   "column": 12
                 },
                 "end": {
-                  "line": 75,
+                  "line": 76,
                   "column": 13
                 }
               },
@@ -2366,11 +2746,11 @@
               "description": "The current blue value in the range `[0 - 255]`.",
               "sourceRange": {
                 "start": {
-                  "line": 79,
+                  "line": 80,
                   "column": 12
                 },
                 "end": {
-                  "line": 83,
+                  "line": 84,
                   "column": 13
                 }
               },
@@ -2382,11 +2762,11 @@
               "description": "The current alpha in the range `[0 - 1]`.",
               "sourceRange": {
                 "start": {
-                  "line": 87,
+                  "line": 88,
                   "column": 12
                 },
                 "end": {
-                  "line": 91,
+                  "line": 92,
                   "column": 13
                 }
               },
@@ -2398,11 +2778,11 @@
               "description": "Allowed number o intervals on the **alpha** value",
               "sourceRange": {
                 "start": {
-                  "line": 95,
+                  "line": 96,
                   "column": 12
                 },
                 "end": {
-                  "line": 98,
+                  "line": 99,
                   "column": 13
                 }
               },
@@ -2455,11 +2835,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 68,
+                  "line": 69,
                   "column": 6
                 },
                 "end": {
-                  "line": 72,
+                  "line": 73,
                   "column": 7
                 }
               },
@@ -2478,11 +2858,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 76,
+                  "line": 77,
                   "column": 6
                 },
                 "end": {
-                  "line": 80,
+                  "line": 81,
                   "column": 7
                 }
               },
@@ -2501,11 +2881,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 84,
+                  "line": 85,
                   "column": 6
                 },
                 "end": {
-                  "line": 88,
+                  "line": 89,
                   "column": 7
                 }
               },
@@ -2524,11 +2904,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 92,
+                  "line": 93,
                   "column": 6
                 },
                 "end": {
-                  "line": 96,
+                  "line": 97,
                   "column": 7
                 }
               },
@@ -2547,11 +2927,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 100,
+                  "line": 101,
                   "column": 6
                 },
                 "end": {
-                  "line": 103,
+                  "line": 104,
                   "column": 7
                 }
               },
@@ -2569,11 +2949,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 107,
+                  "line": 108,
                   "column": 6
                 },
                 "end": {
-                  "line": 110,
+                  "line": 111,
                   "column": 7
                 }
               },
@@ -2591,11 +2971,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 10,
+              "line": 12,
               "column": 0
             },
             "end": {
-              "line": 143,
+              "line": 144,
               "column": 1
             }
           },
@@ -2608,11 +2988,11 @@
               "description": "The current hue in the range `[0 - 360]`.",
               "sourceRange": {
                 "start": {
-                  "line": 68,
+                  "line": 69,
                   "column": 6
                 },
                 "end": {
-                  "line": 72,
+                  "line": 73,
                   "column": 7
                 }
               },
@@ -2624,11 +3004,11 @@
               "description": "The current saturation in the range `[0 - 100]`.",
               "sourceRange": {
                 "start": {
-                  "line": 76,
+                  "line": 77,
                   "column": 6
                 },
                 "end": {
-                  "line": 80,
+                  "line": 81,
                   "column": 7
                 }
               },
@@ -2640,11 +3020,11 @@
               "description": "The current saturation in the range `[0 - 100]`.",
               "sourceRange": {
                 "start": {
-                  "line": 84,
+                  "line": 85,
                   "column": 6
                 },
                 "end": {
-                  "line": 88,
+                  "line": 89,
                   "column": 7
                 }
               },
@@ -2656,11 +3036,11 @@
               "description": "The current alpha in the range `[0 - 1]`.",
               "sourceRange": {
                 "start": {
-                  "line": 92,
+                  "line": 93,
                   "column": 6
                 },
                 "end": {
-                  "line": 96,
+                  "line": 97,
                   "column": 7
                 }
               },
@@ -2672,11 +3052,11 @@
               "description": "Allowed number o intervals on the **alpha** value",
               "sourceRange": {
                 "start": {
-                  "line": 100,
+                  "line": 101,
                   "column": 6
                 },
                 "end": {
-                  "line": 103,
+                  "line": 104,
                   "column": 7
                 }
               },
@@ -2688,11 +3068,11 @@
               "description": "Allowed number o intervals on the **hsl** value",
               "sourceRange": {
                 "start": {
-                  "line": 107,
+                  "line": 108,
                   "column": 6
                 },
                 "end": {
-                  "line": 110,
+                  "line": 111,
                   "column": 7
                 }
               },
@@ -2745,11 +3125,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 66,
+                  "line": 65,
                   "column": 6
                 },
                 "end": {
-                  "line": 69,
+                  "line": 68,
                   "column": 7
                 }
               },
@@ -2767,11 +3147,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 73,
+                  "line": 72,
                   "column": 6
                 },
                 "end": {
-                  "line": 76,
+                  "line": 75,
                   "column": 7
                 }
               },
@@ -2789,11 +3169,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 80,
+                  "line": 79,
                   "column": 6
                 },
                 "end": {
-                  "line": 83,
+                  "line": 82,
                   "column": 7
                 }
               },
@@ -2811,11 +3191,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 87,
+                  "line": 86,
                   "column": 6
                 },
                 "end": {
-                  "line": 90,
+                  "line": 89,
                   "column": 7
                 }
               },
@@ -2833,11 +3213,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 94,
+                  "line": 93,
                   "column": 6
                 },
                 "end": {
-                  "line": 97,
+                  "line": 96,
                   "column": 7
                 }
               },
@@ -2855,11 +3235,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 101,
+                  "line": 100,
                   "column": 6
                 },
                 "end": {
-                  "line": 104,
+                  "line": 103,
                   "column": 7
                 }
               },
@@ -2877,11 +3257,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 108,
+                  "line": 107,
                   "column": 6
                 },
                 "end": {
-                  "line": 111,
+                  "line": 110,
                   "column": 7
                 }
               },
@@ -2899,11 +3279,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 115,
+                  "line": 114,
                   "column": 6
                 },
                 "end": {
-                  "line": 119,
+                  "line": 118,
                   "column": 7
                 }
               },
@@ -2922,11 +3302,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 120,
+                  "line": 119,
                   "column": 6
                 },
                 "end": {
-                  "line": 123,
+                  "line": 122,
                   "column": 7
                 }
               },
@@ -2945,11 +3325,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 127,
+                  "line": 126,
                   "column": 2
                 },
                 "end": {
-                  "line": 138,
+                  "line": 137,
                   "column": 3
                 }
               },
@@ -2965,11 +3345,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 140,
+                  "line": 139,
                   "column": 2
                 },
                 "end": {
-                  "line": 144,
+                  "line": 143,
                   "column": 3
                 }
               },
@@ -2992,11 +3372,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 146,
+                  "line": 145,
                   "column": 2
                 },
                 "end": {
-                  "line": 148,
+                  "line": 147,
                   "column": 3
                 }
               },
@@ -3016,7 +3396,7 @@
               "column": 0
             },
             "end": {
-              "line": 149,
+              "line": 148,
               "column": 1
             }
           },
@@ -3029,11 +3409,11 @@
               "description": "Pin all inputs visible or show them in a carousel.",
               "sourceRange": {
                 "start": {
-                  "line": 66,
+                  "line": 65,
                   "column": 6
                 },
                 "end": {
-                  "line": 69,
+                  "line": 68,
                   "column": 7
                 }
               },
@@ -3045,11 +3425,11 @@
               "description": "Disable the input of color in the **hex** format.",
               "sourceRange": {
                 "start": {
-                  "line": 73,
+                  "line": 72,
                   "column": 6
                 },
                 "end": {
-                  "line": 76,
+                  "line": 75,
                   "column": 7
                 }
               },
@@ -3061,11 +3441,11 @@
               "description": "Disable the input of color in the **rgb(a)** format.",
               "sourceRange": {
                 "start": {
-                  "line": 80,
+                  "line": 79,
                   "column": 6
                 },
                 "end": {
-                  "line": 83,
+                  "line": 82,
                   "column": 7
                 }
               },
@@ -3077,11 +3457,11 @@
               "description": "Disable the input of color in the **hsl(a)** format.",
               "sourceRange": {
                 "start": {
-                  "line": 87,
+                  "line": 86,
                   "column": 6
                 },
                 "end": {
-                  "line": 90,
+                  "line": 89,
                   "column": 7
                 }
               },
@@ -3093,11 +3473,11 @@
               "description": "Disable the input of **alpha** values.",
               "sourceRange": {
                 "start": {
-                  "line": 94,
+                  "line": 93,
                   "column": 6
                 },
                 "end": {
-                  "line": 97,
+                  "line": 96,
                   "column": 7
                 }
               },
@@ -3109,11 +3489,11 @@
               "description": "Allowed number o intervals on the **alpha** value",
               "sourceRange": {
                 "start": {
-                  "line": 101,
+                  "line": 100,
                   "column": 6
                 },
                 "end": {
-                  "line": 104,
+                  "line": 103,
                   "column": 7
                 }
               },
@@ -3125,11 +3505,11 @@
               "description": "Allowed number o intervals on the **hsl** value",
               "sourceRange": {
                 "start": {
-                  "line": 108,
+                  "line": 107,
                   "column": 6
                 },
                 "end": {
-                  "line": 111,
+                  "line": 110,
                   "column": 7
                 }
               },
@@ -3141,11 +3521,11 @@
               "description": "The format that was last modified.",
               "sourceRange": {
                 "start": {
-                  "line": 115,
+                  "line": 114,
                   "column": 6
                 },
                 "end": {
-                  "line": 119,
+                  "line": 118,
                   "column": 7
                 }
               },
@@ -3167,1036 +3547,6 @@
           },
           "slots": [],
           "tagname": "color-picker-input",
-          "mixins": [
-            "Vaadin.ElementMixin",
-            "Vaadin.ThemableMixin",
-            "Vaadin.DisabledPropertyMixin",
-            "Vaadin.ColorPicker.HasColorValueMixin"
-          ]
-        },
-        {
-          "description": "`<color-picker-palette>` shows a set color palettes from which a color can be selected.",
-          "summary": "",
-          "path": "src/palette/color-picker-color-picker-palette.js",
-          "properties": [
-            {
-              "name": "palettes",
-              "type": "Array | null | undefined",
-              "description": "The palettes to show whereas each palette should be an array of\n[TinyColor](https://github.com/bgrins/TinyColor|TinyColor) colors.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 57,
-                  "column": 6
-                },
-                "end": {
-                  "line": 57,
-                  "column": 21
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Array"
-                }
-              }
-            },
-            {
-              "name": "pinned",
-              "type": "boolean | null | undefined",
-              "description": "Pin all palettes visible or show them in a carousel.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 61,
-                  "column": 6
-                },
-                "end": {
-                  "line": 64,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            }
-          ],
-          "methods": [],
-          "staticMethods": [],
-          "demos": [],
-          "metadata": {},
-          "sourceRange": {
-            "start": {
-              "line": 17,
-              "column": 0
-            },
-            "end": {
-              "line": 67,
-              "column": 1
-            }
-          },
-          "privacy": "public",
-          "superclass": "HTMLElement",
-          "name": "Vaadin.ColorPicker.ColorPickerPaletteElement",
-          "attributes": [
-            {
-              "name": "palettes",
-              "description": "The palettes to show whereas each palette should be an array of\n[TinyColor](https://github.com/bgrins/TinyColor|TinyColor) colors.",
-              "sourceRange": {
-                "start": {
-                  "line": 57,
-                  "column": 6
-                },
-                "end": {
-                  "line": 57,
-                  "column": 21
-                }
-              },
-              "metadata": {},
-              "type": "Array | null | undefined"
-            },
-            {
-              "name": "pinned",
-              "description": "Pin all palettes visible or show them in a carousel.",
-              "sourceRange": {
-                "start": {
-                  "line": 61,
-                  "column": 6
-                },
-                "end": {
-                  "line": 64,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            }
-          ],
-          "events": [],
-          "styling": {
-            "cssVariables": [],
-            "selectors": []
-          },
-          "slots": [],
-          "tagname": "color-picker-palette",
-          "mixins": [
-            "Vaadin.ElementMixin",
-            "Vaadin.ThemableMixin",
-            "Vaadin.DisabledPropertyMixin",
-            "Vaadin.ColorPicker.HasColorValueMixin"
-          ]
-        },
-        {
-          "description": "`<color-picker>` allows to select a color using sliders, inputs or palettes.\n\n```\n<color-picker></color-picker>\n```",
-          "summary": "",
-          "path": "src/color-picker.js",
-          "properties": [
-            {
-              "name": "disableHex",
-              "type": "boolean | null | undefined",
-              "description": "Set to true to disable **hex** input.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 87,
-                  "column": 6
-                },
-                "end": {
-                  "line": 90,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            },
-            {
-              "name": "disableRgb",
-              "type": "boolean | null | undefined",
-              "description": "Set to true to disable **rgb** input.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 94,
-                  "column": 6
-                },
-                "end": {
-                  "line": 97,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            },
-            {
-              "name": "disableHsl",
-              "type": "boolean | null | undefined",
-              "description": "Set to true to disable **hsl** input.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 101,
-                  "column": 6
-                },
-                "end": {
-                  "line": 104,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            },
-            {
-              "name": "disableAlpha",
-              "type": "boolean | null | undefined",
-              "description": "Set to true to disable **alpha** input and **alpha** slider.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 108,
-                  "column": 6
-                },
-                "end": {
-                  "line": 111,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            },
-            {
-              "name": "pinnedInputs",
-              "type": "boolean | null | undefined",
-              "description": "Set to true to have all inputs visible all the time instead of having a switch button.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 115,
-                  "column": 6
-                },
-                "end": {
-                  "line": 118,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            },
-            {
-              "name": "pinnedPalettes",
-              "type": "boolean | null | undefined",
-              "description": "Set to true to have all palettes visible all the time instead of having a switch button.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 122,
-                  "column": 6
-                },
-                "end": {
-                  "line": 125,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            },
-            {
-              "name": "value",
-              "type": "string | null | undefined",
-              "description": "The color value as string. If the user switches the input or changes an input, the value will be\nformatted related to the input. Should be a valid CSS color code or CSS Custom Property.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 130,
-                  "column": 6
-                },
-                "end": {
-                  "line": 134,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "notify": true,
-                  "observer": "\"_onValueChanged\"",
-                  "attributeType": "String"
-                }
-              }
-            },
-            {
-              "name": "previousValue",
-              "type": "string | null | undefined",
-              "description": "The value that should be used as previous value. Should be a valid CSS color code or CSS Custom Property.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 138,
-                  "column": 6
-                },
-                "end": {
-                  "line": 141,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "observer": "\"_onPreviousValueChanged\"",
-                  "attributeType": "String"
-                }
-              }
-            },
-            {
-              "name": "lastUsedFormat",
-              "type": "string | null | undefined",
-              "description": "The format that the user used last as input or by switching inputs. One of `hex`,`rgb`,`hsl`.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 145,
-                  "column": 6
-                },
-                "end": {
-                  "line": 149,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "notify": true,
-                  "observer": "\"_onValueInternalChanged\"",
-                  "attributeType": "String"
-                }
-              }
-            },
-            {
-              "name": "palettes",
-              "type": "Array | null | undefined",
-              "description": "The palettes to be shown. Should be an Array of Arrays, whereas the inner Arrays should contain valid\nCSS color codes or CSS Custom Properties.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 154,
-                  "column": 6
-                },
-                "end": {
-                  "line": 157,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "observer": "\"_onPalettesChanged\"",
-                  "attributeType": "Array"
-                }
-              }
-            },
-            {
-              "name": "stepAlpha",
-              "type": "number | null | undefined",
-              "description": "The precision step to use for alpha values.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 161,
-                  "column": 6
-                },
-                "end": {
-                  "line": 164,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Number"
-                }
-              },
-              "defaultValue": "0.01"
-            },
-            {
-              "name": "stepHsl",
-              "type": "number | null | undefined",
-              "description": "The precision step to use for hsl values.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 168,
-                  "column": 6
-                },
-                "end": {
-                  "line": 171,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Number"
-                }
-              },
-              "defaultValue": "1"
-            },
-            {
-              "name": "_valueInternal",
-              "type": "Object | null | undefined",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 172,
-                  "column": 6
-                },
-                "end": {
-                  "line": 175,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "observer": "\"_onValueInternalChanged\"",
-                  "attributeType": "Object"
-                }
-              }
-            },
-            {
-              "name": "_previousValueInternal",
-              "type": "Object | null | undefined",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 176,
-                  "column": 6
-                },
-                "end": {
-                  "line": 176,
-                  "column": 36
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Object"
-                }
-              }
-            },
-            {
-              "name": "_palettesInternal",
-              "type": "Array | null | undefined",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 177,
-                  "column": 6
-                },
-                "end": {
-                  "line": 180,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Array"
-                }
-              },
-              "defaultValue": "[]"
-            }
-          ],
-          "methods": [
-            {
-              "name": "ready",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 184,
-                  "column": 2
-                },
-                "end": {
-                  "line": 191,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            },
-            {
-              "name": "_showPalettes",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 193,
-                  "column": 2
-                },
-                "end": {
-                  "line": 195,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": []
-            },
-            {
-              "name": "_showInputs",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 197,
-                  "column": 2
-                },
-                "end": {
-                  "line": 199,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": []
-            },
-            {
-              "name": "_onValueChanged",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 201,
-                  "column": 2
-                },
-                "end": {
-                  "line": 207,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            },
-            {
-              "name": "_onValueInternalChanged",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 209,
-                  "column": 2
-                },
-                "end": {
-                  "line": 218,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            },
-            {
-              "name": "_onPreviousValueChanged",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 220,
-                  "column": 2
-                },
-                "end": {
-                  "line": 224,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            },
-            {
-              "name": "_onPalettesChanged",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 226,
-                  "column": 2
-                },
-                "end": {
-                  "line": 231,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            }
-          ],
-          "staticMethods": [],
-          "demos": [
-            {
-              "url": "demo/index.html",
-              "description": ""
-            }
-          ],
-          "metadata": {},
-          "sourceRange": {
-            "start": {
-              "line": 23,
-              "column": 0
-            },
-            "end": {
-              "line": 232,
-              "column": 1
-            }
-          },
-          "privacy": "public",
-          "superclass": "HTMLElement",
-          "name": "Vaadin.ColorPicker.ColorPicker",
-          "attributes": [
-            {
-              "name": "disable-hex",
-              "description": "Set to true to disable **hex** input.",
-              "sourceRange": {
-                "start": {
-                  "line": 87,
-                  "column": 6
-                },
-                "end": {
-                  "line": 90,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            },
-            {
-              "name": "disable-rgb",
-              "description": "Set to true to disable **rgb** input.",
-              "sourceRange": {
-                "start": {
-                  "line": 94,
-                  "column": 6
-                },
-                "end": {
-                  "line": 97,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            },
-            {
-              "name": "disable-hsl",
-              "description": "Set to true to disable **hsl** input.",
-              "sourceRange": {
-                "start": {
-                  "line": 101,
-                  "column": 6
-                },
-                "end": {
-                  "line": 104,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            },
-            {
-              "name": "disable-alpha",
-              "description": "Set to true to disable **alpha** input and **alpha** slider.",
-              "sourceRange": {
-                "start": {
-                  "line": 108,
-                  "column": 6
-                },
-                "end": {
-                  "line": 111,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            },
-            {
-              "name": "pinned-inputs",
-              "description": "Set to true to have all inputs visible all the time instead of having a switch button.",
-              "sourceRange": {
-                "start": {
-                  "line": 115,
-                  "column": 6
-                },
-                "end": {
-                  "line": 118,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            },
-            {
-              "name": "pinned-palettes",
-              "description": "Set to true to have all palettes visible all the time instead of having a switch button.",
-              "sourceRange": {
-                "start": {
-                  "line": 122,
-                  "column": 6
-                },
-                "end": {
-                  "line": 125,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            },
-            {
-              "name": "value",
-              "description": "The color value as string. If the user switches the input or changes an input, the value will be\nformatted related to the input. Should be a valid CSS color code or CSS Custom Property.",
-              "sourceRange": {
-                "start": {
-                  "line": 130,
-                  "column": 6
-                },
-                "end": {
-                  "line": 134,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "string | null | undefined"
-            },
-            {
-              "name": "previous-value",
-              "description": "The value that should be used as previous value. Should be a valid CSS color code or CSS Custom Property.",
-              "sourceRange": {
-                "start": {
-                  "line": 138,
-                  "column": 6
-                },
-                "end": {
-                  "line": 141,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "string | null | undefined"
-            },
-            {
-              "name": "last-used-format",
-              "description": "The format that the user used last as input or by switching inputs. One of `hex`,`rgb`,`hsl`.",
-              "sourceRange": {
-                "start": {
-                  "line": 145,
-                  "column": 6
-                },
-                "end": {
-                  "line": 149,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "string | null | undefined"
-            },
-            {
-              "name": "palettes",
-              "description": "The palettes to be shown. Should be an Array of Arrays, whereas the inner Arrays should contain valid\nCSS color codes or CSS Custom Properties.",
-              "sourceRange": {
-                "start": {
-                  "line": 154,
-                  "column": 6
-                },
-                "end": {
-                  "line": 157,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "Array | null | undefined"
-            },
-            {
-              "name": "step-alpha",
-              "description": "The precision step to use for alpha values.",
-              "sourceRange": {
-                "start": {
-                  "line": 161,
-                  "column": 6
-                },
-                "end": {
-                  "line": 164,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "number | null | undefined"
-            },
-            {
-              "name": "step-hsl",
-              "description": "The precision step to use for hsl values.",
-              "sourceRange": {
-                "start": {
-                  "line": 168,
-                  "column": 6
-                },
-                "end": {
-                  "line": 171,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "number | null | undefined"
-            }
-          ],
-          "events": [
-            {
-              "type": "CustomEvent",
-              "name": "value-changed",
-              "description": "Fired when the `value` property changes.",
-              "metadata": {}
-            },
-            {
-              "type": "CustomEvent",
-              "name": "last-used-format-changed",
-              "description": "Fired when the `lastUsedFormat` property changes.",
-              "metadata": {}
-            }
-          ],
-          "styling": {
-            "cssVariables": [],
-            "selectors": []
-          },
-          "slots": [],
-          "tagname": "color-picker",
-          "mixins": [
-            "Vaadin.ElementMixin",
-            "Vaadin.ThemableMixin",
-            "Vaadin.DisabledPropertyMixin"
-          ]
-        },
-        {
-          "description": "`ColorInputElement` is an extendable base class for all inputs regarding color.\n\nIt handles the setting and converting the value from the input and from\noutside without causing stack overflows due to endless recursions.",
-          "summary": "",
-          "path": "src/input/color-picker-color-input.js",
-          "properties": [
-            {
-              "name": "_colorSupplier",
-              "type": "Function | null | undefined",
-              "description": "The supplier function that is called if one of the `_observedInputProperties` is\nchanged and the `value` property should be updated.\n\nShould return a valid [TinyColor](https://github.com/bgrins/TinyColor|TinyColor)\ncolor, e.g.:\n\n```() => tinycolor('rgb(255, 255, 255)')```",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 44,
-                  "column": 6
-                },
-                "end": {
-                  "line": 44,
-                  "column": 30
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Function"
-                }
-              }
-            },
-            {
-              "name": "_toInputConverter",
-              "type": "Function | null | undefined",
-              "description": "The converter function that is called if the `value` property changed and the inputs\nshould be updated.\n\nShould consume the [tinycolor](https://github.com/bgrins/TinyColor|TinyColor) `value`\nas an argument, e.g.:\n\n```value => console.info(value)```",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 56,
-                  "column": 6
-                },
-                "end": {
-                  "line": 56,
-                  "column": 33
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Function"
-                }
-              }
-            },
-            {
-              "name": "_observedInputProperties",
-              "type": "Array | null | undefined",
-              "description": "The properties that should trigger a call to `_colorSupplier` as the color has\nchanged from the input side.",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 63,
-                  "column": 6
-                },
-                "end": {
-                  "line": 66,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Array"
-                }
-              },
-              "defaultValue": "[]"
-            },
-            {
-              "name": "disableAlpha",
-              "type": "boolean | null | undefined",
-              "description": "Show and handle alpha values in the input.",
-              "privacy": "public",
-              "sourceRange": {
-                "start": {
-                  "line": 70,
-                  "column": 6
-                },
-                "end": {
-                  "line": 73,
-                  "column": 7
-                }
-              },
-              "metadata": {
-                "polymer": {
-                  "attributeType": "Boolean"
-                }
-              },
-              "defaultValue": "false"
-            }
-          ],
-          "methods": [
-            {
-              "name": "ready",
-              "description": "",
-              "privacy": "protected",
-              "sourceRange": {
-                "start": {
-                  "line": 80,
-                  "column": 2
-                },
-                "end": {
-                  "line": 86,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            },
-            {
-              "name": "_updateInput",
-              "description": "Update the input with the new `value`.",
-              "privacy": "private",
-              "sourceRange": {
-                "start": {
-                  "line": 92,
-                  "column": 2
-                },
-                "end": {
-                  "line": 98,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            },
-            {
-              "name": "_updateColor",
-              "description": "Update the `value` from the input.",
-              "privacy": "private",
-              "sourceRange": {
-                "start": {
-                  "line": 104,
-                  "column": 2
-                },
-                "end": {
-                  "line": 121,
-                  "column": 3
-                }
-              },
-              "metadata": {},
-              "params": [],
-              "return": {
-                "type": "void"
-              }
-            }
-          ],
-          "staticMethods": [],
-          "demos": [],
-          "metadata": {},
-          "sourceRange": {
-            "start": {
-              "line": 20,
-              "column": 0
-            },
-            "end": {
-              "line": 122,
-              "column": 1
-            }
-          },
-          "privacy": "public",
-          "superclass": "HTMLElement",
-          "name": "Vaadin.ColorPicker.ColorInputElement",
-          "attributes": [
-            {
-              "name": "disable-alpha",
-              "description": "Show and handle alpha values in the input.",
-              "sourceRange": {
-                "start": {
-                  "line": 70,
-                  "column": 6
-                },
-                "end": {
-                  "line": 73,
-                  "column": 7
-                }
-              },
-              "metadata": {},
-              "type": "boolean | null | undefined"
-            }
-          ],
-          "events": [],
-          "styling": {
-            "cssVariables": [],
-            "selectors": []
-          },
-          "slots": [],
-          "tagname": "color-input",
           "mixins": [
             "Vaadin.ElementMixin",
             "Vaadin.ThemableMixin",
@@ -4361,11 +3711,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 32,
+                  "line": 33,
                   "column": 6
                 },
                 "end": {
-                  "line": 35,
+                  "line": 36,
                   "column": 7
                 }
               },
@@ -4384,11 +3734,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 54,
+                  "line": 55,
                   "column": 2
                 },
                 "end": {
-                  "line": 57,
+                  "line": 58,
                   "column": 3
                 }
               },
@@ -4572,11 +3922,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 63,
+                  "line": 64,
                   "column": 2
                 },
                 "end": {
-                  "line": 67,
+                  "line": 68,
                   "column": 3
                 }
               },
@@ -4592,11 +3942,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 73,
+                  "line": 74,
                   "column": 2
                 },
                 "end": {
-                  "line": 86,
+                  "line": 87,
                   "column": 3
                 }
               },
@@ -4612,16 +3962,16 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 16,
+              "line": 17,
               "column": 0
             },
             "end": {
-              "line": 87,
+              "line": 88,
               "column": 1
             }
           },
           "privacy": "public",
-          "superclass": "Vaadin.CheckboxElement",
+          "superclass": "CheckboxElement",
           "name": "Vaadin.ColorPicker.ColorCheckboxElement",
           "attributes": [
             {
@@ -4683,11 +4033,11 @@
               "description": "The color for the checkbox in the form of a\n[TinyColor](https://github.com/bgrins/TinyColor|TinyColor) color.",
               "sourceRange": {
                 "start": {
-                  "line": 32,
+                  "line": 33,
                   "column": 6
                 },
                 "end": {
-                  "line": 35,
+                  "line": 36,
                   "column": 7
                 }
               },
@@ -4748,11 +4098,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 65,
+                  "line": 64,
                   "column": 6
                 },
                 "end": {
-                  "line": 65,
+                  "line": 64,
                   "column": 20
                 }
               },
@@ -4770,11 +4120,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 74,
+                  "line": 73,
                   "column": 2
                 },
                 "end": {
-                  "line": 76,
+                  "line": 75,
                   "column": 3
                 }
               },
@@ -4795,11 +4145,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 84,
+                  "line": 83,
                   "column": 2
                 },
                 "end": {
-                  "line": 86,
+                  "line": 85,
                   "column": 3
                 }
               },
@@ -4823,7 +4173,7 @@
               "column": 0
             },
             "end": {
-              "line": 87,
+              "line": 86,
               "column": 1
             }
           },
@@ -4836,11 +4186,11 @@
               "description": "The palette of colors to show. Each color in the array should be a\n[TinyColor](https://github.com/bgrins/TinyColor|TinyColor) color.",
               "sourceRange": {
                 "start": {
-                  "line": 65,
+                  "line": 64,
                   "column": 6
                 },
                 "end": {
-                  "line": 65,
+                  "line": 64,
                   "column": 20
                 }
               },
@@ -4860,6 +4210,834 @@
             "Vaadin.ThemableMixin",
             "Vaadin.DisabledPropertyMixin",
             "Vaadin.ColorPicker.HasColorValueMixin"
+          ]
+        },
+        {
+          "description": "`<color-picker-palette>` shows a set color palettes from which a color can be selected.",
+          "summary": "",
+          "path": "src/palette/color-picker-color-picker-palette.js",
+          "properties": [
+            {
+              "name": "palettes",
+              "type": "Array | null | undefined",
+              "description": "The palettes to show whereas each palette should be an array of\n[TinyColor](https://github.com/bgrins/TinyColor|TinyColor) colors.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 56,
+                  "column": 6
+                },
+                "end": {
+                  "line": 56,
+                  "column": 21
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Array"
+                }
+              }
+            },
+            {
+              "name": "pinned",
+              "type": "boolean | null | undefined",
+              "description": "Pin all palettes visible or show them in a carousel.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 60,
+                  "column": 6
+                },
+                "end": {
+                  "line": 63,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            }
+          ],
+          "methods": [],
+          "staticMethods": [],
+          "demos": [],
+          "metadata": {},
+          "sourceRange": {
+            "start": {
+              "line": 17,
+              "column": 0
+            },
+            "end": {
+              "line": 66,
+              "column": 1
+            }
+          },
+          "privacy": "public",
+          "superclass": "HTMLElement",
+          "name": "Vaadin.ColorPicker.ColorPickerPaletteElement",
+          "attributes": [
+            {
+              "name": "palettes",
+              "description": "The palettes to show whereas each palette should be an array of\n[TinyColor](https://github.com/bgrins/TinyColor|TinyColor) colors.",
+              "sourceRange": {
+                "start": {
+                  "line": 56,
+                  "column": 6
+                },
+                "end": {
+                  "line": 56,
+                  "column": 21
+                }
+              },
+              "metadata": {},
+              "type": "Array | null | undefined"
+            },
+            {
+              "name": "pinned",
+              "description": "Pin all palettes visible or show them in a carousel.",
+              "sourceRange": {
+                "start": {
+                  "line": 60,
+                  "column": 6
+                },
+                "end": {
+                  "line": 63,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            }
+          ],
+          "events": [],
+          "styling": {
+            "cssVariables": [],
+            "selectors": []
+          },
+          "slots": [],
+          "tagname": "color-picker-palette",
+          "mixins": [
+            "Vaadin.ElementMixin",
+            "Vaadin.ThemableMixin",
+            "Vaadin.DisabledPropertyMixin",
+            "Vaadin.ColorPicker.HasColorValueMixin"
+          ]
+        },
+        {
+          "description": "`<color-picker>` allows to select a color using sliders, inputs or palettes.\n\n```\n<color-picker></color-picker>\n```",
+          "summary": "",
+          "path": "src/color-picker.js",
+          "properties": [
+            {
+              "name": "disableHex",
+              "type": "boolean | null | undefined",
+              "description": "Set to true to disable **hex** input.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 86,
+                  "column": 6
+                },
+                "end": {
+                  "line": 89,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            },
+            {
+              "name": "disableRgb",
+              "type": "boolean | null | undefined",
+              "description": "Set to true to disable **rgb** input.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 93,
+                  "column": 6
+                },
+                "end": {
+                  "line": 96,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            },
+            {
+              "name": "disableHsl",
+              "type": "boolean | null | undefined",
+              "description": "Set to true to disable **hsl** input.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 100,
+                  "column": 6
+                },
+                "end": {
+                  "line": 103,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            },
+            {
+              "name": "disableAlpha",
+              "type": "boolean | null | undefined",
+              "description": "Set to true to disable **alpha** input and **alpha** slider.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 107,
+                  "column": 6
+                },
+                "end": {
+                  "line": 110,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            },
+            {
+              "name": "pinnedInputs",
+              "type": "boolean | null | undefined",
+              "description": "Set to true to have all inputs visible all the time instead of having a switch button.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 114,
+                  "column": 6
+                },
+                "end": {
+                  "line": 117,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            },
+            {
+              "name": "pinnedPalettes",
+              "type": "boolean | null | undefined",
+              "description": "Set to true to have all palettes visible all the time instead of having a switch button.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 121,
+                  "column": 6
+                },
+                "end": {
+                  "line": 124,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Boolean"
+                }
+              },
+              "defaultValue": "false"
+            },
+            {
+              "name": "value",
+              "type": "string | null | undefined",
+              "description": "The color value as string. If the user switches the input or changes an input, the value will be\nformatted related to the input. Should be a valid CSS color code or CSS Custom Property.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 129,
+                  "column": 6
+                },
+                "end": {
+                  "line": 133,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "observer": "\"_onValueChanged\"",
+                  "attributeType": "String"
+                }
+              }
+            },
+            {
+              "name": "previousValue",
+              "type": "string | null | undefined",
+              "description": "The value that should be used as previous value. Should be a valid CSS color code or CSS Custom Property.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 137,
+                  "column": 6
+                },
+                "end": {
+                  "line": 140,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "observer": "\"_onPreviousValueChanged\"",
+                  "attributeType": "String"
+                }
+              }
+            },
+            {
+              "name": "lastUsedFormat",
+              "type": "string | null | undefined",
+              "description": "The format that the user used last as input or by switching inputs. One of `hex`,`rgb`,`hsl`.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 144,
+                  "column": 6
+                },
+                "end": {
+                  "line": 148,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "notify": true,
+                  "observer": "\"_onValueInternalChanged\"",
+                  "attributeType": "String"
+                }
+              }
+            },
+            {
+              "name": "palettes",
+              "type": "Array | null | undefined",
+              "description": "The palettes to be shown. Should be an Array of Arrays, whereas the inner Arrays should contain valid\nCSS color codes or CSS Custom Properties.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 153,
+                  "column": 6
+                },
+                "end": {
+                  "line": 156,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "observer": "\"_onPalettesChanged\"",
+                  "attributeType": "Array"
+                }
+              }
+            },
+            {
+              "name": "stepAlpha",
+              "type": "number | null | undefined",
+              "description": "The precision step to use for alpha values.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 160,
+                  "column": 6
+                },
+                "end": {
+                  "line": 163,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "0.01"
+            },
+            {
+              "name": "stepHsl",
+              "type": "number | null | undefined",
+              "description": "The precision step to use for hsl values.",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 167,
+                  "column": 6
+                },
+                "end": {
+                  "line": 170,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Number"
+                }
+              },
+              "defaultValue": "1"
+            },
+            {
+              "name": "_valueInternal",
+              "type": "Object | null | undefined",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 171,
+                  "column": 6
+                },
+                "end": {
+                  "line": 174,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "observer": "\"_onValueInternalChanged\"",
+                  "attributeType": "Object"
+                }
+              }
+            },
+            {
+              "name": "_previousValueInternal",
+              "type": "Object | null | undefined",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 175,
+                  "column": 6
+                },
+                "end": {
+                  "line": 175,
+                  "column": 36
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Object"
+                }
+              }
+            },
+            {
+              "name": "_palettesInternal",
+              "type": "Array | null | undefined",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 176,
+                  "column": 6
+                },
+                "end": {
+                  "line": 179,
+                  "column": 7
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "attributeType": "Array"
+                }
+              },
+              "defaultValue": "[]"
+            }
+          ],
+          "methods": [
+            {
+              "name": "ready",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 183,
+                  "column": 2
+                },
+                "end": {
+                  "line": 190,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            },
+            {
+              "name": "_showPalettes",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 192,
+                  "column": 2
+                },
+                "end": {
+                  "line": 194,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": []
+            },
+            {
+              "name": "_showInputs",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 196,
+                  "column": 2
+                },
+                "end": {
+                  "line": 198,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": []
+            },
+            {
+              "name": "_onValueChanged",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 200,
+                  "column": 2
+                },
+                "end": {
+                  "line": 206,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            },
+            {
+              "name": "_onValueInternalChanged",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 208,
+                  "column": 2
+                },
+                "end": {
+                  "line": 217,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            },
+            {
+              "name": "_onPreviousValueChanged",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 219,
+                  "column": 2
+                },
+                "end": {
+                  "line": 223,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            },
+            {
+              "name": "_onPalettesChanged",
+              "description": "",
+              "privacy": "protected",
+              "sourceRange": {
+                "start": {
+                  "line": 225,
+                  "column": 2
+                },
+                "end": {
+                  "line": 230,
+                  "column": 3
+                }
+              },
+              "metadata": {},
+              "params": [],
+              "return": {
+                "type": "void"
+              }
+            }
+          ],
+          "staticMethods": [],
+          "demos": [
+            {
+              "url": "demo/index.html",
+              "description": ""
+            }
+          ],
+          "metadata": {},
+          "sourceRange": {
+            "start": {
+              "line": 23,
+              "column": 0
+            },
+            "end": {
+              "line": 231,
+              "column": 1
+            }
+          },
+          "privacy": "public",
+          "superclass": "HTMLElement",
+          "name": "Vaadin.ColorPicker.ColorPicker",
+          "attributes": [
+            {
+              "name": "disable-hex",
+              "description": "Set to true to disable **hex** input.",
+              "sourceRange": {
+                "start": {
+                  "line": 86,
+                  "column": 6
+                },
+                "end": {
+                  "line": 89,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            },
+            {
+              "name": "disable-rgb",
+              "description": "Set to true to disable **rgb** input.",
+              "sourceRange": {
+                "start": {
+                  "line": 93,
+                  "column": 6
+                },
+                "end": {
+                  "line": 96,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            },
+            {
+              "name": "disable-hsl",
+              "description": "Set to true to disable **hsl** input.",
+              "sourceRange": {
+                "start": {
+                  "line": 100,
+                  "column": 6
+                },
+                "end": {
+                  "line": 103,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            },
+            {
+              "name": "disable-alpha",
+              "description": "Set to true to disable **alpha** input and **alpha** slider.",
+              "sourceRange": {
+                "start": {
+                  "line": 107,
+                  "column": 6
+                },
+                "end": {
+                  "line": 110,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            },
+            {
+              "name": "pinned-inputs",
+              "description": "Set to true to have all inputs visible all the time instead of having a switch button.",
+              "sourceRange": {
+                "start": {
+                  "line": 114,
+                  "column": 6
+                },
+                "end": {
+                  "line": 117,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            },
+            {
+              "name": "pinned-palettes",
+              "description": "Set to true to have all palettes visible all the time instead of having a switch button.",
+              "sourceRange": {
+                "start": {
+                  "line": 121,
+                  "column": 6
+                },
+                "end": {
+                  "line": 124,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "boolean | null | undefined"
+            },
+            {
+              "name": "value",
+              "description": "The color value as string. If the user switches the input or changes an input, the value will be\nformatted related to the input. Should be a valid CSS color code or CSS Custom Property.",
+              "sourceRange": {
+                "start": {
+                  "line": 129,
+                  "column": 6
+                },
+                "end": {
+                  "line": 133,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "string | null | undefined"
+            },
+            {
+              "name": "previous-value",
+              "description": "The value that should be used as previous value. Should be a valid CSS color code or CSS Custom Property.",
+              "sourceRange": {
+                "start": {
+                  "line": 137,
+                  "column": 6
+                },
+                "end": {
+                  "line": 140,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "string | null | undefined"
+            },
+            {
+              "name": "last-used-format",
+              "description": "The format that the user used last as input or by switching inputs. One of `hex`,`rgb`,`hsl`.",
+              "sourceRange": {
+                "start": {
+                  "line": 144,
+                  "column": 6
+                },
+                "end": {
+                  "line": 148,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "string | null | undefined"
+            },
+            {
+              "name": "palettes",
+              "description": "The palettes to be shown. Should be an Array of Arrays, whereas the inner Arrays should contain valid\nCSS color codes or CSS Custom Properties.",
+              "sourceRange": {
+                "start": {
+                  "line": 153,
+                  "column": 6
+                },
+                "end": {
+                  "line": 156,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "Array | null | undefined"
+            },
+            {
+              "name": "step-alpha",
+              "description": "The precision step to use for alpha values.",
+              "sourceRange": {
+                "start": {
+                  "line": 160,
+                  "column": 6
+                },
+                "end": {
+                  "line": 163,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            },
+            {
+              "name": "step-hsl",
+              "description": "The precision step to use for hsl values.",
+              "sourceRange": {
+                "start": {
+                  "line": 167,
+                  "column": 6
+                },
+                "end": {
+                  "line": 170,
+                  "column": 7
+                }
+              },
+              "metadata": {},
+              "type": "number | null | undefined"
+            }
+          ],
+          "events": [
+            {
+              "type": "CustomEvent",
+              "name": "value-changed",
+              "description": "Fired when the `value` property changes.",
+              "metadata": {}
+            },
+            {
+              "type": "CustomEvent",
+              "name": "last-used-format-changed",
+              "description": "Fired when the `lastUsedFormat` property changes.",
+              "metadata": {}
+            }
+          ],
+          "styling": {
+            "cssVariables": [],
+            "selectors": []
+          },
+          "slots": [],
+          "tagname": "color-picker",
+          "mixins": [
+            "Vaadin.ElementMixin",
+            "Vaadin.ThemableMixin",
+            "Vaadin.DisabledPropertyMixin"
           ]
         }
       ]
@@ -5175,11 +5353,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 16,
+              "line": 18,
               "column": 4
             },
             "end": {
-              "line": 21,
+              "line": 23,
               "column": 5
             }
           },
@@ -5205,11 +5383,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 6,
+          "line": 8,
           "column": 16
         },
         "end": {
-          "line": 22,
+          "line": 24,
           "column": 3
         }
       },

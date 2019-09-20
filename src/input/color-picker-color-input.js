@@ -1,6 +1,6 @@
-import "@polymer/polymer/polymer-element.js";
-import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
+import {PolymerElement} from "@polymer/polymer";
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin";
 import "../utils/vaadin-disabled-property-mixin.js";
 import "../utils/color-picker-has-color-value-mixin.js";
 import "tinycolor2";
@@ -18,8 +18,7 @@ import "tinycolor2";
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Vaadin.ColorPicker.HasColorValueMixin
  */
-class ColorInputElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
-  Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(Polymer.Element)))) {
+class ColorInputElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(PolymerElement)))) {
 
   static get is() {
     return 'color-input';

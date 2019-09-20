@@ -1,3 +1,5 @@
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import "./color-picker-color-slider.js";
 import "tinycolor2";
 
@@ -6,8 +8,7 @@ import "tinycolor2";
  *
  * @memberof Vaadin.ColorPicker
  */
-class AlphaSliderElement extends Vaadin.ElementMixin(
-  Vaadin.ThemableMixin(Vaadin.ColorPicker.ColorSliderElement)) {
+class AlphaSliderElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.ColorSliderElement)) {
 
   static get is() {
     return 'alpha-slider';

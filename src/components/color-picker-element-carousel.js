@@ -1,7 +1,7 @@
-import "@polymer/polymer/polymer-element.js";
+import {PolymerElement} from "@polymer/polymer";
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin";
 import "@polymer/polymer/lib/utils/flattened-nodes-observer.js";
-import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import "@vaadin/vaadin-button/src/vaadin-button.js";
 import "../utils/vaadin-disabled-property-mixin.js";
 import "../utils/color-picker-utils.js";
@@ -38,7 +38,7 @@ import "../utils/color-picker-utils.js";
  * @mixes Vaadin.DisabledPropertyMixin
  */
 
-class ElementCarouselElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(Vaadin.DisabledPropertyMixin(Polymer.Element))) {
+class ElementCarouselElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(PolymerElement))) {
 
   static get template() {
     return html`

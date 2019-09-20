@@ -1,3 +1,5 @@
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin";
 import "@vaadin/vaadin-text-field/vaadin-number-field.js";
 import "./color-picker-color-input.js";
 import "tinycolor2";
@@ -8,8 +10,7 @@ import "../utils/color-picker-utils.js";
  *
  * @memberof Vaadin.ColorPicker
  */
-class HslaInputElement extends Vaadin.ElementMixin(
-  Vaadin.ThemableMixin(Vaadin.ColorPicker.ColorInputElement)) {
+class HslaInputElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.ColorInputElement)) {
 
   static get template() {
     return html`

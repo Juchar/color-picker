@@ -1,3 +1,5 @@
+import {ElementMixin} from "@polymer/polymer/lib/mixins/element-mixin";
+
 window.Vaadin = window.Vaadin || {};
 
 /**

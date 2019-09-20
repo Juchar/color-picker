@@ -1,6 +1,6 @@
-import "@polymer/polymer/polymer-element.js";
-import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
+import {PolymerElement} from "@polymer/polymer/polymer-element.js";
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import "../utils/vaadin-disabled-property-mixin.js"
 import "../utils/color-picker-has-color-value-mixin.js"
 import "../utils/color-picker-utils.js"
@@ -16,8 +16,7 @@ import "tinycolor2"
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Vaadin.ColorPicker.HasColorValueMixin
  */
-class SelectedColorElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
-  Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(Polymer.Element)))) {
+class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(PolymerElement)))) {
   static get template() {
     return html`
     <style include="color-picker-shared-styles">

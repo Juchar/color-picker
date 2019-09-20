@@ -1,11 +1,12 @@
-import "@polymer/polymer/polymer-element.js";
-import "@polymer/iron-resizable-behavior/iron-resizable-behavior.js";
-import "@vaadin/vaadin-control-state-mixin/vaadin-control-state-mixin.js";
-import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
+import {PolymerElement} from "@polymer/polymer/polymer-element.js";
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
+import {ControlStateMixin} from "@vaadin/vaadin-control-state-mixin";
+import {mixinBehaviors} from '@polymer/polymer/lib/legacy/class.js';
 import "../components/color-picker-responsive-canvas.js";
 import "../utils/vaadin-disabled-property-mixin.js";
 import "../utils/color-picker-utils.js";
+import {IronResizableBehavior} from "@polymer/iron-resizable-behavior";
 
 /**
  * `ColorSliderElement` is an extendable base class for all sliders regarding color.
@@ -19,9 +20,7 @@ import "../utils/color-picker-utils.js";
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Polymer.IronResizableBehavior
  */
-class ColorSliderElement extends Vaadin.ElementMixin(Vaadin.ControlStateMixin(
-  Vaadin.ThemableMixin(Vaadin.DisabledPropertyMixin(
-    Polymer.mixinBehaviors([Polymer.IronResizableBehavior], Polymer.Element))))) {
+class ColorSliderElement extends ElementMixin(ControlStateMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(mixinBehaviors([IronResizableBehavior], PolymerElement))))) {
   static get template() {
     return html`
     <style>

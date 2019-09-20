@@ -1,6 +1,6 @@
-import "@polymer/polymer/polymer-element.js";
-import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
+import {PolymerElement} from "@polymer/polymer";
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin";
 import "../components/color-picker-element-carousel.js";
 import "./color-picker-hex-input.js";
 import "./color-picker-rgba-input.js";
@@ -21,8 +21,7 @@ import "tinycolor2";
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Vaadin.ColorPicker.HasColorValueMixin
  */
-class ColorPickerInputElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
-  Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(Polymer.Element)))) {
+class ColorPickerInputElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(PolymerElement)))) {
 
   static get template() {
     return html`<element-carousel disabled$="[[disabled]]"

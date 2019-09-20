@@ -1,8 +1,9 @@
-import "@polymer/polymer/polymer-element.js";
-import "@polymer/iron-resizable-behavior/iron-resizable-behavior.js";
-import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
+import {PolymerElement} from "@polymer/polymer";
+import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
+import {ElementMixin} from "@vaadin/vaadin-element-mixin";
+import {mixinBehaviors} from '@polymer/polymer/lib/legacy/class.js';
 import "../utils/vaadin-disabled-property-mixin.js";
+import {IronResizableBehavior} from "@polymer/iron-resizable-behavior";
 
 /**
  * `<responsive-canvas>` is a wrapper for the `<canvas>` element that will automatically set
@@ -13,7 +14,7 @@ import "../utils/vaadin-disabled-property-mixin.js";
  * @mixes Vaadin.ThemableMixin
  * @mixes Vaadin.DisabledPropertyMixin
  */
-class ResponsiveCanvasElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(Vaadin.DisabledPropertyMixin(Polymer.mixinBehaviors([Polymer.IronResizableBehavior], Polymer.Element)))) {
+class ResponsiveCanvasElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(mixinBehaviors([IronResizableBehavior], PolymerElement)))) {
 
   static get template() {
     return html`<style>
