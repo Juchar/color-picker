@@ -14,7 +14,7 @@ class SlSliderElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(
   }
 
   static get version() {
-    return '0.9.0';
+    return '2.0.0-alpha.1';
   }
 
   static get properties() {

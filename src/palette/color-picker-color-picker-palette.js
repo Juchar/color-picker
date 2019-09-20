@@ -1,6 +1,6 @@
-import "../../../polymer/polymer-element.js";
-import "../../../vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "../../../vaadin-element-mixin/vaadin-element-mixin.js";
+import "@polymer/polymer/polymer-element.js";
+import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
+import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import "../components/color-picker-element-carousel.js";
 import "color-picker-color-palette.js";
 import "../utils/vaadin-disabled-property-mixinimport "
@@ -46,7 +46,7 @@ class ColorPickerPaletteElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin
   }
 
   static get version() {
-    return '0.9.0';
+    return '2.0.0-alpha.1';
   }
 
   static get properties() {

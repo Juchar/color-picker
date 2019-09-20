@@ -72,7 +72,7 @@ class ElementCarouselElement extends Vaadin.ElementMixin(Vaadin.ThemableMixin(Va
   }
 
   static get version() {
-    return '0.9.0';
+    return '2.0.0-alpha.1';
   }
 
   static get properties() {

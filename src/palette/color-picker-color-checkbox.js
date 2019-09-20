@@ -1,4 +1,4 @@
-import "../../../vaadin-checkbox/src/vaadin-checkbox.js";
+import "@vaadin/vaadin-checkbox/src/vaadin-checkbox.js";
 import "../utils/color-picker-utilsimport "
 import "../libraries/tinycolor-importimport "
 
@@ -21,7 +21,7 @@ class ColorCheckboxElement extends Vaadin.CheckboxElement {
   }
 
   static get version() {
-    return '0.9.0';
+    return '2.0.0-alpha.1';
   }
 
   static get properties() {
