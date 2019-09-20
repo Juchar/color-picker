@@ -1,10 +1,10 @@
 import "@polymer/polymer/polymer-element.js";
 import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
 import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
-import "../utils/vaadin-disabled-property-mixinimport "
-import "../utils/color-picker-has-color-value-mixinimport "
-import "color-picker-color-checkboximport "
-import "../libraries/tinycolor-import.js";
+import "../utils/vaadin-disabled-property-mixin.js"
+import "../utils/color-picker-has-color-value-mixin.js"
+import "./color-picker-color-checkbox.js"
+import "tinycolor2";
 
 /**
  * `<color-palette>` shows a set of colors that can be selected.

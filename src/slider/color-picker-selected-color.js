@@ -1,10 +1,10 @@
-import "../../../polymer/polymer-element.js";
-import "../../../vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "../../../vaadin-element-mixin/vaadin-element-mixin.js";
-import "../utils/vaadin-disabled-property-mixinimport "
-import "../utils/color-picker-has-color-value-mixinimport "
-import "../utils/color-picker-utilsimport "
-import "../libraries/tinycolor-importimport "
+import "@polymer/polymer/polymer-element.js";
+import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
+import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
+import "../utils/vaadin-disabled-property-mixin.js"
+import "../utils/color-picker-has-color-value-mixin.js"
+import "../utils/color-picker-utils.js"
+import "tinycolor2"
 
 /**
  * `<selected-color>` shows a selected color. If a previous color is specified, this one will

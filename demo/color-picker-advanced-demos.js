@@ -1,5 +1,10 @@
-<dom-module id="color-picker-advanced-demos">
-  <template>
+class ColorPickerAdvancedDemos extends DemoReadyEventEmitter(ColorPickerDemo(Polymer.Element)) {
+  static get is() {
+    return 'color-picker-advanced-demos';
+  }
+
+  static get template() {
+    return html`
     <style include="vaadin-component-demo-shared-styles">
       :host {
         display: block;
@@ -47,14 +52,8 @@
         <color-picker disable-hex></color-picker>
       </template>
     </vaadin-demo-snippet>
-  </template>
-  <script>
-    class ColorPickerAdvancedDemos extends DemoReadyEventEmitter(ColorPickerDemo(Polymer.Element)) {
-      static get is() {
-        return 'color-picker-advanced-demos';
-      }
-    }
+ `;
+  }
+}
 
-    customElements.define(ColorPickerAdvancedDemos.is, ColorPickerAdvancedDemos);
-  </script>
-</dom-module>
+customElements.define(ColorPickerAdvancedDemos.is, ColorPickerAdvancedDemos);

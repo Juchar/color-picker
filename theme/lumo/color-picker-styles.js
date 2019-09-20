@@ -3,14 +3,14 @@ import '@vaadin/vaadin-lumo-styles/sizing.js';
 import '@vaadin/vaadin-lumo-styles/spacing.js';
 import '@vaadin/vaadin-lumo-styles/style.js';
 import '@vaadin/vaadin-lumo-styles/typography.js';
-import 'input/color-picker-hex-input-styles.js';
-import 'input/color-picker-hsla-input-styles.js';
-import 'input/color-picker-rgba-input-styles.js';
-import 'palette/color-picker-color-checkbox-styles.js';
-import 'slider/color-picker-color-slider-styles.js';
-import 'slider/color-picker-selected-color-styles.js';
-import 'components/color-picker-element-carousel-styles.js';
-import 'components/color-picker-responsive-canvas-styles.js';
+import './input/color-picker-hex-input-styles.js';
+import './input/color-picker-hsla-input-styles.js';
+import './input/color-picker-rgba-input-styles.js';
+import './palette/color-picker-color-checkbox-styles.js';
+import './slider/color-picker-color-slider-styles.js';
+import './slider/color-picker-selected-color-styles.js';
+// TODO empty? import './components/color-picker-element-carousel-styles.js';
+import './components/color-picker-responsive-canvas-styles.js';
 
 import {html} from '@polymer/polymer/lib/utils/html-tag.js';
 

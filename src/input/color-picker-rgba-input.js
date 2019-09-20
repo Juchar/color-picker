@@ -1,6 +1,6 @@
-import "../../../vaadin-text-field/src/vaadin-number-field.js";
-import "color-picker-color-input.js";
-import "../libraries/tinycolor-import.js";
+import "@vaadin/vaadin-text-field/vaadin-number-field.js";
+import "./color-picker-color-input.js";
+import "tinycolor2";
 import "../utils/color-picker-utils.js";
 
 /**

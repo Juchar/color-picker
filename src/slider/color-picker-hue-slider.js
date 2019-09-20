@@ -1,4 +1,4 @@
-import "color-picker-color-slider.js";
+import "./color-picker-color-slider.js";
 
 /**
  * `<hue-slider>` is an element that allows to select a **hue** value using a slider.

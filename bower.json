@@ -6,8 +6,8 @@
   ],
   "description": "color-picker",
   "main": [
-    "color-picker.html",
-    "theme/material/color-picker.html"
+    "color-picker.js",
+    "theme/material/color-picker.js"
   ],
   "keywords": [
     "Vaadin",

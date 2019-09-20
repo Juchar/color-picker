@@ -2,9 +2,9 @@ import "@polymer/polymer/polymer-element.js";
 import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
 import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import "../components/color-picker-element-carousel.js";
-import "color-picker-color-palette.js";
-import "../utils/vaadin-disabled-property-mixinimport "
-import "../utils/color-picker-has-color-value-mixinimport "
+import "./color-picker-color-palette.js";
+import "../utils/vaadin-disabled-property-mixin.js"
+import "../utils/color-picker-has-color-value-mixin.js"
 
 /**
  * `<color-picker-palette>` shows a set color palettes from which a color can be selected.

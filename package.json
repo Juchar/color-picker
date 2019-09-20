@@ -2,7 +2,7 @@
   "name": "@juchar/color-picker",
   "version": "0.9.0",
   "description": "color-picker",
-  "main": "color-picker.html",
+  "main": "color-picker.js",
   "repository": "juchar/color-picker",
   "keywords": [
     "Vaadin",
@@ -35,7 +35,7 @@
     "lint:css": "stylelint *.html src/*.html demo/*.html theme/**/*.html",
     "lint:html": "eslint *.html src demo --ext .html",
     "prestart": "polymer analyze > analysis.json",
-    "start": "polymer serve --port 3000 --open",
+    "start": "polymer serve --port 3000 --open --npm",
     "preversion": "magi update-version"
   },
   "devDependencies": {
@@ -44,6 +44,9 @@
   "dependencies": {
     "@polymer/iron-resizable-behavior": "^3.0.1",
     "@polymer/polymer": "^3.3.0",
+    "@webcomponents/webcomponentsjs": "^2.3.0",
+    "@vaadin/vaadin-demo-helpers": "^3.0.0",
+    "@polymer/iron-component-page": "^4.0.1",
     "@vaadin/vaadin-button": "^2.2.0",
     "@vaadin/vaadin-checkbox": "^2.2.10",
     "@vaadin/vaadin-icons": "^4.3.1",

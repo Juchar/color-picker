@@ -47,7 +47,7 @@ bower i juchar/color-picker --save
 Once installed, import it in your application:
 
 ```html
-<link rel="import" href="bower_components/color-picker/color-picker.html">
+import "/color-picker/color-picker.js"
 ```
 
 ### npm (ES Modules compatible version)
@@ -64,15 +64,15 @@ To use the Material theme, import the correspondent file from the `theme/materia
 
 - The component with the Lumo theme:
 
-  `theme/lumo/color-picker.html`
+  `theme/lumo/color-picker.js`
 
 - The component with the Material theme:
 
-  `theme/material/color-picker.html`
+  `theme/material/color-picker.js`
 
-- Alias for `theme/lumo/color-picker.html`:
+- Alias for `theme/lumo/color-picker.js`:
 
-  `color-picker.html`
+  `color-picker.js`
 
 
 ## Running demos and tests in a browser

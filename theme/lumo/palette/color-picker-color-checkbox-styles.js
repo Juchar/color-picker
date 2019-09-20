@@ -1,5 +1,4 @@
-import '@vaadin/vaadin-checkbox/vaadin-checkbox.html';
-
+import '@vaadin/vaadin-checkbox/vaadin-checkbox.js';
 import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-button/theme/lumo/vaadin-button-styles.js';
 

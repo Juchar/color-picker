@@ -2,7 +2,7 @@ import "@polymer/polymer/polymer-element.js";
 import "@polymer/iron-resizable-behavior/iron-resizable-behavior.js";
 import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
 import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
-import "utils/vaadin-disabled-property-mixin.js";
+import "../utils/vaadin-disabled-property-mixin.js";
 
 /**
  * `<responsive-canvas>` is a wrapper for the `<canvas>` element that will automatically set

@@ -1,2 +1,2 @@
 import "../../src/color-picker.js";
-import "color-picker-styles.js";
+import "./color-picker-styles.js";

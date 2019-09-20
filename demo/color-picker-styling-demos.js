@@ -1,5 +1,10 @@
-<dom-module id="color-picker-styling-demos">
-  <template>
+class ColorPickerStylingDemos extends DemoReadyEventEmitter(ColorPickerDemo(Polymer.Element)) {
+  static get is() {
+    return 'color-picker-styling-demos';
+  }
+
+  static get template() {
+    return html`
     <style include="vaadin-component-demo-shared-styles">
       :host {
         display: block;
@@ -32,14 +37,7 @@
                       ["hsla(0,100%,50%,0.5)","hsla(45,100%,50%,0.5)","hsla(90,100%,50%,0.5)","hsla(135,100%,50%,0.5)","hsla(180,100%,50%,0.5)","hsla(225,100%,50%,0.5)","hsla(270,100%,50%,0.5)","hsla(315,100%,50%,0.5)"]]'></color-picker>
       </template>
     </vaadin-demo-snippet>
-  </template>
-  <script>
-    class ColorPickerStylingDemos extends DemoReadyEventEmitter(ColorPickerDemo(Polymer.Element)) {
-      static get is() {
-        return 'color-picker-styling-demos';
-      }
-    }
-
-    customElements.define(ColorPickerStylingDemos.is, ColorPickerStylingDemos);
-  </script>
-</dom-module>
+ `;
+  }
+}
+customElements.define(ColorPickerStylingDemos.is, ColorPickerStylingDemos);

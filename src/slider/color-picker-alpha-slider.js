@@ -1,5 +1,5 @@
-import "color-picker-color-slider.js";
-import "../libraries/tinycolor-import.js";
+import "./color-picker-color-slider.js";
+import "tinycolor2";
 
 /**
  * `<alpha-slider>` is an element that allows to select an **alpha** value using a slider.

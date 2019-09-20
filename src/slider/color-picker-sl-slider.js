@@ -1,4 +1,4 @@
-import "color-picker-color-slider.js";
+import "./color-picker-color-slider.js";
 
 /**
  * `<sl-slider>` is an element that allows to select a **saturation** and **lightness** value

@@ -1,8 +1,8 @@
-import "../../../polymer/polymer-element.js";
-import "../../../iron-resizable-behavior/iron-resizable-behavior.js";
-import "../../../vaadin-control-state-mixin/vaadin-control-state-mixin.js";
-import "../../../vaadin-themable-mixin/vaadin-themable-mixin.js";
-import "../../../vaadin-element-mixin/vaadin-element-mixin.js";
+import "@polymer/polymer/polymer-element.js";
+import "@polymer/iron-resizable-behavior/iron-resizable-behavior.js";
+import "@vaadin/vaadin-control-state-mixin/vaadin-control-state-mixin.js";
+import "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
+import "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import "../components/color-picker-responsive-canvas.js";
 import "../utils/vaadin-disabled-property-mixin.js";
 import "../utils/color-picker-utils.js";

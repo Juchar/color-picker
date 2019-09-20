@@ -1,6 +1,6 @@
 import "@vaadin/vaadin-checkbox/src/vaadin-checkbox.js";
-import "../utils/color-picker-utilsimport "
-import "../libraries/tinycolor-importimport "
+import "../utils/color-picker-utils";
+import "tinycolor2";
 
 let memoizedTemplate;
 
