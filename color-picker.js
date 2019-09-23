@@ -1,1 +1,1 @@
-import "./theme/lumo/color-picker.js";
+import './theme/lumo/color-picker.js';

@@ -1,8 +1,6 @@
-import "@vaadin/vaadin-checkbox/src/vaadin-checkbox.js";
-import "../utils/color-picker-utils";
-import "tinycolor2";
-import {CheckboxElement} from "@vaadin/vaadin-checkbox/src/vaadin-checkbox";
-import ColorPickerUtils from "../utils/color-picker-utils";
+import {CheckboxElement} from '@vaadin/vaadin-checkbox/src/vaadin-checkbox';
+import 'tinycolor2';
+import ColorPickerUtils from '../utils/color-picker-utils';
 
 let memoizedTemplate;
 
@@ -41,7 +39,7 @@ class ColorCheckboxElement extends CheckboxElement {
 
   static get template() {
     if (!memoizedTemplate) {
-      memoizedTemplate = Vaadin.CheckboxElement.template.cloneNode(true);
+      memoizedTemplate = super.template.cloneNode(true);
 
       const div = document.createElement('div');
       div.setAttribute('part', 'color-backdrop');

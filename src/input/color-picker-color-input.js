@@ -1,9 +1,9 @@
-import {PolymerElement} from "@polymer/polymer";
-import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
-import {ElementMixin} from "@vaadin/vaadin-element-mixin";
-import "../utils/vaadin-disabled-property-mixin.js";
-import "../utils/color-picker-has-color-value-mixin.js";
-import "tinycolor2";
+import {PolymerElement} from '@polymer/polymer';
+import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
+import {ElementMixin} from '@vaadin/vaadin-element-mixin';
+import '../utils/vaadin-disabled-property-mixin.js';
+import '../utils/color-picker-has-color-value-mixin.js';
+import 'tinycolor2';
 
 /**
  * `ColorInputElement` is an extendable base class for all inputs regarding color.
@@ -81,8 +81,7 @@ class ColorInputElement extends ElementMixin(ThemableMixin(Vaadin.DisabledProper
     super.ready();
 
     this._createPropertyObserver('value', '_updateInput', true);
-    this._observedInputProperties
-    .forEach(p => this._createPropertyObserver(p, '_updateColor', true));
+    this._observedInputProperties.forEach(p => this._createPropertyObserver(p, '_updateColor', true));
   }
 
   /**

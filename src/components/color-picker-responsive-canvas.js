@@ -1,9 +1,9 @@
-import {html, PolymerElement} from "@polymer/polymer";
-import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
-import {ElementMixin} from "@vaadin/vaadin-element-mixin";
+import {html, PolymerElement} from '@polymer/polymer';
+import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
+import {ElementMixin} from '@vaadin/vaadin-element-mixin';
 import {mixinBehaviors} from '@polymer/polymer/lib/legacy/class.js';
-import "../utils/vaadin-disabled-property-mixin.js";
-import {IronResizableBehavior} from "@polymer/iron-resizable-behavior";
+import '../utils/vaadin-disabled-property-mixin.js';
+import {IronResizableBehavior} from '@polymer/iron-resizable-behavior';
 
 /**
  * `<responsive-canvas>` is a wrapper for the `<canvas>` element that will automatically set

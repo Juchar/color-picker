@@ -1,11 +1,11 @@
-import {html, PolymerElement} from "@polymer/polymer";
-import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
-import {ElementMixin} from "@vaadin/vaadin-element-mixin";
-import "@polymer/polymer/lib/utils/flattened-nodes-observer.js";
-import "@vaadin/vaadin-button/src/vaadin-button.js";
-import "../utils/vaadin-disabled-property-mixin.js";
-import {FlattenedNodesObserver} from "@polymer/polymer/lib/utils/flattened-nodes-observer";
-import ColorPickerUtils from "../utils/color-picker-utils";
+import {html, PolymerElement} from '@polymer/polymer';
+import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
+import {ElementMixin} from '@vaadin/vaadin-element-mixin';
+import '@polymer/polymer/lib/utils/flattened-nodes-observer.js';
+import '@vaadin/vaadin-button/src/vaadin-button.js';
+import '../utils/vaadin-disabled-property-mixin.js';
+import {FlattenedNodesObserver} from '@polymer/polymer/lib/utils/flattened-nodes-observer';
+import ColorPickerUtils from '../utils/color-picker-utils';
 
 /**
  * `<element-carousel>` allows to switch between elements and display one of them at a time.
@@ -49,14 +49,13 @@ class ElementCarouselElement extends ElementMixin(ThemableMixin(Vaadin.DisabledP
         align-self: var(--switch-button-alignment, flex-end);
         padding: 0;
       }
-
       #slot,
       #slot::slotted(*:not([hidden])) {
-        display: block;
+      display: block;
       }
-    </style>
-    <div class="horizontal-spacing" style="min-width: 100%;align-items: flex-start">
-      <slot id="slot" spacing$="[[spacing]]"></slot>
+      </style>
+      <div class="horizontal-spacing" style="min-width: 100%;align-items: flex-start">
+        <slot id="slot" spacing$="[[spacing]]"></slot>
       <vaadin-button disabled$="[[disabled]]"
                      hidden$="[[!_showSwitchButton]]"
                      on-click="_displayNextElement"
@@ -127,8 +126,7 @@ class ElementCarouselElement extends ElementMixin(ThemableMixin(Vaadin.DisabledP
     this._slotObserver = new FlattenedNodesObserver(this.$.slot, () => {
       this._enabledMutationObserver.disconnect();
 
-      this._slotElements = this.$.slot.assignedNodes()
-      .filter(n => n.nodeType === Node.ELEMENT_NODE);
+      this._slotElements = this.$.slot.assignedNodes().filter(n => n.nodeType === Node.ELEMENT_NODE);
 
       this._slotElements.forEach(element => {
         this._enabledMutationObserver.observe(element, {
@@ -172,12 +170,10 @@ class ElementCarouselElement extends ElementMixin(ThemableMixin(Vaadin.DisabledP
     }
 
     this._slotElements.forEach(element => {
-      ColorPickerUtils.conditionallySetAttribute(element,
-        !(this.pinned && this._isElementRelevant(element)), 'hidden');
+      ColorPickerUtils.conditionallySetAttribute(element, !(this.pinned && this._isElementRelevant(element)), 'hidden');
     });
 
-    const enabledElementsCount = this._slotElements
-    .filter(element => this._isElementRelevant(element)).length;
+    const enabledElementsCount = this._slotElements.filter(element => this._isElementRelevant(element)).length;
     if (!enabledElementsCount > 0) {
       return;
     }

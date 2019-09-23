@@ -1,13 +1,13 @@
-import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
-import "@polymer/iron-icon";
-import "../utils/vaadin-disabled-property-mixin.js";
-import "../utils/color-picker-has-color-value-mixin.js";
-import "../utils/color-picker-utils.js";
-import "../components/color-picker-responsive-canvas";
-import "tinycolor2";
-import {html, PolymerElement} from "@polymer/polymer";
-import ColorPickerUtils from "../utils/color-picker-utils";
+import {ThemableMixin} from '@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js';
+import {ElementMixin} from '@vaadin/vaadin-element-mixin/vaadin-element-mixin.js';
+import '@polymer/iron-icon';
+import '../utils/vaadin-disabled-property-mixin.js';
+import '../utils/color-picker-has-color-value-mixin.js';
+import '../utils/color-picker-utils.js';
+import '../components/color-picker-responsive-canvas';
+import 'tinycolor2';
+import {html, PolymerElement} from '@polymer/polymer';
+import ColorPickerUtils from '../utils/color-picker-utils';
 
 /**
  * `<selected-color>` shows a selected color. If a previous color is specified, this one will
@@ -21,56 +21,44 @@ import ColorPickerUtils from "../utils/color-picker-utils";
  */
 class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(Vaadin.ColorPicker.HasColorValueMixin(PolymerElement)))) {
   static get template() {
-    return html`
-    <style include="color-picker-shared-styles">
+    return html`<style include="color-picker-shared-styles">
       :host {
         position: relative;
       }
-
       [part="previous-color-canvas"],
       [part="selected-color-canvas"] {
         position: absolute;
         height: 100%;
       }
-
       [part="selected-color-canvas"] {
         width: 100%;
       }
-
       [part="previous-color-canvas"] {
         width: 50%;
       }
-
       [part="selected-color-canvas"] {
         left: 0;
       }
-
       [part="previous-color-canvas"] {
         right: 0;
       }
-
       [part="previous-icon"] {
         opacity: 0;
       }
-
       [part="halo"] {
         position: absolute;
         width: 100%;
         height: 100%;
-        content: "\2003";
         color: transparent;
         opacity: 0;
       }
-
       :host([has-previous-value]:hover) [part="previous-color-canvas"] {
         width: 100%;
       }
-
       :host([has-previous-value]:hover) [part="previous-icon"] {
         opacity: 1;
       }
     </style>
-
     <span part="halo"></span>
     <responsive-canvas disabled$="[[disabled]]"
                        part="selected-color-canvas"
@@ -115,14 +103,7 @@ class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPro
   ready() {
     super.ready();
     this.previousIcon = this.shadowRoot.querySelector('[part="previous-icon"]');
-    console.log(this.shadowRoot);
-    if (!this.previousIcon) {
-      console.error("No wai");
-    }
     this.halo = this.shadowRoot.querySelector('[part="halo"]');
-    if (!this.halo) {
-      console.error("No wai");
-    }
   }
 
   /**

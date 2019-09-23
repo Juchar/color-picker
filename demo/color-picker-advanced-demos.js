@@ -1,4 +1,4 @@
-import {html, PolymerElement} from "@polymer/polymer";
+import {html, PolymerElement} from '@polymer/polymer';
 
 class ColorPickerAdvancedDemos extends DemoReadyEventEmitter(ColorPickerDemo(PolymerElement)) {
   static get is() {

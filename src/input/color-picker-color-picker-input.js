@@ -1,13 +1,13 @@
-import {html, PolymerElement} from "@polymer/polymer";
-import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
-import {ElementMixin} from "@vaadin/vaadin-element-mixin";
-import "../components/color-picker-element-carousel.js";
-import "./color-picker-hex-input.js";
-import "./color-picker-rgba-input.js";
-import "./color-picker-hsla-input.js";
-import "../utils/vaadin-disabled-property-mixin.js";
-import "../utils/color-picker-has-color-value-mixin.js";
-import "tinycolor2";
+import {html, PolymerElement} from '@polymer/polymer';
+import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
+import {ElementMixin} from '@vaadin/vaadin-element-mixin';
+import '../components/color-picker-element-carousel.js';
+import './color-picker-hex-input.js';
+import './color-picker-rgba-input.js';
+import './color-picker-hsla-input.js';
+import '../utils/vaadin-disabled-property-mixin.js';
+import '../utils/color-picker-has-color-value-mixin.js';
+import 'tinycolor2';
 
 /**
  * `<color-picker-input>` allows to select a color from different inputs:

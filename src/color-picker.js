@@ -1,13 +1,13 @@
-import {html, PolymerElement} from "@polymer/polymer";
-import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
-import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
-import "./slider/color-picker-color-picker-slider.js";
-import "./input/color-picker-color-picker-input.js";
-import "./palette/color-picker-color-picker-palette.js";
-import "./utils/vaadin-disabled-property-mixin.js";
-import "./utils/color-picker-utils.js";
-import "tinycolor2";
-import ColorPickerUtils from "./utils/color-picker-utils";
+import {html, PolymerElement} from '@polymer/polymer';
+import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
+import {ElementMixin} from '@vaadin/vaadin-element-mixin';
+import './slider/color-picker-color-picker-slider.js';
+import './input/color-picker-color-picker-input.js';
+import './palette/color-picker-color-picker-palette.js';
+import './utils/vaadin-disabled-property-mixin.js';
+import './utils/color-picker-utils.js';
+import 'tinycolor2';
+import ColorPickerUtils from './utils/color-picker-utils';
 
 /**
  * `<color-picker>` allows to select a color using sliders, inputs or palettes.

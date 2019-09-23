@@ -1,7 +1,7 @@
-import "@vaadin/vaadin-text-field/vaadin-text-field.js";
-import "./color-picker-color-input.js";
-import "tinycolor2";
-import {html} from "@polymer/polymer";
+import '@vaadin/vaadin-text-field/vaadin-text-field.js';
+import './color-picker-color-input.js';
+import 'tinycolor2';
+import {html} from '@polymer/polymer';
 
 /**
  * `<hex-input>` is an element that allows to input **hex** color codes.

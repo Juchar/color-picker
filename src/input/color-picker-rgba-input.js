@@ -1,11 +1,11 @@
-import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
-import {ElementMixin} from "@vaadin/vaadin-element-mixin";
-import "@vaadin/vaadin-text-field/vaadin-number-field.js";
-import "./color-picker-color-input.js";
-import "tinycolor2";
-import "../utils/color-picker-utils.js";
-import {html} from "@polymer/polymer";
-import ColorPickerUtils from "../utils/color-picker-utils";
+import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
+import {ElementMixin} from '@vaadin/vaadin-element-mixin';
+import '@vaadin/vaadin-text-field/vaadin-number-field.js';
+import './color-picker-color-input.js';
+import 'tinycolor2';
+import '../utils/color-picker-utils.js';
+import {html} from '@polymer/polymer';
+import ColorPickerUtils from '../utils/color-picker-utils';
 
 /**
  * `<rgba-input>` is an element that allows to input **rgba** color codes.
@@ -13,8 +13,8 @@ import ColorPickerUtils from "../utils/color-picker-utils";
  * @memberof Vaadin.ColorPicker
  */
 class RgbaInputElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.ColorInputElement)) {
-      static get template() {
-        return html`
+  static get template() {
+    return html`
     <style include="color-picker-shared-styles">
     </style>
 
@@ -46,100 +46,96 @@ class RgbaInputElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.Col
                            value="{{alpha}}"></vaadin-number-field>
     </div>
   `;
-    }
+  }
 
+  static get is() {
+    return 'rgba-input';
+  }
 
+  static get version() {
+    return '2.0.0-alpha.1';
+  }
 
-
-        static get is() {
-          return 'rgba-input';
-        }
-
-        static get version() {
-          return '2.0.0-alpha.1';
-        }
-
-        static get properties() {
-          return {
-            /**
-             * The current red value in the range `[0 - 255]`.
-             */
-            red: {
-              type: Number,
-              value: 0,
-              notify: true
-            },
-            /**
-             * The current green value in the range `[0 - 255]`.
-             */
-            green: {
-              type: Number,
-              value: 0,
-              notify: true
-            },
-            /**
-             * The current blue value in the range `[0 - 255]`.
-             */
-            blue: {
-              type: Number,
-              value: 0,
-              notify: true
-            },
-            /**
-             * The current alpha in the range `[0 - 1]`.
-             */
-            alpha: {
-              type: Number,
-              value: 1,
-              notify: true
-            },
-            /**
-             * Allowed number o intervals on the **alpha** value
-             */
-            stepAlpha: {
-              type: Number,
-              value: 0.01
-            }
-          };
-        }
-
-        /**
-         * @constructor
-         */
-        constructor() {
-          super();
-
-          this._observedInputProperties = ['red', 'green', 'blue', 'alpha'];
-
-          this._colorSupplier = () => tinycolor({
-            r: parseFloat(this.red),
-            g: parseFloat(this.green),
-            b: parseFloat(this.blue)
-          }).setAlpha(parseFloat(this.alpha));
-
-          this._toInputConverter = color => {
-            if (color) {
-              const rgb = color.toRgb();
-              this.red = rgb.r;
-              this.green = rgb.g;
-              this.blue = rgb.b;
-              this.alpha = ColorPickerUtils.roundToNearest(color.getAlpha(), this.stepAlpha);
-            } else {
-              this.red = '';
-              this.green = '';
-              this.blue = '';
-              this.alpha = '';
-            }
-          };
-        }
-      }
-
-      customElements.define(RgbaInputElement.is, RgbaInputElement);
-
+  static get properties() {
+    return {
       /**
-       * @namespace Vaadin.ColorPicker
+       * The current red value in the range `[0 - 255]`.
        */
-      window.Vaadin = window.Vaadin || {};
-      window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
-      window.Vaadin.ColorPicker.RgbaInputElement = RgbaInputElement;
+      red: {
+        type: Number,
+        value: 0,
+        notify: true
+      },
+      /**
+       * The current green value in the range `[0 - 255]`.
+       */
+      green: {
+        type: Number,
+        value: 0,
+        notify: true
+      },
+      /**
+       * The current blue value in the range `[0 - 255]`.
+       */
+      blue: {
+        type: Number,
+        value: 0,
+        notify: true
+      },
+      /**
+       * The current alpha in the range `[0 - 1]`.
+       */
+      alpha: {
+        type: Number,
+        value: 1,
+        notify: true
+      },
+      /**
+       * Allowed number o intervals on the **alpha** value
+       */
+      stepAlpha: {
+        type: Number,
+        value: 0.01
+      }
+    };
+  }
 
+  /**
+   * @constructor
+   */
+  constructor() {
+    super();
+
+    this._observedInputProperties = ['red', 'green', 'blue', 'alpha'];
+
+    this._colorSupplier = () => tinycolor({
+      r: parseFloat(this.red),
+      g: parseFloat(this.green),
+      b: parseFloat(this.blue)
+    }).setAlpha(parseFloat(this.alpha));
+
+    this._toInputConverter = color => {
+      if (color) {
+        const rgb = color.toRgb();
+        this.red = rgb.r;
+        this.green = rgb.g;
+        this.blue = rgb.b;
+        this.alpha = ColorPickerUtils.roundToNearest(color.getAlpha(), this.stepAlpha);
+      } else {
+        this.red = '';
+        this.green = '';
+        this.blue = '';
+        this.alpha = '';
+      }
+    };
+  }
+}
+
+customElements.define(RgbaInputElement.is, RgbaInputElement);
+
+/**
+ * @namespace Vaadin.ColorPicker
+ */
+window.Vaadin = window.Vaadin || {};
+window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
+window.Vaadin.ColorPicker.RgbaInputElement = RgbaInputElement;

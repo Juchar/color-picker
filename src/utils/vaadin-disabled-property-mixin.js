@@ -1,12 +1,10 @@
-import {ElementMixin} from "@polymer/polymer/lib/mixins/element-mixin";
-
 window.Vaadin = window.Vaadin || {};
 
 /**
  * @polymerBehaviour
  */
 Vaadin.DisabledPropertyMixin =
-  superClass => class VaadinDisabledPropertyMixin extends superClass {
+  superClass => class DisabledPropertyMixin extends superClass {
     static get properties() {
       return {
         disabled: {
