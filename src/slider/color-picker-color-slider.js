@@ -16,8 +16,8 @@ import ColorPickerUtils from "../utils/color-picker-utils";
  *
  * @abstract
  * @memberof Vaadin.ColorPicker
- * @mixes Vaadin.ElementMixin
- * @mixes Vaadin.ThemableMixin
+ * @mixes ElementMixin
+ * @mixes ThemableMixin
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Polymer.IronResizableBehavior
  */

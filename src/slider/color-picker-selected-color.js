@@ -1,9 +1,11 @@
 import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
 import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
-import "../utils/vaadin-disabled-property-mixin.js"
-import "../utils/color-picker-has-color-value-mixin.js"
-import "../utils/color-picker-utils.js"
-import "tinycolor2"
+import "@polymer/iron-icon";
+import "../utils/vaadin-disabled-property-mixin.js";
+import "../utils/color-picker-has-color-value-mixin.js";
+import "../utils/color-picker-utils.js";
+import "../components/color-picker-responsive-canvas";
+import "tinycolor2";
 import {html, PolymerElement} from "@polymer/polymer";
 import ColorPickerUtils from "../utils/color-picker-utils";
 
@@ -12,8 +14,8 @@ import ColorPickerUtils from "../utils/color-picker-utils";
  * be also visible.
  *
  * @memberof Vaadin.ColorPicker
- * @mixes Vaadin.ElementMixin
- * @mixes Vaadin.ThemableMixin
+ * @mixes ElementMixin
+ * @mixes ThemableMixin
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Vaadin.ColorPicker.HasColorValueMixin
  */
@@ -113,7 +115,14 @@ class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPro
   ready() {
     super.ready();
     this.previousIcon = this.shadowRoot.querySelector('[part="previous-icon"]');
+    console.log(this.shadowRoot);
+    if (!this.previousIcon) {
+      console.error("No wai");
+    }
     this.halo = this.shadowRoot.querySelector('[part="halo"]');
+    if (!this.halo) {
+      console.error("No wai");
+    }
   }
 
   /**

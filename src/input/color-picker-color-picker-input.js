@@ -16,8 +16,8 @@ import "tinycolor2";
  * * HSLA
  *
  * @memberof Vaadin.ColorPicker
- * @mixes Vaadin.ElementMixin
- * @mixes Vaadin.ThemableMixin
+ * @mixes ElementMixin
+ * @mixes ThemableMixin
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Vaadin.ColorPicker.HasColorValueMixin
  */

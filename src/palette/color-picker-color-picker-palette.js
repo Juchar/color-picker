@@ -10,8 +10,8 @@ import "../utils/color-picker-has-color-value-mixin.js"
  * `<color-picker-palette>` shows a set color palettes from which a color can be selected.
  *
  * @memberof Vaadin.ColorPicker
- * @mixes Vaadin.ElementMixin
- * @mixes Vaadin.ThemableMixin
+ * @mixes ElementMixin
+ * @mixes ThemableMixin
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Vaadin.ColorPicker.HasColorValueMixin
  */

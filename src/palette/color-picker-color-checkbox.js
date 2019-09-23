@@ -12,8 +12,8 @@ let memoizedTemplate;
  * background color of the checkbox.
  *
  * @memberof Vaadin.ColorPicker
- * @mixes Vaadin.ElementMixin
- * @mixes Vaadin.ThemableMixin
+ * @mixes ElementMixin
+ * @mixes ThemableMixin
  * @mixes Vaadin.DisabledPropertyMixin
  */
 class ColorCheckboxElement extends CheckboxElement {

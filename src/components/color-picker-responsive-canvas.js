@@ -10,8 +10,8 @@ import {IronResizableBehavior} from "@polymer/iron-resizable-behavior";
  * the `width` and `height` attribute of the canvas if it is resized.
  *
  * @memberof Vaadin.ColorPicker
- * @mixes Vaadin.ElementMixin
- * @mixes Vaadin.ThemableMixin
+ * @mixes ElementMixin
+ * @mixes ThemableMixin
  * @mixes Vaadin.DisabledPropertyMixin
  */
 class ResponsiveCanvasElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(mixinBehaviors([IronResizableBehavior], PolymerElement)))) {
