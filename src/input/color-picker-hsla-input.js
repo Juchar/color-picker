@@ -4,6 +4,8 @@ import "@vaadin/vaadin-text-field/vaadin-number-field.js";
 import "./color-picker-color-input.js";
 import "tinycolor2";
 import "../utils/color-picker-utils.js";
+import {html} from "@polymer/polymer";
+import ColorPickerUtils from "../utils/color-picker-utils";
 
 /**
  * `<hsla-input>` is an element that allows to input **hsla** color codes.

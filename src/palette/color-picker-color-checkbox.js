@@ -2,6 +2,7 @@ import "@vaadin/vaadin-checkbox/src/vaadin-checkbox.js";
 import "../utils/color-picker-utils";
 import "tinycolor2";
 import {CheckboxElement} from "@vaadin/vaadin-checkbox/src/vaadin-checkbox";
+import ColorPickerUtils from "../utils/color-picker-utils";
 
 let memoizedTemplate;
 

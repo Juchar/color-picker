@@ -52,3 +52,5 @@ class ColorPickerUtils {
     }
   }
 }
+
+export default ColorPickerUtils;

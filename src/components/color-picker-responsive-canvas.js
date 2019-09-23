@@ -1,4 +1,4 @@
-import {PolymerElement} from "@polymer/polymer";
+import {html, PolymerElement} from "@polymer/polymer";
 import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
 import {ElementMixin} from "@vaadin/vaadin-element-mixin";
 import {mixinBehaviors} from '@polymer/polymer/lib/legacy/class.js';

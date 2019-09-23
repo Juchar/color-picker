@@ -1,10 +1,11 @@
-import {PolymerElement} from "@polymer/polymer";
+import {html, PolymerElement} from "@polymer/polymer";
 import {ThemableMixin} from "@vaadin/vaadin-themable-mixin";
 import {ElementMixin} from "@vaadin/vaadin-element-mixin";
 import "@polymer/polymer/lib/utils/flattened-nodes-observer.js";
 import "@vaadin/vaadin-button/src/vaadin-button.js";
 import "../utils/vaadin-disabled-property-mixin.js";
-import "../utils/color-picker-utils.js";
+import {FlattenedNodesObserver} from "@polymer/polymer/lib/utils/flattened-nodes-observer";
+import ColorPickerUtils from "../utils/color-picker-utils";
 
 /**
  * `<element-carousel>` allows to switch between elements and display one of them at a time.
@@ -123,7 +124,7 @@ class ElementCarouselElement extends ElementMixin(ThemableMixin(Vaadin.DisabledP
       }
     });
 
-    this._slotObserver = new Polymer.FlattenedNodesObserver(this.$.slot, () => {
+    this._slotObserver = new FlattenedNodesObserver(this.$.slot, () => {
       this._enabledMutationObserver.disconnect();
 
       this._slotElements = this.$.slot.assignedNodes()

@@ -1,10 +1,11 @@
-import {PolymerElement} from "@polymer/polymer/polymer-element.js";
 import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
 import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import "../utils/vaadin-disabled-property-mixin.js"
 import "../utils/color-picker-has-color-value-mixin.js"
 import "../utils/color-picker-utils.js"
 import "tinycolor2"
+import {html, PolymerElement} from "@polymer/polymer";
+import ColorPickerUtils from "../utils/color-picker-utils";
 
 /**
  * `<selected-color>` shows a selected color. If a previous color is specified, this one will
@@ -104,25 +105,25 @@ class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPro
         reflectToAttribute: true,
         computed: '_showSelectPreviousValue(value,previousValue)'
       },
-      _previousIcon: Object,
-      _halo: Object
+      previousIcon: Object,
+      halo: Object
     };
   }
 
   ready() {
     super.ready();
-    this._previousIcon = this.shadowRoot.querySelector('[part="previous-icon"]');
-    this._halo = this.shadowRoot.querySelector('[part="halo"]');
+    this.previousIcon = this.shadowRoot.querySelector('[part="previous-icon"]');
+    this.halo = this.shadowRoot.querySelector('[part="halo"]');
   }
 
   /**
    * @private
    **/
   _previousValueChanged() {
-    this._previousIcon.style.color = this.previousValue
+    this.previousIcon.style.color = this.previousValue
       ? ColorPickerUtils.getContrastColor(this.previousValue)
       : 'transparent';
-    this._halo.style.backgroundColor = this.previousValue ? this.previousValue.toHslString() : 'transparent';
+    this.halo.style.backgroundColor = this.previousValue ? this.previousValue.toHslString() : 'transparent';
   }
 
   /**

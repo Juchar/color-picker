@@ -1,4 +1,3 @@
-import {PolymerElement} from "@polymer/polymer/polymer-element.js";
 import {ThemableMixin} from "@vaadin/vaadin-themable-mixin/vaadin-themable-mixin.js";
 import {ElementMixin} from "@vaadin/vaadin-element-mixin/vaadin-element-mixin.js";
 import {ControlStateMixin} from "@vaadin/vaadin-control-state-mixin";
@@ -7,6 +6,8 @@ import "../components/color-picker-responsive-canvas.js";
 import "../utils/vaadin-disabled-property-mixin.js";
 import "../utils/color-picker-utils.js";
 import {IronResizableBehavior} from "@polymer/iron-resizable-behavior";
+import {html, PolymerElement} from "@polymer/polymer";
+import ColorPickerUtils from "../utils/color-picker-utils";
 
 /**
  * `ColorSliderElement` is an extendable base class for all sliders regarding color.

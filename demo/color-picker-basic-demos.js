@@ -16,9 +16,8 @@ class ColorPickerBasicDemos extends window.DemoReadyEventEmitter(ColorPickerDemo
 
     <h3>Color Picker</h3>
     <vaadin-demo-snippet id="color-picker-basic-color-picker" when-defined="color-picker">
-      <template preserve-content>
+ 
         <color-picker></color-picker>
-      </template>
     </vaadin-demo-snippet>
 
     <h3>Initial value and previous value</h3>
@@ -27,9 +26,7 @@ class ColorPickerBasicDemos extends window.DemoReadyEventEmitter(ColorPickerDemo
       <code>value</code> property.</p>
     <p>Hover and click the color field to reset the current value to the previous color.</p>
     <vaadin-demo-snippet id="color-picker-value" when-defined="color-picker">
-      <template preserve-content>
         <color-picker previous-value="#ff00bf44" value="hsla(135,100%,50%,0.5)"></color-picker>
-      </template>
     </vaadin-demo-snippet>
 
     <h3>Palettes</h3>
