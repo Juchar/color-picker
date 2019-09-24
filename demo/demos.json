@@ -4,7 +4,7 @@
     {
       "name": "Basics",
       "url": "color-picker-basic-demos",
-      "src": "color-picker-basic-demos.html",
+      "src": "color-picker-basic-demos.js",
       "meta": {
         "title": "Color Picker Basics",
         "description": "",
@@ -14,7 +14,7 @@
     {
       "name": "Styling",
       "url": "color-picker-styling-demos",
-      "src": "color-picker-styling-demos.html",
+      "src": "color-picker-styling-demos.js",
       "meta": {
         "title": "Color Picker Styling Examples",
         "description": "",
@@ -24,7 +24,7 @@
     {
       "name": "Advanced Usage",
       "url": "color-picker-advanced-demos",
-      "src": "color-picker-advanced-demos.html",
+      "src": "color-picker-advanced-demos.js",
       "meta": {
         "title": "Color Picker Advanced Examples",
         "description": "",
