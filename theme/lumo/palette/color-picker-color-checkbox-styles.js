@@ -1,7 +1,7 @@
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `
-<dom-module id="color-checkbox" theme-for="color-checkbox">
+<dom-module id="color-checkbox-styles" theme-for="color-checkbox">
   <template>
     <style>
       :host([checked]) {

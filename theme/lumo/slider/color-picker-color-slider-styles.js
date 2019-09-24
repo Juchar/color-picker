@@ -131,3 +131,20 @@ $_documentContainer.innerHTML = `
 `;
 
 document.head.appendChild($_documentContainer.content);
+
+const $_documentContainer2 = document.createElement('template');
+
+$_documentContainer2.innerHTML = `
+<dom-module id="color-picker-sl-slider" theme-for="sl-slider">
+  <template>
+  <style>
+  :host {
+    height: calc(var(--color-slider-size) * 8);
+    width: 100%;
+  }
+</style>
+</template>
+</dom-module>
+`;
+
+document.head.appendChild($_documentContainer2.content);

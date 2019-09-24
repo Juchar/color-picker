@@ -4,7 +4,7 @@ import '@vaadin/vaadin-button/theme/lumo/vaadin-button-styles.js';
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `
-<dom-module id="color-picker-responsive-canvas" theme-for="responsive-canvas">
+<dom-module id="color-picker-responsive-canvas-styles" theme-for="responsive-canvas">
   <template>
     <style>
       :host([disabled]),

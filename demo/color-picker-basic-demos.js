@@ -63,10 +63,8 @@ class ColorPickerBasicDemos extends window.DemoReadyEventEmitter(ColorPickerDemo
       </code>
     </p>
     <vaadin-demo-snippet id="color-picker-palettes" when-defined="color-picker">
-      <template preserve-content>
         <color-picker palettes='[["hsl(0,100%,50%)","hsl(45,100%,50%)","hsl(90,100%,50%)","hsl(135,100%,50%)","hsl(180,100%,50%)","hsl(225,100%,50%)","hsl(270,100%,50%)","hsl(315,100%,50%)"],
                       ["hsla(0,100%,50%,0.5)","hsla(45,100%,50%,0.5)","hsla(90,100%,50%,0.5)","hsla(135,100%,50%,0.5)","hsla(180,100%,50%,0.5)","hsla(225,100%,50%,0.5)","hsla(270,100%,50%,0.5)","hsla(315,100%,50%,0.5)"]]'></color-picker>
-      </template>
     </vaadin-demo-snippet>
  `;
   }

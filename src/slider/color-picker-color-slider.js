@@ -28,9 +28,6 @@ class ColorSliderElement extends ElementMixin(ControlStateMixin(ThemableMixin(mi
       :host {
         position: relative;
         box-sizing: border-box;
-        height: 100%;
-        width: 100%;
-
         display: flex;
         justify-content: center;
         align-items: center;

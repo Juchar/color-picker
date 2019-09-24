@@ -17,7 +17,7 @@ import {IronResizableBehavior} from '@polymer/iron-resizable-behavior';
 class ResponsiveCanvasElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(mixinBehaviors([IronResizableBehavior], PolymerElement)))) {
 
   static get template() {
-    return html`<style include="color-picker-responsive-canvas">
+    return html`<style include="color-picker-responsive-canvas-styles">
       :host {
         position: relative;
         background: #fff;

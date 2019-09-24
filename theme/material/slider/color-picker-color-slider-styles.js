@@ -8,7 +8,7 @@ const $_documentContainer = html`
         --color-slider-size: calc(36px / 2);
         --color-slider-handle-size: var(--color-slider-size);
 
-        height: var(--color-slider-size);
+        height: var(--color-slider-size); 
         margin: calc(4px / 2) 0;
       }
 
