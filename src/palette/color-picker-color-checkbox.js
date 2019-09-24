@@ -1,4 +1,5 @@
 import {CheckboxElement} from '@vaadin/vaadin-checkbox/src/vaadin-checkbox';
+import '@vaadin/vaadin-checkbox';
 import 'tinycolor2';
 import ColorPickerUtils from '../utils/color-picker-utils';
 
