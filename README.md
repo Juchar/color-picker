@@ -41,11 +41,11 @@ The converted ES Modules are only published on npm, not pushed to GitHub reposit
 Install `color-picker`:
 
 ```sh
-npm install @juchar/color-picker
+npm install @appreciated/color-picker
 ```
 
 ```js
-import "@juchar/color-picker/color-picker.js"
+import "@appreciated/color-picker/color-picker.js"
 ```
 
 ## Getting started
