@@ -11,7 +11,7 @@ cache:
 script: 'true'
 
 install:
-  - npm install -g bower polymer-cli
+  - npm install -g polymer-cli
   - npm install
 
 after_success:
