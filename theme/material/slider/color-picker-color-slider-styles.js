@@ -1,4 +1,4 @@
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer';
 
 const $_documentContainer = html`
 <dom-module id="material-color-picker-color-slider" theme-for="color-slider">

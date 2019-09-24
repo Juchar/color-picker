@@ -2,7 +2,7 @@ import '@vaadin/vaadin-checkbox/vaadin-checkbox.js';
 import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-button/theme/lumo/vaadin-button-styles.js';
 
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer';
 
 const $_documentContainer = html`
 <dom-module id="lumo-color-checkbox" theme-for="color-checkbox">

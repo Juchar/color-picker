@@ -1,4 +1,4 @@
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer';
 
 const $_documentContainer = html`
 <dom-module id="lumo-color-picker-selected-color" theme-for="selected-color">

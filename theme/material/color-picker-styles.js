@@ -10,7 +10,7 @@ import "./slider/color-picker-selected-color-styles.js";
 // TODO empty? import "./components/color-picker-element-carousel-styles.js";
 import "./components/color-picker-responsive-canvas-styles.js";
 
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer';
 
 const $_documentContainer = html`
 <dom-module id="material-color-picker" theme-for="color-picker">

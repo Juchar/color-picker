@@ -1,7 +1,7 @@
 import "@vaadin/vaadin-icons/vaadin-icons.js";
 import "@vaadin/vaadin-button/theme/material/vaadin-button.js";
 
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer';
 
 const $_documentContainer = html`
 <dom-module id="material-color-picker-element-carousel" theme-for="element-carousel">

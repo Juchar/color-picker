@@ -1,6 +1,6 @@
 import "@vaadin/vaadin-checkbox/theme/material/vaadin-checkbox.js";
 
-import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer';
 
 const $_documentContainer = html`
 <dom-module id="material-color-checkbox" theme-for="color-checkbox">
