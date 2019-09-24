@@ -25,7 +25,7 @@ class ColorPicker extends ElementMixin(ThemableMixin(PolymerElement)) {
 
   static get template() {
     return html`
-    <style include="color-picker-shared-styles">
+    <style include="color-picker-shared-styles color-picker-styles">
       :host {
         display: block;
         max-width: 100%;

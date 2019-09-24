@@ -1,11 +1,7 @@
-import '@vaadin/vaadin-checkbox/vaadin-checkbox.js';
-import '@vaadin/vaadin-button/src/vaadin-button.js';
-import '@vaadin/vaadin-button/theme/lumo/vaadin-button-styles.js';
+const $_documentContainer = document.createElement('template');
 
-import {html} from '@polymer/polymer';
-
-const $_documentContainer = html`
-<dom-module id="lumo-color-checkbox" theme-for="color-checkbox">
+$_documentContainer.innerHTML = `
+<dom-module id="color-checkbox" theme-for="color-checkbox">
   <template>
     <style>
       :host([checked]) {
@@ -92,5 +88,4 @@ const $_documentContainer = html`
   </template>
 </dom-module>
 `;
-
 document.head.appendChild($_documentContainer.content);

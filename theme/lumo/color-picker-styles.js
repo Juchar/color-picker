@@ -1,21 +1,7 @@
-import '@vaadin/vaadin-lumo-styles/color.js';
-import '@vaadin/vaadin-lumo-styles/sizing.js';
-import '@vaadin/vaadin-lumo-styles/spacing.js';
-import '@vaadin/vaadin-lumo-styles/style.js';
-import '@vaadin/vaadin-lumo-styles/typography.js';
-import './input/color-picker-hex-input-styles.js';
-import './input/color-picker-hsla-input-styles.js';
-import './input/color-picker-rgba-input-styles.js';
-import './palette/color-picker-color-checkbox-styles.js';
-import './slider/color-picker-color-slider-styles.js';
-import './slider/color-picker-selected-color-styles.js';
-// TODO empty? import './components/color-picker-element-carousel-styles.js';
-import './components/color-picker-responsive-canvas-styles.js';
+const $_documentContainer = document.createElement('template');
 
-import {html} from '@polymer/polymer';
-
-const $_documentContainer = html`
-<dom-module id="lumo-color-picker" theme-for="color-picker">
+$_documentContainer.innerHTML = `
+<dom-module id="color-picker-styles" theme-for="color-picker">
   <template>
     <style>
       :host {
@@ -42,7 +28,12 @@ const $_documentContainer = html`
     </style>
   </template>
 </dom-module>
+`;
+document.head.appendChild($_documentContainer.content);
 
+const $_documentContainer2 = document.createElement('template');
+
+$_documentContainer2.innerHTML = `
 <dom-module id="color-picker-shared-styles">
   <template>
     <style>
@@ -78,7 +69,12 @@ const $_documentContainer = html`
     </style>
   </template>
 </dom-module>
+`;
+document.head.appendChild($_documentContainer2.content);
 
+const $_documentContainer3 = document.createElement('template');
+
+$_documentContainer3.innerHTML = `
 <dom-module id="color-value-text-field" theme-for="vaadin-text-field">
   <template>
     <style>
@@ -98,4 +94,4 @@ const $_documentContainer = html`
   </template>
 </dom-module>
 `;
-document.head.appendChild($_documentContainer.content);
+document.head.appendChild($_documentContainer3.content);

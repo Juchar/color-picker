@@ -1,10 +1,10 @@
 import '@vaadin/vaadin-button/src/vaadin-button.js';
 import '@vaadin/vaadin-button/theme/lumo/vaadin-button-styles.js';
 
-import {html} from '@polymer/polymer';
+const $_documentContainer = document.createElement('template');
 
-const $_documentContainer = html`
-<dom-module id="lumo-color-picker-responsive-canvas" theme-for="responsive-canvas">
+$_documentContainer.innerHTML = `
+<dom-module id="color-picker-responsive-canvas" theme-for="responsive-canvas">
   <template>
     <style>
       :host([disabled]),

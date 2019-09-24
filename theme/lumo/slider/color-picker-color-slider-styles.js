@@ -1,10 +1,7 @@
-import '@vaadin/vaadin-button/src/vaadin-button.js';
-import '@vaadin/vaadin-button/theme/lumo/vaadin-button-styles.js';
+const $_documentContainer = document.createElement('template');
 
-import {html} from '@polymer/polymer';
-
-const $_documentContainer = html`
-<dom-module id="lumo-color-picker-color-slider" theme-for="color-slider">
+$_documentContainer.innerHTML = `
+<dom-module id="color-picker-color-slider-styles" theme-for="color-slider">
   <template>
     <style>
       :host {
@@ -71,7 +68,7 @@ const $_documentContainer = html`
       }
 
       [part="handle"]::before {
-        content: "\2003";
+        content: "test";
         color: transparent;
         display: inline-block;
         width: 100%;
@@ -131,17 +128,6 @@ const $_documentContainer = html`
     </style>
   </template>
 </dom-module>
-
-<dom-module id="lumo-color-picker-sl-slider" theme-for="sl-slider">
-  <template>
-    <style>
-      :host {
-        height: calc(var(--color-slider-size) * 8);
-      }
-    </style>
-  </template>
-</dom-module>
 `;
 
-document.head.appendChild($_documentContainer.content);
 document.head.appendChild($_documentContainer.content);

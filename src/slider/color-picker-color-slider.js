@@ -21,10 +21,10 @@ import ColorPickerUtils from '../utils/color-picker-utils';
  * @mixes Vaadin.DisabledPropertyMixin
  * @mixes Polymer.IronResizableBehavior
  */
-class ColorSliderElement extends ElementMixin(ControlStateMixin(ThemableMixin(Vaadin.DisabledPropertyMixin(mixinBehaviors([IronResizableBehavior], PolymerElement))))) {
+class ColorSliderElement extends ElementMixin(ControlStateMixin(ThemableMixin(mixinBehaviors([IronResizableBehavior], PolymerElement)))) {
   static get template() {
     return html`
-    <style>
+    <style include="color-picker-color-slider-styles">
       :host {
         position: relative;
         box-sizing: border-box;

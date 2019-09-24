@@ -1,7 +1,7 @@
-import {html} from '@polymer/polymer';
+const $_documentContainer = document.createElement('template');
 
-const $_documentContainer = html`
-<dom-module id="lumo-color-picker-selected-color" theme-for="selected-color">
+$_documentContainer.innerHTML = `
+<dom-module id="color-picker-selected-color-styles" theme-for="selected-color">
   <template>
     <style>
       :host {
