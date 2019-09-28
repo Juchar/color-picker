@@ -1,2 +1,2 @@
 npm login
-npm publish --public
+npm publish --access public
