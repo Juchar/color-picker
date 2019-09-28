@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/Juchar/color-picker.svg?branch=master)](https://travis-ci.org/Juchar/color-picker)
 [![Bower version](https://badgen.net/github/release/juchar/color-picker)](https://github.com/juchar/color-picker/releases)
 [![Published on Vaadin Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/jucharcolor-picker)
-
+[![npm version](https://badge.fury.io/js/%40appreciated%2Fcolor-picker.svg)](https://badge.fury.io/js/%40appreciated%2Fcolor-picker)
 <!--
 ```
 <custom-element-demo>
