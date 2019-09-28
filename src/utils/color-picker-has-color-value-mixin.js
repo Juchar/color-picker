@@ -1,6 +1,7 @@
 window.Vaadin = window.Vaadin || {};
 window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
 
+import 'tinycolor2/tinycolor.js';
 /**
  * @polymerBehaviour
  */
