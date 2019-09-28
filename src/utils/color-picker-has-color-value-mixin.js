@@ -1,6 +1,7 @@
 window.Vaadin = window.Vaadin || {};
 window.Vaadin.ColorPicker = window.Vaadin.ColorPicker || {};
 import 'tinycolor2';
+window.Vaadin.tinycolor = window.tinycolor;
 /**
  * @polymerBehaviour
  */
@@ -15,7 +16,7 @@ Vaadin.ColorPicker.HasColorValueMixin =
          */
         value: {
           type: Object,
-          value: window.tinycolor({h: 0, s: 1, l: 0.5}),
+          value: window.Vaadin.tinycolor({h: 0, s: 1, l: 0.5}),
           notify: true
         }
       };
