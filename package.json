@@ -1,6 +1,6 @@
 {
   "name": "@appreciated/color-picker",
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0-alpha.3",
   "description": "color-picker",
   "main": "color-picker.js",
   "repository": "juchar/color-picker",
@@ -54,7 +54,7 @@
     "@vaadin/vaadin-text-field": "^2.4.4",
     "tinycolor2": "^1.4.1",
     "@vaadin/vaadin-element-mixin": "^2.1.3",
-    "@vaadin/vaadin-themable-mixin": "^1.4.4",
+    "@vaadin/vaadin-themable-mixin": "^1.2.0",
     "@vaadin/vaadin-control-state-mixin": "^2.1.3"
   }
 }
