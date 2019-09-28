@@ -15,7 +15,7 @@ Vaadin.ColorPicker.HasColorValueMixin =
          */
         value: {
           type: Object,
-          value: tinycolor({h: 0, s: 1, l: 0.5}),
+          value: window.tinycolor({h: 0, s: 1, l: 0.5}),
           notify: true
         }
       };
