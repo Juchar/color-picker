@@ -73,8 +73,8 @@ class AlphaSliderElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.C
       const hsv = tinycolor({h: this.hue || 0, s: 1, v: this.value});
 
       const gradient = ctx.createLinearGradient(0, 0, width, 0);
-      gradient.addColorStop(0, hsv.setAlpha(0).toHslString());
-      gradient.addColorStop(1, hsv.setAlpha(1).toHslString());
+      gradient.addColorStop(0, hsv.setAlpha(0).toRgbString());
+      gradient.addColorStop(1, hsv.setAlpha(1).toRgbString());
 
       ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = gradient;

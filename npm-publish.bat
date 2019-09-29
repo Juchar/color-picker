@@ -1,2 +1,1 @@
-npm login appreciated
-&& npm publish --access public
+npm login appreciated && npm publish --access public
