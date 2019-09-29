@@ -28,7 +28,7 @@ class ColorPickerUtils {
     if (color.getLuminance() >= 0.5 || color.getAlpha() <= 0.5) {
       return contrastColor.darken(color.getAlpha() <= 0.5 && color.getLuminance() <= 0.5 ? 10 : 20).toRgbString();
     } else {
-      return contrastColor.brighten(70).toRgbString();
+      return contrastColor.brighten(90).toRgbString();
     }
   }
 

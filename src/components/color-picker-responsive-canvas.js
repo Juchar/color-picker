@@ -45,7 +45,7 @@ class ResponsiveCanvasElement extends ElementMixin(ThemableMixin(Vaadin.Disabled
   }
 
   static get version() {
-    return '2.0.0-beta.3';
+    return '2.0.0-beta.4';
   }
 
   static get properties() {

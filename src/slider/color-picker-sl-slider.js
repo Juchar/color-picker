@@ -15,7 +15,7 @@ class SlSliderElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.Colo
   }
 
   static get version() {
-    return '2.0.0-beta.3';
+    return '2.0.0-beta.4';
   }
 
   static get properties() {
