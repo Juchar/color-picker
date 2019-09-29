@@ -26,9 +26,9 @@ class ColorPickerUtils {
     const contrastColor = tinycolor({h: hsl.h, s: 1, l: .5});
 
     if (color.getLuminance() >= 0.5 || color.getAlpha() <= 0.5) {
-      return contrastColor.darken(color.getAlpha() <= 0.5 && color.getLuminance() <= 0.5 ? 10 : 20).toHslString();
+      return contrastColor.darken(color.getAlpha() <= 0.5 && color.getLuminance() <= 0.5 ? 10 : 20).toRgbString();
     } else {
-      return contrastColor.brighten(70).toHslString();
+      return contrastColor.brighten(70).toRgbString();
     }
   }
 

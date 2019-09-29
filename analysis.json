@@ -1296,11 +1296,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 25,
+                  "line": 26,
                   "column": 6
                 },
                 "end": {
-                  "line": 28,
+                  "line": 29,
                   "column": 7
                 }
               },
@@ -1319,11 +1319,11 @@
               "privacy": "protected",
               "sourceRange": {
                 "start": {
-                  "line": 54,
+                  "line": 55,
                   "column": 2
                 },
                 "end": {
-                  "line": 57,
+                  "line": 58,
                   "column": 3
                 }
               },
@@ -1339,11 +1339,11 @@
               "privacy": "private",
               "sourceRange": {
                 "start": {
-                  "line": 64,
+                  "line": 65,
                   "column": 2
                 },
                 "end": {
-                  "line": 86,
+                  "line": 87,
                   "column": 3
                 }
               },
@@ -1359,11 +1359,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 9,
+              "line": 10,
               "column": 0
             },
             "end": {
-              "line": 87,
+              "line": 88,
               "column": 1
             }
           },
@@ -1376,11 +1376,11 @@
               "description": "The **h**sv-hue of the color to show as background in the range `[0 - 360]`.",
               "sourceRange": {
                 "start": {
-                  "line": 25,
+                  "line": 26,
                   "column": 6
                 },
                 "end": {
-                  "line": 28,
+                  "line": 29,
                   "column": 7
                 }
               },

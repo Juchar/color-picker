@@ -113,7 +113,7 @@ class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPro
     this.previousIcon.style.color = this.previousValue
       ? ColorPickerUtils.getContrastColor(this.previousValue)
       : 'transparent';
-    this.halo.style.backgroundColor = this.previousValue ? this.previousValue.toHslString() : 'transparent';
+    this.halo.style.backgroundColor = this.previousValue ? this.previousValue.toRgbString() : 'transparent';
   }
 
   /**
@@ -123,7 +123,7 @@ class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPro
    */
   _showSelectPreviousValue() {
     return this.previousValue !== undefined && this.previousValue !== null
-      && this.previousValue.toHslString() !== (this.value !== undefined && this.value !== null ? this.value.toHslString() : undefined);
+      && this.previousValue.toRgbString() !== (this.value !== undefined && this.value !== null ? this.value.toRgbString() : undefined);
   }
 
   /**
@@ -171,9 +171,9 @@ class SelectedColorElement extends ElementMixin(ThemableMixin(Vaadin.DisabledPro
     ctx.clearRect(0, 0, width, height);
 
     if (color) {
-      const hsl = tinycolor(color).toHsl();
+      const rgbString = tinycolor(color).toRgbString();
       ctx.fillStyle =
-        `hsla(${hsl.h || 0}, ${hsl.s * 100}%, ${hsl.l * 100}%, ${hsl.a})`;
+        `${rgbString}`;
       ctx.fillRect(0, 0, width, height);
     }
   }

@@ -82,7 +82,7 @@ class ColorPaletteElement extends ElementMixin(ThemableMixin(Vaadin.DisabledProp
    * @private
    */
   _isSelected(color) {
-    return color && this.value && tinycolor(color).toHslString() === tinycolor(this.value).toHslString();
+    return color && this.value && tinycolor(color).toRgbString() === tinycolor(this.value).toRgbString();
   }
 }
 
