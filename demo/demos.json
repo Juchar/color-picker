@@ -1,0 +1,35 @@
+{
+  "name": "Color Picker",
+  "pages": [
+    {
+      "name": "Basics",
+      "url": "color-picker-basic-demos",
+      "src": "color-picker-basic-demos.js",
+      "meta": {
+        "title": "Color Picker Basics",
+        "description": "",
+        "image": ""
+      }
+    },
+    {
+      "name": "Styling",
+      "url": "color-picker-styling-demos",
+      "src": "color-picker-styling-demos.js",
+      "meta": {
+        "title": "Color Picker Styling Examples",
+        "description": "",
+        "image": ""
+      }
+    },
+    {
+      "name": "Advanced Usage",
+      "url": "color-picker-advanced-demos",
+      "src": "color-picker-advanced-demos.js",
+      "meta": {
+        "title": "Color Picker Advanced Examples",
+        "description": "",
+        "image": ""
+      }
+    }
+  ]
+}
