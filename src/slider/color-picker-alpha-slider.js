@@ -15,7 +15,7 @@ class AlphaSliderElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.C
   }
 
   static get version() {
-    return '2.0.0-beta.1';
+    return '2.0.0-beta.3';
   }
 
   static get properties() {

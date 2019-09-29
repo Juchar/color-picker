@@ -61,7 +61,7 @@ class HslaInputElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.Col
   }
 
   static get version() {
-    return '2.0.0-beta.1';
+    return '2.0.0-beta.3';
   }
 
   static get properties() {

@@ -72,7 +72,7 @@ class ElementCarouselElement extends ElementMixin(ThemableMixin(Vaadin.DisabledP
   }
 
   static get version() {
-    return '2.0.0-beta.1';
+    return '2.0.0-beta.3';
   }
 
   static get properties() {
