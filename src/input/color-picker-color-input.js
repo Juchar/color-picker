@@ -3,7 +3,6 @@ import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
 import {ElementMixin} from '@vaadin/vaadin-element-mixin';
 import '../utils/vaadin-disabled-property-mixin.js';
 import '../utils/color-picker-has-color-value-mixin.js';
-import 'tinycolor2';
 
 /**
  * `ColorInputElement` is an extendable base class for all inputs regarding color.

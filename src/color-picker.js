@@ -6,7 +6,6 @@ import './input/color-picker-color-picker-input.js';
 import './palette/color-picker-color-picker-palette.js';
 import './utils/vaadin-disabled-property-mixin.js';
 import ColorPickerUtils from './utils/color-picker-utils';
-import 'tinycolor2';
 
 /**
  * `<color-picker>` allows to select a color using sliders, inputs or palettes.

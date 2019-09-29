@@ -5,7 +5,7 @@ import '../utils/vaadin-disabled-property-mixin.js';
 import '../utils/color-picker-has-color-value-mixin.js';
 import '../utils/color-picker-utils.js';
 import '../components/color-picker-responsive-canvas';
-import 'tinycolor2';
+import {tinycolor} from '@thebespokepixel/es-tinycolor';
 import {html, PolymerElement} from '@polymer/polymer';
 import ColorPickerUtils from '../utils/color-picker-utils';
 

@@ -1,7 +1,7 @@
 import {html, PolymerElement} from '@polymer/polymer';
 import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
 import {ElementMixin} from '@vaadin/vaadin-element-mixin';
-import 'tinycolor2';
+import {tinycolor} from '@thebespokepixel/es-tinycolor';
 import './color-picker-sl-slider.js';
 import './color-picker-hue-slider.js';
 import './color-picker-alpha-slider.js';

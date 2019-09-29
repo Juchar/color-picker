@@ -1,3 +1,5 @@
+import {tinycolor} from '@thebespokepixel/es-tinycolor';
+
 // eslint-disable-next-line no-unused-vars
 class ColorPickerUtils {
 

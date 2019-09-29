@@ -4,7 +4,7 @@ import {ElementMixin} from '@vaadin/vaadin-element-mixin';
 import '../utils/vaadin-disabled-property-mixin.js';
 import '../utils/color-picker-has-color-value-mixin.js';
 import './color-picker-color-checkbox.js';
-import 'tinycolor2';
+import {tinycolor} from '@thebespokepixel/es-tinycolor';
 
 /**
  * `<color-palette>` shows a set of colors that can be selected.

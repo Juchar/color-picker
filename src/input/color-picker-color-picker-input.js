@@ -7,7 +7,6 @@ import './color-picker-rgba-input.js';
 import './color-picker-hsla-input.js';
 import '../utils/vaadin-disabled-property-mixin.js';
 import '../utils/color-picker-has-color-value-mixin.js';
-import 'tinycolor2';
 
 /**
  * `<color-picker-input>` allows to select a color from different inputs:

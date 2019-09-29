@@ -2,7 +2,7 @@ import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
 import {ElementMixin} from '@vaadin/vaadin-element-mixin';
 import '@vaadin/vaadin-text-field/vaadin-number-field.js';
 import './color-picker-color-input.js';
-import 'tinycolor2';
+import {tinycolor} from '@thebespokepixel/es-tinycolor';
 import '../utils/color-picker-utils.js';
 import {html} from '@polymer/polymer';
 import ColorPickerUtils from '../utils/color-picker-utils';
