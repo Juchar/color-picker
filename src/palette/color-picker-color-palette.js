@@ -53,7 +53,7 @@ class ColorPaletteElement extends ElementMixin(ThemableMixin(Vaadin.DisabledProp
   }
 
   static get version() {
-    return '2.0.0-alpha.1';
+    return '2.0.0-beta.1';
   }
 
   static get properties() {

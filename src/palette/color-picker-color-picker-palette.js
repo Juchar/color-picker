@@ -45,7 +45,7 @@ class ColorPickerPaletteElement extends ElementMixin(ThemableMixin(Vaadin.Disabl
   }
 
   static get version() {
-    return '2.0.0-alpha.1';
+    return '2.0.0-beta.1';
   }
 
   static get properties() {

@@ -1,6 +1,7 @@
 import './color-picker-color-slider.js';
 import {ThemableMixin} from '@vaadin/vaadin-themable-mixin';
 import {ElementMixin} from '@vaadin/vaadin-element-mixin';
+
 /**
  * `<sl-slider>` is an element that allows to select a **saturation** and **lightness** value
  * from the hsv color space using a slider.
@@ -14,7 +15,7 @@ class SlSliderElement extends ElementMixin(ThemableMixin(Vaadin.ColorPicker.Colo
   }
 
   static get version() {
-    return '2.0.0-alpha.1';
+    return '2.0.0-beta.1';
   }
 
   static get properties() {

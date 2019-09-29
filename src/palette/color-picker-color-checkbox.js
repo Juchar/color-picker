@@ -21,7 +21,7 @@ class ColorCheckboxElement extends CheckboxElement {
   }
 
   static get version() {
-    return '2.0.0-alpha.1';
+    return '2.0.0-beta.1';
   }
 
   static get properties() {
@@ -75,7 +75,7 @@ class ColorCheckboxElement extends CheckboxElement {
     const element = this.shadowRoot.querySelector('[part="checkbox"]');
 
     if (this.color) {
-      element.style.background = this.color.toHslString();
+      element.style.background = this.color.toRgbString();
       element.style.color = ColorPickerUtils.getContrastColor(this.color);
 
       if (this.color.getLuminance() > 0.96) {
