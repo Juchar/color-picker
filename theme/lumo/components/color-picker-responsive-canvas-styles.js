@@ -1,5 +1,5 @@
 import '@vaadin/vaadin-button/src/vaadin-button.js';
-import '@vaadin/vaadin-button/theme/lumo/vaadin-button-styles.js';
+import '@vaadin/button/theme/lumo/vaadin-button-styles.js';
 
 const $_documentContainer = document.createElement('template');
 
